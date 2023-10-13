@@ -47,7 +47,7 @@ plot(M.data(:,1)/60,M.data(:,3),'k-'); hold on
 set(gca,'FontName',Font_Name)
 set(gca,'FontSize',Title_Font_Size)
 axis([0 t_end{j} 0 HRR_max{j}])
-text(.05,.90,['Test ' num2str(j+32,'%1d\n')],'FontName',Font_Name,'FontSize',Label_Font_Size,'Interpreter',Font_Interpreter,'Units','normalized')
+text(.05,.90,['Experiment ' num2str(j,'%1d\n')],'FontName',Font_Name,'FontSize',Label_Font_Size,'Interpreter',Font_Interpreter,'Units','normalized')
 
 xlabel('Time (min)','FontSize',Title_Font_Size,'Interpreter',Font_Interpreter)
 ylabel('Heat Release Rate (kW)','FontSize',Title_Font_Size,'Interpreter',Font_Interpreter)
@@ -58,7 +58,7 @@ set(gcf,'Units',Paper_Units);
 set(gcf,'PaperUnits',Paper_Units);
 set(gcf,'PaperSize',[Paper_Width Paper_Height]);
 set(gcf,'Position',[0 0 Paper_Width Paper_Height]);
-print(gcf,'-dpdf',['../SCRIPT_FIGURES/Test_' num2str(j+32,'%1d\n') '_HRR'])
+print(gcf,'-dpdf',['../SCRIPT_FIGURES/Test_' num2str(j,'%1d\n') '_HRR'])
 
 hold off
 
@@ -75,7 +75,7 @@ end
 set(gca,'FontName',Font_Name)
 set(gca,'FontSize',Title_Font_Size)
 axis([0 t_end{j} 0 1000])
-text(.05,.90,['Test ' num2str(j+32,'%1d\n')],'FontName',Font_Name,'FontSize',Label_Font_Size,'Interpreter',Font_Interpreter,'Units','normalized')
+text(.05,.90,['Experiment ' num2str(j,'%1d\n')],'FontName',Font_Name,'FontSize',Label_Font_Size,'Interpreter',Font_Interpreter,'Units','normalized')
 
 xlabel('Time (min)','FontSize',Title_Font_Size,'Interpreter',Font_Interpreter)
 ylabel('Temperature ($^\circ$C)','FontSize',Title_Font_Size,'Interpreter',Font_Interpreter)
@@ -86,7 +86,7 @@ set(gcf,'Units',Paper_Units);
 set(gcf,'PaperUnits',Paper_Units);
 set(gcf,'PaperSize',[Paper_Width Paper_Height]);
 set(gcf,'Position',[0 0 Paper_Width Paper_Height]);
-print(gcf,'-dpdf',['../SCRIPT_FIGURES/Test_' num2str(j+32,'%1d\n') '_Slug_TC'])
+print(gcf,'-dpdf',['../SCRIPT_FIGURES/Test_' num2str(j,'%1d\n') '_Slug_TC'])
 
 hold off
 
@@ -112,7 +112,7 @@ end
 set(gca,'FontName',Font_Name)
 set(gca,'FontSize',Title_Font_Size)
 axis([0 t_end{j} 0 1000])
-text(.05,.90,['Test ' num2str(j+32,'%1d\n')],'FontName',Font_Name,'FontSize',Label_Font_Size,'Interpreter',Font_Interpreter,'Units','normalized')
+text(.05,.90,['Experiment ' num2str(j,'%1d\n')],'FontName',Font_Name,'FontSize',Label_Font_Size,'Interpreter',Font_Interpreter,'Units','normalized')
 
 xlabel('Time (min)','FontSize',Title_Font_Size,'Interpreter',Font_Interpreter)
 ylabel('Temperature ($^\circ$C)','FontSize',Title_Font_Size,'Interpreter',Font_Interpreter)
@@ -122,7 +122,7 @@ set(gcf,'Units',Paper_Units);
 set(gcf,'PaperUnits',Paper_Units);
 set(gcf,'PaperSize',[Paper_Width Paper_Height]);
 set(gcf,'Position',[0 0 Paper_Width Paper_Height]);
-print(gcf,'-dpdf',['../SCRIPT_FIGURES/Test_' num2str(j+32,'%1d\n') '_Gas_TC'])
+print(gcf,'-dpdf',['../SCRIPT_FIGURES/Test_' num2str(j,'%1d\n') '_Gas_TC'])
 
 hold off
 
