@@ -50,12 +50,13 @@
 \usepackage{epstopdf} % converting EPS figure files to PDF
 
 \usepackage{fancyhdr, lastpage}	% formatting document, calculating number of pages, formatting headers
-\setlength{\topmargin}{-0.5in}
-\setlength{\headheight}{39pt}
-\setlength{\oddsidemargin}{0.25in}
-\setlength{\evensidemargin}{0.25in}
-\setlength{\textwidth}{6.0in}
-\setlength{\textheight}{8.5in}
+\setlength{\headsep}{0.in}
+\setlength{\topmargin}{0.in}
+\setlength{\headheight}{0pt}
+\setlength{\oddsidemargin}{0.in}
+\setlength{\evensidemargin}{0.in}
+\setlength{\textwidth}{6.5in}
+\setlength{\textheight}{9in}
 
 \usepackage{caption} % required for Figure labels
 \captionsetup{font=small,labelfont=bf,figurename=Fig.,labelsep=period,justification=raggedright}
@@ -221,60 +222,73 @@ Natl. Inst. Stand. Technol. Tech. Note \pubnumber, \pageref{LastPage} pages (\mo
 
 \section{Introduction}
 
-Electrical enclosures housing switchgear, circuit breakers, motor controls, etc., are a common source of fire in industrial settings, and the heat release rate (HRR) of these fires is an important consideration in facility risk assessments. Previous experiments have been conducted to determine peak heat release rate (HRR) probability distributions for electrical enclosure fires~\cite{NUREG/CR-7197}, refine these results to consider specific electrical enclosure characteristics (e.g., cabinets size or fuel loading)~\cite{NUREG-2178}, and to examine HRR for enclosures with limited ventilation~\cite{OLIVE-FIRE}. To date, there is limited experimental data measuring the HRR of circuit breaker fires in electrical enclosures, which have been observed to grow and continue burning for tens of minutes after high energy arc fault (HEAF) events. Thus, the experiments described in this report are designed to quantify the peak HRR, time to peak HRR, and duration of circuit breaker fires in closed steel enclosures.
+Electrical enclosures housing switchgear, circuit breakers, motor controls, etc., are a common source of fire in industrial settings, and the heat release rate (HRR) of these fires is an important consideration in facility risk assessments. Previous experiments have been conducted to determine peak heat release rate (HRR) probability distributions for electrical enclosure fires~\cite{NUREG/CR-7197}. Analysis was then conducted to refine these results to consider specific electrical enclosure characteristics (e.g., cabinets size or fuel loading)~\cite{NUREG-2178}. Further experiments were conducted to measure the HRR for enclosures with limited ventilation~\cite{OLIVE-FIRE}. To date, there are few measurements of the HRR of circuit breaker fires in electrical enclosures, which have been observed to grow and continue burning for tens of minutes after high energy arc fault (HEAF) events. Thus, the experiments described in this report seek to quantify the peak HRR, time to peak HRR, and duration of circuit breaker fires in steel electrical enclosures.
 
 
 \section{Description of Experiments}
 
-Four low voltage circuit breakers and their steel enclosures were shipped to the National Fire Research Laboratory (NFRL) at NIST in September 2023. These enclosures were taken from a decommissioned nuclear power plant in Germany, and included original equipment inside: low voltage circuit breaker, wires/cabling. Three of the breakers enclosures were bolted together, as shown in Fig.~\ref{fig:Cabinet_1} and one was stand-alone (Fig.~\ref{Cabinet_2}). Each enclosure consisted of three vertical compartments, separated (but not fully sealed/enclosed) by horizontal metal dividing barriers.
+Four low voltage circuit breaker enclosures were shipped to the National Fire Research Laboratory (NFRL) at NIST in September 2023. These enclosures were taken from a decommissioned nuclear power plant in Germany, and included original equipment inside: low voltage circuit breaker, wires/cabling. Three of the breakers enclosures were bolted together, as shown in Fig.~\ref{fig:Cabinet_1} and one was stand-alone (Fig.~\ref{fig:Cabinet_2}). Each enclosure consisted of three vertical compartments, separated (but not fully sealed/enclosed) by horizontal metal dividing barriers.
 
-In each experiment, a low voltage circuit breaker with nominal dimensions of 30~cm by 40~cm by 30~cm and mass 47~kg was the primary combustible whose non-metallic mass consists of polymeric insulating materials such as glass-polyester and thermoset composite resins. Additionally, panels, wiring, and circuit boards were found mainly in the compartment above the breaker. The compartment below the breaker was largely empty of combustibles. 
+In each experiment, a low voltage circuit breaker with nominal dimensions of 30~cm by 40~cm by 30~cm and mass 47~kg was the primary combustible whose non-metallic mass consists of polymeric insulating materials such as glass-polyester and thermoset composite resins. Additionally, panels, wiring, and circuit boards were found mainly in the compartment above the breaker, as seen in Fig.~\ref{fig:Contents}. The compartment below the breaker was largely empty of combustibles. No attempt was made to remove and weigh the instrumentation because doing so would have potentially changed its burning behavior. However, estimates of its mass were made by dividing the integral of the heat release rate with time (kJ) by an estimated heat of combustion (kJ/kg). These estimates are entered in Table~\ref{matrix}.
 
 \begin{figure}[ht]
-\includegraphics[width=\textwidth]{../FIGURES/Large_Cabinet}
+\centering
+\includegraphics[width=6in]{../FIGURES/Large_Cabinet}
 \caption[Photograph of three-breaker enclosure] {Photograph of three-breaker enclosure. The breaker is located in the middle compartment of each column. Wiring and other electrical equipment is located mainly in the compartment above, and the compartment below is largely empty. Each of the three vertical columns is largely the same.}
 \label{fig:Cabinet_1}
 \end{figure}
 
 \begin{figure}[ht]
-\includegraphics[width=\textwidth]{../FIGURES/Small_Cabinet}
+\centering
+\includegraphics[width=6in]{../FIGURES/Small_Cabinet}
 \caption[Photograph of single-breaker enclosure] {Photograph of single-breaker enclosure.}
 \label{fig:Cabinet_2}
 \end{figure}
 
-The breakers were ignited using a 30~cm square natural gas burner positioned approximately 20~cm beneath the circuit breaker, as shown in Fig.~\ref{fig:Burner}. The burner's heat release rate was set to approximately 100~kW. After sustained ignition of the circuit breaker was observed, the burner was turned off and the enclosure fire was allowed to continue burning until the measured heat release rate decreased below 10~kW, at which point the small remaining fires were extinguished.
+\begin{figure}[ht]
+\centering
+\includegraphics[width=6in]{../FIGURES/Contents}
+\caption[Photograph of instrumentation above the breaker] {Photograph of instrumentation above the breaker. A few cables have been added to replace those removed previously.}
+\label{fig:Contents}
+\end{figure}
+
+The breakers were ignited using a 30~cm square natural gas burner positioned approximately 20~cm beneath the circuit breaker, as shown in Fig.~\ref{fig:Burner}. The burner's heat release rate was set to approximately 100~kW. After sustained ignition of the circuit breaker was observed, the burner was turned off and the enclosure fire was allowed to continue burning until the measured heat release rate decreased below 10~kW, at which point the small remaining fires were extinguished. The relative expanded uncertainty\footnote{The relative expanded uncertainty is a 95~\% confidence interval.} of the heat release rate measurement under the hood used in these experiments 7~\%~\cite{bryant2019nist}.
 
 \begin{figure}[ht]
-\includegraphics[width=\textwidth]{../FIGURES/Burner}
+\centering
+\includegraphics[width=6in]{../FIGURES/Burner}
 \caption[Position of the burner] {Position of the burner under the breaker in Test~2.}
 \label{fig:Burner}
 \end{figure}
 
-Sheathed thermocouples (K-type, sheath diameter 3~mm) were installed 15~cm (6~in) below the ceiling of each compartment to provide a measurement of the gas temperature within. Thermocouples were also embedded within representative items that were placed directly above each circuit breaker: 7-conductor thermoplastic electrical cable segments and aluminum rods, both approximately  15~cm (6~in) in length and 13~mm in diameter. An IR camera provided a qualitative measure of temperature distribution across the enclosure walls.
+Sheathed thermocouples (K-type, sheath diameter 3~mm) were installed 15~cm (6~in) below the ceiling of each compartment to provide a measurement of the gas temperature within. Thermocouples were also embedded within representative items (``slugs'') that were placed directly above each circuit breaker: 7-conductor thermoplastic electrical cable segments and aluminum rods, both approximately  15~cm (6~in) in length and 13~mm in diameter. An IR camera provided a qualitative measure of temperature distribution across the enclosure walls.
 
 Photographs of the enclosures used in this work are shown in Figs.~\ref{fig:Cabinet_1} and \ref{fig:Cabinet_2}. Each enclosure is approximately 2.2~m (87~in) tall, 0.4~m (16~in) wide, and 1.0~m (40~in) deep. Some of the enclosures have ventilation panels near the top and bottom, and all have seams and small openings to accommodate wiring, bus bars, door panels, and so on. No attempt was made to seal these various gaps and openings except in Experiment~2 where a burned out instrument panel was covered by a steel plate, and in Experiment~3, where a hole in the top of the enclosure was covered by a steel plate.
 
 
 
-
+\clearpage
 
 
 \section{Experimental Results}
 
-Three experiments were conducted in October of 2023. Nominal results are listed in Table~\ref{matrix}.
+The experiments were conducted in October of 2023. Nominal results are listed in Table~\ref{matrix} and details can be found on the following pages. In each experiment, the nominally 100~kW natural gas burner was sustained until it appeared that the breaker had begun to burn. For the first two experiments, the burner was sustained longer than necessary, as evidenced by the third experiment where the breaker was able to sustain a fire after four minutes of exposure from the burner. 
+
+The ``Peak HRR'' in Table~\ref{matrix} indicates the maximum value of the combined heat release rate of burner and enclosure contents. The ``Total HR'' (Total Heat Release), however, is the total energy released less the burner's energy; that is, the energy of the contents alone. The ``Mass Consumed'' is the Total HR divided by an estimated heat of combustion of 20~MJ/kg. The peak ``slug'' and gas temperatures are comparable and represent uniform conditions within the burning breaker and instrument compartments.
 
 
 \begin{table}[ht]
 \begin{center}
-\caption[Summary of Experimental Results]{Summary of Experimental Results. The plus sign added to the Leak Area of Experiments~1 and 2 indicate that the gaps between steel panels opened substantially during the experiment due to heating.}
+\caption[Summary of Experimental Results]{Summary of Experimental Results.}
 \label{matrix}
-\begin{tabular}{|c|c|c|c|c|c|c|}
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
 \hline
-Exp.   & Encl.      & Peak HRR          & Total HR  	& Time to Peak HRR	& Steady Burning Duration	& Decay Phase Duration                        \\
-No.    & No.        & [kW]      	    & [MW]	        & [min]        		& [min]  				    & [min]			             \\ \hline
-1	   &  1	        & 349$\pm$19	    & Q1	    	& t1	          	& $t_{dur,1}$	            & $t_{dec,1}$	             \\ \hline
-2	   &  1	        & 172$\pm$10	    & Q2	    	& t2	          	& $t_{dur,2}$	            & $t_{dec,2}$	             \\ \hline
-3	   &  2	        & 349$\pm$19	    & Q3	        & t3	           	& $t_{dur,3}$	            & $t_{dec,3}$	             \\ \hline
+Exp.   & Peak           & Total     	& Mass          	& Time             & Burner       & Peak Slug    & Peak Gas      \\
+No.    & HRR            & HR            & Consumed          & to Peak          & Duration     & Temp.        & Temp.         \\                    
+       & [kW]      	    & [MJ]	        & [kg]        		& [min]  		   & [min] 	      & [$^\circ$C]  & [$^\circ$C]   \\ \hline
+1	   & 349$\pm$24	    & 387	    	& 19.4	          	& 11          	   & 10           & 770          & 860           \\ \hline
+2	   & 172$\pm$12	    & 192	    	& 9.6	          	& 9	               & 8            & 680          & 700           \\ \hline
+3	   & 223$\pm$16	    & 230	        & 11.5	           	& 20        	   & 4            & 680          & 670           \\ \hline
 \end{tabular}
 \end{center}
 \end{table}
@@ -338,7 +352,7 @@ The fire in Experiment~1 consumed all of the combustibles in the upper compartme
 
 \subsection{Experiment 3}
 
-This experiment was conducted within the single breaker enclosure, where the burner was positioned as in the previous experiments. 
+This experiment was conducted within the single breaker enclosure, where the burner was positioned as in the previous experiments.
 
 \begin{figure}[!h]
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
@@ -365,12 +379,12 @@ This experiment was conducted within the single breaker enclosure, where the bur
 
 \section{Conclusion}
 
-Experiments were conducted to measure the heat release rates (HRR) and burning behavior of circuit breaker fires within closed steel enclosures. \\
-Note on fire development, delay for shorter initial fire. Sustained flaming/heat near breakder [small/local/smoldering and flaming fire until compartment temp and target Temps maintained ~400C]; then, `flashover' of the compartment\\
-Note on peak HRR, duration\\
-Note on spread to neighboring compartments\\
-Connection to guidance currently available in RACHELLE fire.\\
-Comment on similarity in measured Temperature response of aluminum slugs vs. jacketed cables. NOTE: while center of slug Temperature rise was quite similar, it is possible that that outter jacket of real cabels heated more quickly, showed damage prior to [critical temp] at center.
+Experiments were conducted to measure the heat release rates (HRR) and burning behavior of circuit breaker fires within closed steel enclosures. Of note: 
+\begin{itemize} 
+\item Fires within compartments of the enclosure resembled typical  ``flashover'' behavior; that is, flames emerging from the openings left behind after the instrument panels melted away. The measured temperatures within these compartments (both gas and solid) ranged between 600~$^\circ$C and 800~$^\circ$C, typical of an uninsulated steel enclosure.
+\item The combustible load within the upper compartments was sufficient to maintain a fire long enough for the neighboring compartment to heat up and burn. Typically, a compartment would start burning when its interior gas temperature reached approximately 400~$^\circ$C.
+\item The aluminum ``slug calorimeters'' and the interior of the instrumented cable segments exhibited similar temperatures, suggesting that the slugs might be a suitable surrogate to assess the vulnerability of electrical cables near or within a fire.
+\end{itemize}
 
 
 
