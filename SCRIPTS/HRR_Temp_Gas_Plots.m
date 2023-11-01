@@ -129,3 +129,28 @@ hold off
 clf('reset')
 
 end
+
+% Make a plot of the Al rods and cable oven test
+
+M = importdata('../DATA/Oven_Test_002_avg.csv',',',2);
+
+plot(M.data(:,1),M.data(:,15),'k-'); hold on
+plot(M.data(:,1),M.data(:,2),'k--'); hold on
+plot(M.data(:,1),M.data(:,9),'k:'); hold on
+
+set(gca,'FontName',Font_Name)
+set(gca,'FontSize',Title_Font_Size)
+axis([0 100 0 400])
+
+xlabel('Time (min)','FontSize',Title_Font_Size,'Interpreter',Font_Interpreter)
+ylabel('Temperature ($^\circ$C)','FontSize',Title_Font_Size,'Interpreter',Font_Interpreter)
+legend('Air','Aluminum Rod','Cable Segment', 'Location', 'Best','FontSize',Legend_Font_Size);
+
+set(gcf,'Visible',Figure_Visibility);
+set(gcf,'Units',Paper_Units);
+set(gcf,'PaperUnits',Paper_Units);
+set(gcf,'PaperSize',[Paper_Width Paper_Height]);
+set(gcf,'Position',[0 0 Paper_Width Paper_Height]);
+print(gcf,'-dpdf',['../SCRIPT_FIGURES/Oven_Test'])
+
+hold off

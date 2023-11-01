@@ -229,8 +229,6 @@ Electrical enclosures housing switchgear, circuit breakers, motor controls, etc.
 
 Four low voltage circuit breaker enclosures were shipped to the National Fire Research Laboratory (NFRL) at NIST in September 2023. These enclosures were taken from a decommissioned nuclear power plant in Germany, and included low voltage circuit breakers and various types of wires, cables, and instrumentation manufactured by ABB. Three of enclosures were bolted together, as shown in Fig.~\ref{fig:Cabinet_1} and one was stand-alone (Fig.~\ref{fig:Cabinet_2}). Each enclosure consisted of three vertical compartments, separated (but not fully sealed/enclosed) by horizontal metal dividing barriers.
 
-In each experiment, a low voltage circuit breaker with nominal dimensions of 30~cm by 40~cm by 30~cm and mass 47~kg was the primary combustible whose non-metallic mass consists of polymeric insulating materials such as glass-polyester and thermoset composite resins. Additionally, panels, wiring, and circuit boards were found mainly in the compartment above the breaker, as seen in Fig.~\ref{fig:Contents}. The compartment below the breaker was largely empty of combustibles. No attempt was made to remove and weigh the instrumentation because doing so would have potentially changed its burning behavior. However, estimates of its mass were made by dividing the integral of the heat release rate with time (kJ) by an estimated heat of combustion (kJ/kg). These estimates are entered in Table~\ref{matrix}.
-
 \begin{figure}[ht]
 \centering
 \includegraphics[width=6in]{../FIGURES/Large_Cabinet}
@@ -244,6 +242,8 @@ In each experiment, a low voltage circuit breaker with nominal dimensions of 30~
 \caption[Photograph of single-breaker enclosure] {Photograph of single-breaker enclosure.}
 \label{fig:Cabinet_2}
 \end{figure}
+
+In each experiment, a low voltage circuit breaker with nominal dimensions of 30~cm by 40~cm by 30~cm and mass 47~kg was the primary combustible whose non-metallic mass consists of polymeric insulating materials such as glass-polyester and thermoset composite resins. Additionally, panels, wiring, and circuit boards were found mainly in the compartment above the breaker, as seen in Fig.~\ref{fig:Contents}. The compartment below the breaker was largely empty of combustibles. No attempt was made to remove and weigh the instrumentation because doing so would have potentially changed its burning behavior. However, estimates of its mass were made by dividing the integral of the heat release rate with time (kJ) by an estimated heat of combustion (kJ/kg). These estimates are entered in Table~\ref{matrix}.
 
 \begin{figure}[ht]
 \centering
@@ -261,7 +261,16 @@ The breakers were ignited using a 30~cm square natural gas burner positioned app
 \label{fig:Burner}
 \end{figure}
 
-Sheathed thermocouples (K-type, sheath diameter 3~mm) were installed 15~cm (6~in) below the ceiling of each compartment to provide a measurement of the gas temperature within. Thermocouples were also embedded within representative items (``slugs'') that were placed directly above each circuit breaker: 7-conductor thermoplastic electrical cable segments and aluminum rods, both approximately  15~cm (6~in) in length and 13~mm in diameter. An IR camera provided a qualitative measure of temperature distribution across the enclosure walls.
+Sheathed thermocouples (K-type, sheath diameter 3~mm) were installed 15~cm (6~in) below the ceiling of each compartment to provide a measurement of the gas temperature within. Thermocouples were also embedded within representative items (``slugs'') that were placed directly above each circuit breaker: 7-conductor thermoplastic electrical cable segments and 6061~aluminum alloy rods, both approximately  15~cm (6~in) in length and 13~mm in diameter. The heat capacity of these objects can be expressed in terms of the product of their density, specific heat, and cross sectional area, $\rho c A$, in units of kJ/K/m; that is, the amount of energy required to raise a 1~m segment 1~K. The heat capacity of the aluminum rod is approximately 0.31~kJ/K/m and the cable segment is approximately 0.36~kJ/K/m. Figure~\ref{oven} displays the measured temperature of each when placed in a convection oven whose temperature was raised to 300~$^\circ$C.
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[height=2.15in]{../SCRIPT_FIGURES/Oven_Test} 
+\caption[Measured temperatures of slug calorimeters in a convection oven]{Measured temperatures of a 1/2 inch aluminum rod and cable segment in a convection oven.}
+\label{oven}
+\end{figure}
+
+An IR camera provided a qualitative measure of temperature distribution across the enclosure walls.
 
 Photographs of the enclosures used in this work are shown in Figs.~\ref{fig:Cabinet_1} and \ref{fig:Cabinet_2}. Each enclosure is approximately 2.2~m (87~in) tall, 0.4~m (16~in) wide, and 1.0~m (40~in) deep. Some of the enclosures have ventilation panels near the top and bottom, and all have seams and small openings to accommodate wiring, bus bars, door panels, and so on. No attempt was made to seal these various gaps and openings except in Experiment~2 where a burned out instrument panel was covered by a steel plate, and in Experiment~3, where a hole in the top of the enclosure was covered by a steel plate.
 
@@ -383,7 +392,7 @@ Experiments were conducted to measure the heat release rates (HRR) and burning b
 \begin{itemize}
 \item Fires within compartments of the enclosure resembled typical  ``flashover'' behavior; that is, flames emerging from the openings left behind after the instrument panels melted away. The measured temperatures within these compartments (both gas and solid) ranged between 600~$^\circ$C and 800~$^\circ$C, typical of an uninsulated steel enclosure.
 \item In Experiment~1, the fire spread through double-walled steel partitions in approximately 10~min. Vigorous burning of combustibles was noted when the compartment gas temperature reached approximately 400~$^\circ$C.
-\item The combustible load within the upper compartments was sufficient to maintain a fire long enough for the neighboring compartment to heat up and burn. 
+\item The combustible load within the upper compartments was sufficient to maintain a fire long enough for the neighboring compartment to heat up and burn.
 \item The aluminum ``slug calorimeters'' and the interior of the instrumented cable segments exhibited similar temperatures, suggesting that the slugs might be a suitable surrogate to assess the vulnerability of electrical cables near or within a fire.
 \end{itemize}
 
