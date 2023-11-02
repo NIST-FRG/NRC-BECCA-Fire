@@ -252,7 +252,7 @@ In each experiment, a low voltage circuit breaker with nominal dimensions of 30~
 \label{fig:Contents}
 \end{figure}
 
-The breakers were ignited using a 30~cm square natural gas burner positioned approximately 20~cm beneath the circuit breaker, as shown in Fig.~\ref{fig:Burner}. The burner's heat release rate was set to approximately 100~kW. After sustained ignition of the circuit breaker was observed, the burner was turned off and the enclosure fire was allowed to continue burning until the measured heat release rate decreased below 10~kW, at which point the small remaining fires were extinguished. The relative expanded uncertainty\footnote{The relative expanded uncertainty is a 95~\% confidence interval.} of the heat release rate measurement under the hood used in these experiments 7~\%~\cite{bryant2019nist}.
+The breakers were ignited using a 30~cm square natural gas burner positioned approximately 20~cm beneath the circuit breaker, as shown in Fig.~\ref{fig:Burner}. The burner's heat release rate\footnote{The relative expanded uncertainty (95~\% confidence interval) of the heat release rate measurement under the hood used in these experiments is 4~\% for natural gas and 7~\% for ``generic combustibles''~\cite{bryant2019nist}.} was set to approximately 100~kW. After sustained ignition of the circuit breaker was observed, the burner was turned off and the enclosure fire was allowed to continue burning until the measured heat release rate decreased below 10~kW, at which point the small remaining fires were extinguished.
 
 \begin{figure}[ht]
 \centering
@@ -265,7 +265,7 @@ Sheathed thermocouples (K-type, sheath diameter 3~mm) were installed 15~cm (6~in
 
 \begin{figure}[!ht]
 \centering
-\includegraphics[height=2.15in]{../SCRIPT_FIGURES/Oven_Test} 
+\includegraphics[height=3.0in]{../SCRIPT_FIGURES/Oven_Test}
 \caption[Measured temperatures of slug calorimeters in a convection oven]{Measured temperatures of a 1/2 inch aluminum rod and cable segment in a convection oven.}
 \label{oven}
 \end{figure}
@@ -281,26 +281,30 @@ Photographs of the enclosures used in this work are shown in Figs.~\ref{fig:Cabi
 
 \section{Experimental Results}
 
-The experiments were conducted in October of 2023. Nominal results are listed in Table~\ref{matrix} and details can be found on the following pages. In each experiment, the nominally 100~kW natural gas burner was sustained until it appeared that the breaker had begun to burn. For the first two experiments, the burner was sustained longer than necessary, as evidenced by the third experiment where the breaker was able to sustain a fire after four minutes of exposure from the burner.
+The experiments were conducted in October of 2023. Nominal results are listed in Table~\ref{matrix} and details can be found on the following pages. For each experiment, the nominally 100~kW natural gas burner was sustained until it appeared that the breaker had begun to burn. For the first two experiments, the burner was sustained longer than necessary, as evidenced by the third experiment where the breaker was able to sustain a fire after four minutes of exposure from the burner.
 
-The ``Peak HRR'' in Table~\ref{matrix} indicates the maximum value of the combined heat release rate of burner and enclosure contents. The ``Total HR'' (Total Heat Release), however, is the total energy released less the burner's energy; that is, the energy of the contents alone. The ``Mass Consumed'' is the Total HR divided by an estimated heat of combustion of 20~MJ/kg. The peak ``slug'' and gas temperatures are comparable and represent uniform conditions within the burning breaker and instrument compartments.
+The ``Peak HRR'' in Table~\ref{matrix} indicates the maximum value of the heat release rate of the enclosure contents; that is the total heat release rate minus that of the natural gas burner. The ``Total HR'' (Total Heat Release) is the total energy released less the burner's energy; that is, the energy of the contents alone. The ``Mass Consumed'' is the Total HR divided by an estimated heat of combustion of 25~MJ/kg for the combustible materials within the enclosure. The peak ``slug'' and gas temperatures are comparable and represent uniform conditions within the burning breaker and instrument compartments.
 
 
 \begin{table}[ht]
 \begin{center}
-\caption[Summary of Experimental Results]{Summary of Experimental Results.}
+\caption[Summary of Experimental Results]{Summary of Experimental Results. The values of temperature are rounded to the nearest 10~$^\circ$C which is much greater than the uncertainty of the thermocouples used in the experiments. The listed times are rounded to the nearest minute.}
 \label{matrix}
 \begin{tabular}{|c|c|c|c|c|c|c|c|}
 \hline
 Exp.   & Peak           & Total     	& Mass          	& Time             & Burner       & Peak Slug    & Peak Gas      \\
 No.    & HRR            & HR            & Consumed          & to Peak          & Duration     & Temp.        & Temp.         \\
        & [kW]      	    & [MJ]	        & [kg]        		& [min]  		   & [min] 	      & [$^\circ$C]  & [$^\circ$C]   \\ \hline
-1	   & 349$\pm$24	    & 387	    	& 19.4	          	& 11          	   & 10           & 770          & 860           \\ \hline
-2	   & 172$\pm$12	    & 192	    	& 9.6	          	& 9	               & 8            & 680          & 700           \\ \hline
-3	   & 223$\pm$16	    & 230	        & 11.5	           	& 20        	   & 4            & 680          & 670           \\ \hline
+1	   & 250$\pm$18	    & 387$\pm$27	& 15.5$\pm$3.3	    & 11          	   & 10           & 770          & 860           \\ \hline
+2	   & 140$\pm$10	    & 192$\pm$13	& 7.7$\pm$1.6	    & 9	               & 8            & 680          & 700           \\ \hline
+3	   & 200$\pm$14	    & 230$\pm$16	& 9.2$\pm$1.9	    & 20        	   & 4            & 680          & 670           \\ \hline
 \end{tabular}
 \end{center}
 \end{table}
+
+The breaker that was burned in Exp.~3 was weighed before and after the experiment. Its original mass was 47.8~kg and its final mass was 44.1~kg. The uncertainty of the load cell is approximately 1~g, which is far exceeded by the uncertainty due to extracting the burned breaker from the enclosure and separating out materials that were or were not part of the original breaker. Thus, the estimated combustible mass of the breaker is taken as 3.7~kg~$\pm$~0.1~kg.
+
+Using the measured mass loss of the breaker and the estimates of the mass consumed in the three experiments, it is possible to estimate the distribution of combustible mass in the lower, middle, and upper compartments of the enclosure. In Exp.~1, the fire consumed the contents of a lower, middle and three upper compartments. In Exp.~2, the fire consumed a lower and middle compartment. In Exp.~3, the fire consumed a lower, middle, and upper compartment. Taking the combustible load of the middle compartment to be 3.7~kg, the estimated mass loss of the breaker, a least squares regression yields an estimate of 3.5~kg for the lower compartment and 2.7~kg for the upper. The 3.5~kg estimate for the lower compartment can be taken as all of the combustibles in the lower and middle compartment minus the breaker itself. These estimated combustible loads fall well within the uncertainty bounds for the total mass consumption listed in Table~\ref{matrix}.
 
 
 
@@ -312,9 +316,9 @@ The natural gas burner was positioned near the top of the lower left compartment
 
 \begin{figure}[!h]
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-\includegraphics[height=2.15in]{../SCRIPT_FIGURES/Test_1_HRR} &
-\includegraphics[height=2.15in]{../SCRIPT_FIGURES/Test_1_Gas_TC} \\
-\multicolumn{2}{c}{\includegraphics[height=2.15in]{../SCRIPT_FIGURES/Test_1_Slug_TC}}
+\includegraphics[height=2.65in]{../SCRIPT_FIGURES/Test_1_HRR} &
+\includegraphics[height=2.65in]{../SCRIPT_FIGURES/Test_1_Gas_TC} \\
+\multicolumn{2}{c}{\includegraphics[height=2.65in]{../SCRIPT_FIGURES/Test_1_Slug_TC}}
 \end{tabular*}
 \caption[HRR and temperatures of Experiment 1]{Heat release rate (upper left), gas temperatures (upper right), and slug temperatures for Test~1.}
 \label{fig:Test_1}
@@ -335,13 +339,13 @@ The natural gas burner was positioned near the top of the lower left compartment
 
 \subsection{Experiment 2}
 
-The fire in Experiment~1 consumed all of the combustibles in the upper compartments of the large enclosure. However, the breakers in the center and right columns remained intact. For Experiment~2, the burner was placed beneath the right breaker with the aim of measuring its heat release rate with no other combustibles involved. The gas temperature in the compartment above the breaker reaches approximately 400~$^\circ$C, and there are no combustibles remaining from the previous experiment to sustain a fire.
+The fire in Exp.~1 consumed all of the combustibles in the upper compartments of the large enclosure. However, the breakers in the center and right columns remained intact. For Exp.~2, the burner was placed beneath the right breaker with the aim of measuring its heat release rate with no combustibles in the compartment above the breaker. The gas temperature in the compartment above reaches only approximately 400~$^\circ$C because there is no significant fire in this compartment, only the heat from below.
 
 \begin{figure}[!h]
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-\includegraphics[height=2.15in]{../SCRIPT_FIGURES/Test_2_HRR} &
-\includegraphics[height=2.15in]{../SCRIPT_FIGURES/Test_2_Gas_TC} \\
-\multicolumn{2}{c}{\includegraphics[height=2.15in]{../SCRIPT_FIGURES/Test_2_Slug_TC}}
+\includegraphics[height=2.65in]{../SCRIPT_FIGURES/Test_2_HRR} &
+\includegraphics[height=2.65in]{../SCRIPT_FIGURES/Test_2_Gas_TC} \\
+\multicolumn{2}{c}{\includegraphics[height=2.65in]{../SCRIPT_FIGURES/Test_2_Slug_TC}}
 \end{tabular*}
 \caption[HRR and temperatures of Experiment 2]{Heat release rate (upper left), gas temperatures (upper right), and slug temperatures for Test~2.}
 \label{fig:Test_2}
@@ -361,13 +365,13 @@ The fire in Experiment~1 consumed all of the combustibles in the upper compartme
 
 \subsection{Experiment 3}
 
-This experiment was conducted within the single breaker enclosure, where the burner was positioned as in the previous experiments.
+This experiment was conducted within the single-column breaker enclosure, where the burner was positioned as in the previous experiments. The breaker ignited within 4~min at which time the burner was turned off. The HRR dropped down to about 50~kW at this time and then slowly increased as the fire spread from the breaker to the compartment above after approximately 18~min from the start of the experiment.
 
 \begin{figure}[!h]
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-\includegraphics[height=2.15in]{../SCRIPT_FIGURES/Test_3_HRR} &
-\includegraphics[height=2.15in]{../SCRIPT_FIGURES/Test_3_Gas_TC} \\
-\multicolumn{2}{c}{\includegraphics[height=2.15in]{../SCRIPT_FIGURES/Test_3_Slug_TC}}
+\includegraphics[height=2.65in]{../SCRIPT_FIGURES/Test_3_HRR} &
+\includegraphics[height=2.65in]{../SCRIPT_FIGURES/Test_3_Gas_TC} \\
+\multicolumn{2}{c}{\includegraphics[height=2.65in]{../SCRIPT_FIGURES/Test_3_Slug_TC}}
 \end{tabular*}
 \caption[HRR and temperatures of Experiment 3]{Heat release rate (upper left), gas temperatures (upper right), and slug temperatures for Test~3.}
 \label{fig:Test_3}
@@ -394,6 +398,7 @@ Experiments were conducted to measure the heat release rates (HRR) and burning b
 \item In Experiment~1, the fire spread through double-walled steel partitions in approximately 10~min. Vigorous burning of combustibles was noted when the compartment gas temperature reached approximately 400~$^\circ$C.
 \item The combustible load within the upper compartments was sufficient to maintain a fire long enough for the neighboring compartment to heat up and burn.
 \item The aluminum ``slug calorimeters'' and the interior of the instrumented cable segments exhibited similar temperatures, suggesting that the slugs might be a suitable surrogate to assess the vulnerability of electrical cables near or within a fire.
+\item Using the measured mass loss of one of the breakers and estimates of the total mass consumed, a least squares regression was used to estimate the combustible mass of the breaker (3.7~kg), lower compartment (3.5~kg), and upper compartment (2.7~kg). The uncertainty of these estimates is approximately 20~\%.
 \end{itemize}
 
 
@@ -402,7 +407,7 @@ Experiments were conducted to measure the heat release rates (HRR) and burning b
 
 This research has been funded by the U.S. Nuclear Regulatory Commission, Office of Nuclear Regulatory Research, under the direction of Nicholas Melly and Gabriel Taylor.
 
-Anthony Chakalis, Michael Selepak, Marco Fernandez, and Laurean DeLauter assisted in conducting the experiments.
+Anthony Chakalis, Michael Selepak, Marco Fernandez, Philip Deardorff and Laurean DeLauter assisted in conducting the experiments.
 
 
 
