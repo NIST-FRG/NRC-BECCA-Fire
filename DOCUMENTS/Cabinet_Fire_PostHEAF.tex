@@ -306,6 +306,16 @@ The breaker that was burned in Exp.~3 was weighed before and after the experimen
 
 Using the measured mass loss of the breaker and the estimates of the mass consumed in the three experiments, it is possible to estimate the distribution of combustible mass in the lower, middle, and upper compartments of the enclosure. In Exp.~1, the fire consumed the contents of a lower, middle and three upper compartments. In Exp.~2, the fire consumed a lower and middle compartment. In Exp.~3, the fire consumed a lower, middle, and upper compartment. Taking the combustible load of the middle compartment to be 3.7~kg, the estimated mass loss of the breaker, a least squares regression yields an estimate of 3.5~kg for the lower compartment and 2.7~kg for the upper. The 3.5~kg estimate for the lower compartment can be taken as all of the combustibles in the lower and middle compartment minus the breaker itself. These estimated combustible loads fall well within the uncertainty bounds for the total mass consumption listed in Table~\ref{matrix}.
 
+The heat release rate of a fire contained within a single compartment is limited by the air supplied through openings in the back and side of the enclosure and the opening in the front door of the compartment that is created when the instrument panel melts/burns away. For the enclosures tested, this opening is approximately 15~cm (6~in) wide by 30~cm (12~in) tall. A useful correlation~\cite{SFPE:Walton} used in compartment fire modeling states that air is entrained into a flashed over compartment at a rate given by
+\begin{equation}
+   \dot{m}_{\rm a} = 0.5  \, A \, \sqrt{H}  \approx 0.0123 \; \hbox{kg/s}
+\end{equation}
+where $H$ is the opening height (0.3~m) and $A$ is the opening area (0.045~m$^2$). With this estimate, the heat release rate can be estimated 
+\begin{equation}
+   \dot{Q} = Y_{\rm O_2,\infty} \, E \, \dot{m}_{\rm a} \approx 37 \; \hbox{kW}
+\end{equation}
+where $Y_{\rm O_2,\infty}\approx 0.23$ is the oxygen mass fraction of air and $E\approx 13\,100$~kJ/kg is the amount of energy released per unit mass oxygen consumed. The other openings at the back and side of the enclosure supply the extra air needed to raise the heat release rate to, at most, approximately 100~kW.
+
 
 
 \clearpage
@@ -399,6 +409,7 @@ Experiments were conducted to measure the heat release rates (HRR) and burning b
 \item The combustible load within the upper compartments was sufficient to maintain a fire long enough for the neighboring compartment to heat up and burn.
 \item The aluminum ``slug calorimeters'' and the interior of the instrumented cable segments exhibited similar temperatures, suggesting that the slugs might be a suitable surrogate to assess the vulnerability of electrical cables near or within a fire.
 \item Using the measured mass loss of one of the breakers and estimates of the total mass consumed, a least squares regression was used to estimate the combustible mass of the breaker (3.7~kg), lower compartment (3.5~kg), and upper compartment (2.7~kg). The uncertainty of these estimates is approximately 20~\%.
+\item The peak heat release rate of a fire burning within a single compartment of the enclosure is approximately 100~kW. 
 \end{itemize}
 
 
