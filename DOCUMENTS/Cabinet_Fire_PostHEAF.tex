@@ -204,7 +204,7 @@ Natl. Inst. Stand. Technol. Tech. Note \pubnumber, \pageref{LastPage} pages (\mo
 \normalsize This report documents a series of fire experiments performed within steel electrical enclosures. The objective is to measure the heat release rates and qualitatively understand the burning behavior of circuit breaker fires within closed steel enclosures when ignited by a source representative of a high energy arc fault (HEAF).  \\
 
 \section*{Key words}
-\normalsize Circuit Breaker Fire; Electrical Enclosures\\
+\normalsize Circuit Breaker Fire; Electrical Enclosures; Heat Release Rate\\
 \pagebreak
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %   Table of Contents is required
@@ -222,12 +222,13 @@ Natl. Inst. Stand. Technol. Tech. Note \pubnumber, \pageref{LastPage} pages (\mo
 
 \section{Introduction}
 
-Electrical enclosures housing switchgear, circuit breakers, motor controls, etc., are a common source of fire in industrial settings, and the heat release rate (HRR) of these fires is an important consideration in facility risk assessments. Previous experiments have been conducted to determine HRR probability distributions for electrical enclosure fires~\cite{NUREG/CR-7197}. Analysis was then conducted to refine these results to consider specific electrical enclosure characteristics (e.g., cabinets size or fuel loading)~\cite{NUREG-2178}. Further experiments were conducted to measure the HRR for enclosures with limited ventilation~\cite{OLIVE-FIRE}. To date, there are few measurements of the HRR of circuit breaker fires in electrical enclosures, which have been observed to grow and continue burning for tens of minutes after high energy arc fault (HEAF) events. Thus, the experiments described in this report seek to quantify the peak HRR, time to peak HRR, and duration of circuit breaker fires in steel electrical enclosures.
+Electrical enclosures housing switchgear, circuit breakers, motor controls, etc., are a common source of fire in industrial settings, and the heat release rate (HRR) of these fires is an important consideration in facility risk assessments. Previous experiments have been conducted to determine HRR probability distributions for electrical enclosure fires~\cite{NUREG/CR-7197}. Analysis was then conducted to refine these results to consider specific electrical enclosure characteristics (e.g., classifying electrical enclosures in terms of function, size, contents/fuel loading, and ventilation)~\cite{NUREG-2178}. 
+In 2020, a revised set of parameters was provided~\cite{NUREG2230} to address both the fire growth and the suppression response. Further experiments were conducted to measure the HRR for enclosures with limited ventilation~\cite{OLIVE-FIRE} and to quantify the impact of material composition (of combustible solids commonly found in power plants) on ignitability and fire growth behavior~\cite{leventon2024nist}. To date, there are few measurements of the HRR of circuit breaker fires in electrical enclosures, which have been observed to grow and continue burning for tens of minutes after high energy arc fault (HEAF) events. Thus, the experiments described in this report seek to quantify the peak HRR, time to peak HRR, and duration of circuit breaker fires in steel electrical enclosures.
 
 
 \section{Description of Experiments}
 
-Four low voltage circuit breaker enclosures were shipped to the National Fire Research Laboratory (NFRL) at NIST in September 2023. These enclosures were taken from a decommissioned nuclear power plant in Germany, and included low voltage circuit breakers and various types of wires, cables, and instrumentation manufactured by ABB. Three of the enclosures were bolted together, as shown in Fig.~\ref{fig:Cabinet_1}, and one was stand-alone (Fig.~\ref{fig:Cabinet_2}). Each enclosure consisted of three vertical compartments, separated (but not fully sealed/enclosed) by horizontal metal dividing barriers.
+Four low voltage circuit breaker enclosures were shipped to the National Fire Research Laboratory (NFRL) at NIST in September 2023. These enclosures were taken from a decommissioned nuclear power plant in Germany, and included low voltage circuit breakers and various types of wires, cables, and instrumentation manufactured by ABB. Three of the enclosures were bolted together, as shown in Fig.~\ref{fig:Cabinet_1}, and one was stand-alone (Fig.~\ref{fig:Cabinet_2}). Each enclosure consisted of three vertical compartments, separated (but not fully sealed/enclosed) by horizontal metal dividing barriers. 
 
 \begin{figure}[ht]
 \centering
@@ -243,7 +244,7 @@ Four low voltage circuit breaker enclosures were shipped to the National Fire Re
 \label{fig:Cabinet_2}
 \end{figure}
 
-In each experiment, a low voltage circuit breaker with nominal dimensions of 30~cm by 40~cm by 30~cm and mass 47~kg was the primary combustible whose non-metallic mass consists of polymeric insulating materials such as glass-polyester and thermoset composite resins. Additionally, plastic wire harnesses, SIS wire\footnote{A range of single-core wires for use in electrical switchboards and panels.}, and circuit boards were found mainly in the compartment above the breaker, as seen in Fig.~\ref{fig:Contents}. There were only a few jacketed, multi-conductor cables. The compartment below the breaker was largely empty of combustibles. No attempt was made to remove and weigh the combustible material because doing so would have potentially changed its burning behavior. However, estimates of its mass were made by dividing the integral of the heat release rate with time (kJ) by an estimated heat of combustion (kJ/kg). These estimates are entered in Table~\ref{matrix}.
+In each experiment, a low voltage circuit breaker with nominal dimensions of 30~cm by 40~cm by 30~cm and mass 47~kg was the primary combustible whose non-metallic mass consists of polymeric insulating materials such as glass-polyester and thermoset composite resins. Additionally, plastic wire harnesses, SIS wire\footnote{SIS Wire identifies a range of single-core wires for use in electrical switchboards and panels.}, and circuit boards were found mainly in the compartment above the breaker, as seen in Fig.~\ref{fig:Contents}. There were only a few jacketed, multi-conductor cables. The compartment below the breaker was largely empty of combustibles. No attempt was made to remove and weigh the combustible material because doing so would have potentially changed its burning behavior; however, representative samples (~approxmately 5~g to 10~g of each material) of ten of the most commmon electrical components in the compartment (e.g., wiring, switches, circuit boards, and electrical insulation materials) were removed prior to experiments to allow for microscale combustion calorimetry (MCC)~\cite{ASTM_D7309} tests that quantified their heat of complete combustion (kJ/kg gaseous fuel burned). Estimates of total combustible mass in the compartment were then be made by dividing the integral of the heat release rate with time (kJ) by this measured heat of combustion. These heats of combustion and estimates total combustible mass in the compartment are presented in Sec.~\ref{sec:results}.
 
 \begin{figure}[ht]
 \centering
@@ -280,8 +281,38 @@ Photographs of the enclosures used in this work are shown in Figs.~\ref{fig:Cabi
 
 
 \section{Experimental Results}
+\label{sec:results}
+MCC experiments were conducted in December, 2023. Details of the instrument calibration, sample preparation, test procedure, and analysis approach are provided in the Appendix~\ref{Appendix}. All tests were conducted in UHP Nitrogen at a heating rate of 60 K/min; tests were repeated at least three times for each material. Nominal results are listed in Table~\ref{MCC}; as seen here, an the average heat of combustion of the combustible components found in the enclosure was appoximately \#**. Also calculated and reported in this table are the onset temperature, $T_{onset}$, and Fire Growth Capacity, FGC, of each of these materials. Fore these two quantities, $T_{onset}$ and FGC, uncertainties represent two standard deviations of the mean. 
 
-The experiments were conducted in October of 2023. Nominal results are listed in Table~\ref{matrix} and details can be found on the following pages. For each experiment, the nominally 100~kW natural gas burner was sustained until it appeared that the breaker had begun to burn. For the first two experiments, the burner was sustained longer than necessary, as evidenced by the third experiment where the breaker was able to sustain a fire after four minutes of exposure from the burner.
+The FGC is a physically based parameter for early stage fire growth, derived from a simple burning model, that has been shown to rank commercial materials according to their behavior in bench scale flame and fire tests. $T_{onset}$  is calcualted as...[**Isaac will complete this section and add the corresponding reference]. Details of these calculations are provided elsewhere~\cite{DOT/FAA/TC-20/30}.
+
+\begin{table}
+\begin{center}
+\caption[MCC Measurements]{MCC Measurements. Uncertainty in reported heat of combustion represents an expanded uncertainty ($U_c$; 95~\% confidence interval, coverage factor = 2).  The primary sources of uncertainty in this measurement include (1) Uncertainty in measured solid residue yield, **3\%; (2) uncertainty of oxygen consumption calorimetry measurements~\cite{Huggett:1}; and test repeatability, calculated as **1 standard deviation of the mean.}
+\label{MCC}
+\begin{tabular}{ccccc}
+\hline
+Matl. & Heat of		& Solid Residue & &\\
+No.    & Combustion    	& Yield & $T_{onset}$& FGC\\
+       & [kJ/g]      	    	& [g/g] & [°C] & [J/g-K]\\
+ \hline
+1	   & 	?? $\pm$ ?? & 0.xx $\pm$ ?? &&\\
+2	   & 	?? $\pm$ ?? & 0.xx $\pm$ ??&&\\
+3	   & 	13.9 $\pm$ ?? & 0.29 $\pm$ ??&&\\
+4	   & 	30.8 $\pm$ ?? & 0.02 $\pm$ ??&&\\
+5	   & 	25.7 $\pm$ ?? & 0.00 $\pm$ ??&&\\
+6	   & 	28.3 $\pm$ ?? & 0.10 $\pm$ 0.00&&\\
+7	   & 	21.9 $\pm$ ?? & 0.40 $\pm$ ??&&\\
+8	   & 	9.6 $\pm$ ?? & 0.02 $\pm$ ??&&\\
+9	   & 	29.7 $\pm$ ?? & 0.24 $\pm$ ??&&\\
+10	   & 	14.8 $\pm$ ?? & 0.57 $\pm$ ??&&\\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+
+The cabinet fire experiments were conducted in October of 2023. Nominal results are listed in Table~\ref{matrix} and details can be found on the following pages. For each experiment, the nominally 100~kW natural gas burner was sustained until it appeared that the breaker had begun to burn. For the first two experiments, the burner was sustained longer than necessary, as evidenced by the third experiment where the breaker was able to sustain a fire after four minutes of exposure from the burner.
 
 The ``Peak HRR'' in Table~\ref{matrix} indicates the maximum value of the heat release rate of the enclosure contents; that is the total heat release rate minus that of the natural gas burner. The ``Total HR'' (Total Heat Release) is the total energy released less the burner's energy; that is, the energy of the contents alone. The ``Mass Consumed'' is the Total HR divided by an estimated\footnote{The uncertainty of the estimated heat of combustion is difficult to quantify. The estimated value of 25~MJ/kg is merely the center point of the interval between 20~MJ/kg and 30~MJ/kg which is a typical range for the  various plastics found within the enclosure.} heat of combustion of 25~MJ/kg for the combustible materials within the enclosure. The peak ``slug'' and gas temperatures are comparable and represent uniform conditions within the burning breaker and instrument compartments.
 
@@ -425,14 +456,17 @@ Anthony Chakalis, Michael Selepak, Marco Fernandez, Philip Deardorff and Laurean
 
 
 \clearpage
+\section{Appendix}
+Microscale Combustion Calorimetry (MCC) experiments were conducted in a Deatak MCC-3 Microscale Combustion Calorimeter equipped with a paramagnetic oxygen sensor. In these tests, specimens of known mass (5.0~mg $\pm$ 0.1~mg are thermally decomposed in an anaerobic environment (80 ml/min UHP nitrogen) at a constant heating rate (60 K/min. Gaseous volatiles released by pyrolyzing samples are mixed with an inert carrier gas and transported to a high temperature combustion chamber where they are forced to complete combustion in an oxygen rich (20 ml/min UHP oxygen) environment. The heat released by combustion of these volatiles is computed from the rate of oxygen consumption in the gas stream exiting the combustion furnace. Sample temperature is continuously monitored during tests using a K-type thermocouple positioned directly beneath the sample crucible.
 
+A temperature calibration was conducted as per best practices \cite{ASTM_D7309} to provide a relation between measured and actual sample temperature. The calibration was performed using the same crucible type, heating rate, and gaseous environment as was used during thermal analysis experiments. All MCC tests were conducted within six months of this calibration. At the start of each week of testing, the MCC oxygen sensor was calibrated using a prepared gas mixture (19.19 %
+oxygen in nitrogen). At the start of each day of testing, the total system calibration was checked using a reference material, polystyrene (Styron 665 GP). For each test, samples were placed into open alumina crucibles, introduced into the pyrolysis chamber, and allowed to reach equilibrium at a temperature of 75~°C, at which point the chamber temperature was increased to 750 °C at a constant heating rate of 60~K/min. Before and after each test, sample mass was measured by a Mettler M3 analytical balance (??1~mg precision). All tests were repeated at least 3 times.
+\clearpage
 
 \section*{References}
 \addcontentsline{toc}{section}{References}
 \bibliographystyle{unsrt}
 \bibliography{FDS_general}
-
-
 
 
 
