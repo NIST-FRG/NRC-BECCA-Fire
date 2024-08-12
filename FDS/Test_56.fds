@@ -1,0 +1,104 @@
+&HEAD CHID='Test_56', TITLE='BECCA-FIRE Test 56; natural gas burner in a cabinet' /
+
+&MESH IJK=24,27,27, XB=-0.96,-0.32,-1.20,-0.48,-0.16,0.56, MULT_ID='mesh' /
+&MULT ID='mesh', DX=0.64, DY=0.72, DZ=0.72, I_UPPER=2, J_UPPER=2, K_UPPER=3 /
+
+&TIME T_END=1500., TIME_SHRINK_FACTOR=5 /
+
+&MATL ID            = 'STEEL'
+      SPECIFIC_HEAT = 0.465
+      CONDUCTIVITY  = 54.
+      DENSITY       = 7833. /
+
+&SURF ID            = 'STEEL PLATE'
+      MATL_ID       = 'STEEL'
+      DEFAULT       = .TRUE.
+      THICKNESS     = 0.003
+      COLOR         = 'DARK KHAKI' /
+
+&VENT MB='XMIN', SURF_ID='OPEN' /
+&VENT MB='XMAX', SURF_ID='OPEN' /
+&VENT MB='YMIN', SURF_ID='OPEN' /
+&VENT MB='YMAX', SURF_ID='OPEN' /
+&VENT MB='ZMAX', SURF_ID='OPEN' /
+
+&REAC FUEL='METHANE', SOOT_YIELD=0.001 /
+
+&SURF ID='FIRE', HRRPUA=1276., COLOR='ORANGE', TMP_FRONT=300., RAMP_Q='fire ramp' /
+&RAMP ID='fire ramp', T=   0., F= 0.000 /
+&RAMP ID='fire ramp', T=  20., F= 0.330 /
+&RAMP ID='fire ramp', T= 310., F= 0.330 /
+&RAMP ID='fire ramp', T= 330., F= 0.550 /
+&RAMP ID='fire ramp', T= 410., F= 0.550 /
+&RAMP ID='fire ramp', T= 420., F= 0.800 /
+&RAMP ID='fire ramp', T= 470., F= 0.800 /
+&RAMP ID='fire ramp', T= 500., F= 1.100 /
+&RAMP ID='fire ramp', T= 570., F= 1.100 /
+&RAMP ID='fire ramp', T= 590., F= 1.550 /
+&RAMP ID='fire ramp', T= 690., F= 1.550 /
+&RAMP ID='fire ramp', T= 700., F= 2.000 /
+&RAMP ID='fire ramp', T=1440., F= 2.000 /
+&RAMP ID='fire ramp', T=1450., F= 0.000 /
+
+&OBST XB=-0.56,-0.28,-0.56,-0.28,1.56,1.76, SURF_IDS='FIRE','STEEL PLATE','STEEL PLATE' /
+
+&OBST XB=-0.86, 0.86,-0.80,-0.76, 0.00, 2.32 / Front
+&OBST XB=-0.86, 0.86, 0.76, 0.80, 0.00, 2.32 / Back
+&OBST XB=-0.86,-0.84,-0.76, 0.76, 0.00, 2.32 / Left
+&OBST XB= 0.84, 0.86,-0.76, 0.76, 0.00, 2.32 / Right
+&OBST XB=-0.86, 0.86,-0.80, 0.80, 2.32, 2.34 / Top
+
+&OBST XB=-0.86, 0.86, 0.00, 0.00, 2.20, 2.32 / Inside obstruction
+&OBST XB=-0.00, 0.00,-0.76, 0.76, 2.20, 2.32 / Inside obstruction
+
+&OBST XB=-0.60,-0.60,-1.20, 1.00, 2.62, 2.72, COLOR='GRAY 40' / Left Tray Rail
+&OBST XB=-0.28,-0.28,-1.20, 1.00, 2.62, 2.72, COLOR='GRAY 40' / Right Tray Rail
+&OBST XB=-0.60,-0.28,-0.76,-0.72, 2.62, 2.62, COLOR='GRAY 40', MULT_ID='rung' / Rung
+&MULT ID='rung', DY=0.24, J_LOWER=-3, J_UPPER=8 /
+
+&OBST XB=-0.92,-0.76,-0.92, 0.92,-0.16, 0.00, COLOR='BROWN' / Wood support
+&OBST XB= 0.76, 0.92,-0.92, 0.92,-0.16, 0.00, COLOR='BROWN' / Wood support
+
+&VENT XB=-0.72,-0.16,-0.76,-0.76,1.98,2.22, ID='Inside Upper Left Vent',  SURF_ID='STEEL PLATE' /
+&VENT XB=-0.72,-0.16,-0.80,-0.80,1.98,2.22, ID='Outside Upper Left Vent', SURF_ID='STEEL PLATE', COLOR='KHAKI 2' /
+&HVAC ID='Upper Left Vent', TYPE_ID='LEAK', VENT_ID='Inside Upper Left Vent', VENT2_ID='Outside Upper Left Vent', AREA=0.1,
+      LEAK_PRESSURE_EXPONENT=0.6, LEAK_REFERENCE_PRESSURE=1., DISCHARGE_COEFFICIENT=0.61, LEAK_ENTHALPY=T /
+&VENT XB=-0.72,-0.16,-0.76,-0.76,0.16,0.44, ID='Inside Lower Left Vent',  SURF_ID='STEEL PLATE' /
+&VENT XB=-0.72,-0.16,-0.80,-0.80,0.16,0.44, ID='Outside Lower Left Vent', SURF_ID='STEEL PLATE', COLOR='KHAKI 2' /
+&HVAC ID='Lower Left Vent', TYPE_ID='LEAK', VENT_ID='Inside Lower Left Vent', VENT2_ID='Outside Lower Left Vent', AREA=0.1,
+      LEAK_PRESSURE_EXPONENT=0.6, LEAK_REFERENCE_PRESSURE=1., DISCHARGE_COEFFICIENT=0.61, LEAK_ENTHALPY=T /
+&VENT XB= 0.16, 0.72,-0.76,-0.76,1.98,2.22, ID='Inside Upper Right Vent',  SURF_ID='STEEL PLATE' /
+&VENT XB= 0.16, 0.72,-0.80,-0.80,1.98,2.22, ID='Outside Upper Right Vent', SURF_ID='STEEL PLATE', COLOR='KHAKI 2' /
+&HVAC ID='Upper Right Vent', TYPE_ID='LEAK', VENT_ID='Inside Upper Right Vent', VENT2_ID='Outside Upper Right Vent', AREA=0.1,
+      LEAK_PRESSURE_EXPONENT=0.6, LEAK_REFERENCE_PRESSURE=1., DISCHARGE_COEFFICIENT=0.61, LEAK_ENTHALPY=T /
+&VENT XB= 0.16, 0.72,-0.76,-0.76,0.16,0.44, ID='Inside Lower Right Vent',  SURF_ID='STEEL PLATE' /
+&VENT XB= 0.16, 0.72,-0.80,-0.80,0.16,0.44, ID='Outside Lower Right Vent', SURF_ID='STEEL PLATE', COLOR='KHAKI 2' /
+&HVAC ID='Lower Right Vent', TYPE_ID='LEAK', VENT_ID='Inside Lower Right Vent', VENT2_ID='Outside Lower Right Vent', AREA=0.1,
+      LEAK_PRESSURE_EXPONENT=0.6, LEAK_REFERENCE_PRESSURE=1., DISCHARGE_COEFFICIENT=0.61, LEAK_ENTHALPY=T /
+
+&DUMP DT_DEVC=5., DT_HRR=5. /
+
+&SLCF PBX=-0.44, QUANTITY='HRRPUV' /
+&SLCF PBZ= 2.62, QUANTITY='HRRPUV', CELL_CENTERED=T /
+&SLCF PBX=-0.44, QUANTITY='TEMPERATURE', VECTOR=T /
+&SLCF PBZ= 2.62, QUANTITY='TEMPERATURE', CELL_CENTERED=T /
+
+&BNDF QUANTITY='WALL TEMPERATURE', CELL_CENTERED=.TRUE. /
+
+&PART ID='Al part', SURF_ID='Al surf', STATIC=T, PROP_ID='Al prop', QUANTITIES(1)='PARTICLE TEMPERATURE' /
+&PROP ID='Al prop', SMOKEVIEW_ID='tube', SMOKEVIEW_PARAMETERS(1:6)='R=128','G=128','B=128','D=0.0127','L=0.15','DIRY=1' /
+&SURF ID='Al surf', GEOMETRY='CYLINDRICAL', LENGTH=0.15, THICKNESS=0.00635, MATL_ID='Al matl' /
+&MATL ID='Al matl', CONDUCTIVITY=237, SPECIFIC_HEAT=0.896, DENSITY=2700., EMISSIVITY=0.9 /
+
+&INIT ID='Al init 1', XYZ=-0.40,-0.82,2.62, PART_ID='Al part', N_PARTICLES=1 /
+&INIT ID='Al init 2', XYZ=-0.42,-0.84,2.62, PART_ID='Al part', N_PARTICLES=1 /
+&INIT ID='Al init 3', XYZ=-0.44,-0.86,2.62, PART_ID='Al part', N_PARTICLES=1 /
+&INIT ID='Al init 4', XYZ=-0.46,-0.88,2.62, PART_ID='Al part', N_PARTICLES=1 /
+
+&DEVC ID='T_Al_1', INIT_ID='Al init 1', QUANTITY='WALL TEMPERATURE' /
+&DEVC ID='T_Al_2', INIT_ID='Al init 2', QUANTITY='WALL TEMPERATURE' /
+&DEVC ID='T_Al_3', INIT_ID='Al init 3', QUANTITY='WALL TEMPERATURE' /
+&DEVC ID='T_Al_4', INIT_ID='Al init 4', QUANTITY='WALL TEMPERATURE' /
+
+&TAIL/
+
