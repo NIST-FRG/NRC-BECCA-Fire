@@ -58,7 +58,7 @@ set(gcf,'Units',Paper_Units);
 set(gcf,'PaperUnits',Paper_Units);
 set(gcf,'PaperSize',[Paper_Width Paper_Height]);
 set(gcf,'Position',[0 0 Paper_Width Paper_Height]);
-print(gcf,'-dpdf',['../SCRIPT_FIGURES/Test_' num2str(j,'%1d\n') '_HRR'])
+print(gcf,'-dpdf',['../SCRIPT_FIGURES/Test_' num2str(j+32,'%1d\n') '_HRR'])
 
 hold off
 
@@ -86,7 +86,7 @@ set(gcf,'Units',Paper_Units);
 set(gcf,'PaperUnits',Paper_Units);
 set(gcf,'PaperSize',[Paper_Width Paper_Height]);
 set(gcf,'Position',[0 0 Paper_Width Paper_Height]);
-print(gcf,'-dpdf',['../SCRIPT_FIGURES/Test_' num2str(j,'%1d\n') '_Slug_TC'])
+print(gcf,'-dpdf',['../SCRIPT_FIGURES/Test_' num2str(j+32,'%1d\n') '_Slug_TC'])
 
 hold off
 
@@ -122,7 +122,7 @@ set(gcf,'Units',Paper_Units);
 set(gcf,'PaperUnits',Paper_Units);
 set(gcf,'PaperSize',[Paper_Width Paper_Height]);
 set(gcf,'Position',[0 0 Paper_Width Paper_Height]);
-print(gcf,'-dpdf',['../SCRIPT_FIGURES/Test_' num2str(j,'%1d\n') '_Gas_TC'])
+print(gcf,'-dpdf',['../SCRIPT_FIGURES/Test_' num2str(j+32,'%1d\n') '_Gas_TC'])
 
 hold off
 
