@@ -5,6 +5,7 @@
 
 \usepackage{multirow}  % Table formatting
 \usepackage{placeins}  % FloatBarrier
+\usepackage{graphicx}
 %\usepackage[tagged,highstructure]{accessibility}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -205,8 +206,9 @@ kevin.mcgrattan@nist.gov
     \appendixtitletocon
 	\listoftables
 	\listoffigures
-	\end{center}
+\end{center}
 
+\end{titlepage}
 \pagestyle{fancy}
 \renewcommand{\headrulewidth}{0pt}
   \fancyhead{}
@@ -326,21 +328,15 @@ Evidence for the estimated heat release rate associated with the opening of the 
 \label{ssec:MCC}
 Material samples were taken from the various circuit breakers to better understand their burning behavior using a Microscale Combustion Calorimeter\footnote{This MCC used in this work was a Deatak MCC-3 equipped with a paramagnetic oxygen sensor and calibrated according to ASTM~D7309~\cite{ASTM_D7309}} (MCC), an apparatus in which a specimen of known mass is thermally decomposed in nitrogen at a constant heating rate and then burned in oxygen to determine its heat of combustion. Samples were not identified by a specific material type (e.g., composition, and/or manufacturer/distributor name), rather they are labeled in series (No. 1 to No. 10) to correspond to each of the items identified in Figure~\ref{fig:MCC_samples}.
 
-\begin{figure}[ht]
-\centering
-     \begin{subfigure}[h]{0.45\textwidth}
-         \centering
-         \includegraphics[width=\textwidth]
-         {{FIGURES/Fig1.png}}
-         \caption{}
-     \end{subfigure}
-     \begin{subfigure}[h]{0.45\textwidth}
-         \centering
-         \includegraphics[width=\textwidth]
-         {{FIGURES/Fig2.png}}
-         \caption{}
-     \end{subfigure}
-\caption[Electrical Cabinet Components selected for MCC Tests] {Photographs of each of the plastic components removed from electrical enclosures fore .}
+
+\begin{figure}[!h]
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+\includegraphics[height=2.65in]{../FIGURES/Cabinet_Materials1.jpg} &
+\includegraphics[height=2.65in]{../FIGURES/Cabinet_Materials2.jpg} \\
+\includegraphics[height=2.65in]{../FIGURES/Cabinet_Materials4.jpg} &
+\includegraphics[height=2.65in]{../FIGURES/Cabinet_Materials3.jpg}
+\end{tabular*}
+\caption[Electrical Cabinet Components selected for MCC Tests] {Photographs of each of the electrical cabinet components selected for MCC Tests (material numbers identified by blue labels).}
 \label{fig:MCC_samples}
 \end{figure}
 
