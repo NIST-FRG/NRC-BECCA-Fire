@@ -1,177 +1,120 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% LaTeX source code to approximate a NIST Technical report
-% Instructions for authors: tinyurl.com/techpubsnist
-% DOI watermark will be added on final PDF
-% Developed by K. Miller, kmm5@nist.gov
-% Last updated: 10-Oct-2017
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\documentclass[12pt]{article}
-\usepackage{amsmath}
-\usepackage{amsfonts}   % if you want the fonts
-\usepackage{amssymb}    % if you want extra symbols
-\usepackage{graphicx}   % need for figures
-\usepackage{xcolor}
-\usepackage{bm}
-\usepackage{secdot}
-\usepackage{mathptmx}
-\usepackage{multirow}
-\usepackage{float}
-\usepackage[utf8]{inputenc}
-\usepackage{textcomp}
-\usepackage[hang,flushmargin,bottom]{footmisc} % footnote format
-\usepackage{placeins}
-\newcommand{\ct}{\tt\small}
-
-\usepackage{titlesec}
-\titleformat{\section}{\normalsize\bfseries}{\thesection.}{1em}{} % required for heading numbering style
-\titleformat*{\subsection}{\normalsize\bfseries}
-
-\usepackage{tocloft} % change typeset, titles, and format list of appendices/figures/tables
-\renewcommand{\cftdot}{}
-\renewcommand{\contentsname}{Table of Contents}
-\renewcommand{\cftpartleader}{\cftdotfill{\cftdotsep}} % for parts
-\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
-\renewcommand\cftbeforesecskip{\setlength{4pt}{}}
-\addtolength{\cftfignumwidth}{1em}
-\renewcommand{\cftfigpresnum}{\figurename\ }
-\addtolength{\cfttabnumwidth}{1em}
-\renewcommand{\cfttabpresnum}{\tablename\ }
-\setlength{\cfttabindent}{0in}    %% adjust as you like
-\setlength{\cftfigindent}{0in}
-
-\usepackage{enumitem}         % to control spacing between bullets/numbered lists
-
-\usepackage[numbers,sort&compress]{natbib} % format bibliography
-\renewcommand{\bibsection}{}
-\setlength{\bibsep}{0.0pt}
-
-\usepackage[hidelinks]{hyperref} % hyperref package & removing outline from links
-
-\usepackage{epstopdf} % converting EPS figure files to PDF
-
-\usepackage{fancyhdr, lastpage} % formatting document, calculating number of pages, formatting headers
-\setlength{\headsep}{0.in}
-\setlength{\topmargin}{0.in}
-\setlength{\headheight}{0pt}
-\setlength{\oddsidemargin}{0.in}
-\setlength{\evensidemargin}{0.in}
-\setlength{\textwidth}{6.5in}
-\setlength{\textheight}{9in}
-
-\usepackage{caption} % required for Figure labels
-\captionsetup{font=small,labelfont=bf,figurename=Fig.,labelsep=period,justification=raggedright}
-
-%%%%%%%%%%% !!!!!! REQUIRED - FILL OUT METADATA HERE !!!!!!!! %%%%%%%%%%%%%%
-%   Report Number - fill in Report Number sent to you (see info below)
-%   DOI Statement - fill in DOI sent to you
-%   Month Year - fill in Month and Year of Publication
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newcommand{\pubnumber}{XXXX}
-\newcommand{\DOI}{https://doi.org/10.6028/NIST.TN.XXXX}
-\newcommand{\monthyear}{November 2023}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%    BEGIN DOCUMENT
+%   	FILL OUT METADATA IN PREAMBLE TEX FILE FIRST
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{preamble.tex}
+
+\usepackage{multirow}  % Table formatting
+\usepackage{placeins}  % FloatBarrier
+%\usepackage[tagged,highstructure]{accessibility}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   	BEGIN DOCUMENT
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
- \urlstyle{rm} % Format style of \url
-
+\urlstyle{rm} % Format style of \url
+% \linenumbers % Include if draft
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   	DELETE INSTRUCTIONS PAGE BEFORE SUBMISSION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \import{./}{instructions.tex}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %   Cover Page is REQUIRED and must contain the information
-% displayed here, at a minimum. Additional artwork may be included
-% (e.g., official project/conference logo, etc.).
-% Pub Number automated based on metadata
+%	displayed here, at a minimum. Additional artwork may be included
+%	(e.g., official project/conference logo, etc.).
+%	Most info automated based on metadata entered in preamble.tex
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- \begin{titlepage}
-  \begin{flushright}
+	\begin{titlepage}
+		\begin{flushright}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%  Automated based on metadata - delete if not applicable
+% 	Automated based on metadata
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\LARGE{\textbf{NIST Technical Note \pubnumber}}\\
+\LARGE{\sffamily{\textbf{NIST \pubseries}}}\\
+\LARGE{\sffamily{\textbf{\pubnumber}}}\\
+\vfill
+\Huge{\sffamily{\textbf{\pubtitle}}}\\
+\Large{\sffamily{\textit{\pubsubtitle}}}\\
+%\vfill include if draft
+%\Large{\draftstage}\\ include if draft
 \vfill
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Title
+%	Authors - automated based on metadata
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\Huge{\textbf{Breaker Fires in Electrical Cabinets --- Calometric Analysis (BECCA-Fire)}}\\
+\large \authorone\\
+\large \authortwo\\
 \vfill
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Authors - add complete list of authors, affiliations will be
-%   added on title page
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\large Kevin McGrattan \\ Isaac Leventon \\
-\vfill
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% The DOI is automated based on metadata.
+%	The DOI is automated based on metadata.	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \normalsize This publication is available free of charge from:\\
 \DOI\\
 \vfill
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% NIST LOGO - keep as-is
+%	NIST LOGO - keep as-is The cover page can include additional visual elements. Commercial logos are not permitted. NIST program logos are permitted. Other agency logos are permitted on a case-by-case basis.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \includegraphics[width=0.5\linewidth]{../FIGURES/NRC_logo} %\hfill
 
 \vspace{0.5in}
 
-\includegraphics[width=0.3\linewidth]{../FIGURES/NIST-logo}\\
-
+\includegraphics[trim=0 0 0.7in 0,clip,width=3.62in]{../FIGURES/NIST-logo.pdf}\\
 
 \end{flushright}
 \end{titlepage}
 \begin{titlepage}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Title Page is REQUIRED
+%	Title Page is REQUIRED
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{flushright}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%   Publication Series & Number - automated
+%   Automated based on metadata
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\LARGE{\textbf{NIST Technical Note \pubnumber}}\\
+\LARGE{\sffamily{\textbf{NIST \pubseries}}}\\
+\LARGE{\sffamily{\textbf{\pubnumber}}}\\
+\vfill
+\Huge{\sffamily{\textbf{\pubtitle}}}\\
+\Large{\sffamily{\textit{\pubsubtitle}}}\\
+%\vfill include if draft
+%\Large{\draftstage}\\ include if draft
 \vfill
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Title
+%	Author Order and Grouping. Always identify the primary author/creator first (s/he does not have to be a NIST author). For publications with multiple authors, group authors by their organizational affiliation. The organizational groupings and the names within each grouping should generally be ordered by decreasing level of contribution.
+%	For non-NIST authors, list their city and state below their organization name.
+%	For NIST authors, include the Division and Laboratory names (but do not include their city and state).
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\Huge{\textbf{Breaker Fires in Electrical Cabinets --- Calometric Analysis (BECCA-Fire)}}\\
-\vfill
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Author Order and Grouping. Always identify the primary author/creator first (s/he does not have to be a NIST author). For publications with multiple authors, group authors by their organizational affiliation. The organizational groupings and the names within each grouping should generally be ordered by decreasing level of contribution.
-% For non-NIST authors, list their city and state below their organization name.
-% For NIST authors, include the Division and Laboratory names (but do not include their city and state).
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\normalsize Kevin McGrattan \\ Isaac Leventon \\
+\normalsize \authorone\\
+\authortwo\\
 \textit{Fire Research Division}\\
-\textit{Engineering Laboratory}\\
+\textit{Engineering Laboratory}
 \vfill
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%   DOI Statement - automated
+%   Automated based on metadata
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \normalsize This publication is available free of charge from:\\
 \DOI\\
 \vfill
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%   Date - Month and Year - automated
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\normalsize \monthyear
+\normalsize \pubmonth~\pubyear\\
+%\textsc{Includes Updates as of \erratadate; See \appendixname~\ref{changes}} %include if errata update
 \vfill
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %  Department of Commerce LOGO - leave as-is
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \includegraphics[width=0.4\linewidth]{../FIGURES/NRC_logo}  \hspace{0.5in}
-\includegraphics[width=0.18\linewidth]{../FIGURES/DoC-logo}\\
+\includegraphics[width=0.2\linewidth]{../FIGURES/DoC-logo.pdf}\\
 \vfill
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %  Department of Commerce & NIST Leadership
 % will be updated as changes occur
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
 \footnotesize U.S. Department of Commerce\\
 \textit{Gina M. Raimondo, Secretary}\\
 \vspace{10pt}
 National Institute of Standards and Technology\\
-\textit{James K. Olthoff, NIST Acting Director and \\ Undersecretary of Commerce for Standards and Technology}
+\hspace*{-3cm}\textit{Laurie E. Locascio, NIST Director and Under Secretary of Commerce for Standards and Technology} \\
+\vspace{10pt}
+\normalsize
+\textbf{Research sponsored by:} \\
+\includegraphics[width=0.4\linewidth]{../FIGURES/NRC_logo.png}
 \end{flushright}
 \end{titlepage}
 
@@ -179,47 +122,97 @@ National Institute of Standards and Technology\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %   Disclaimer/CODEN page - required
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{flushright}
+\begin{flushleft}
 \footnotesize  Certain commercial entities, equipment, or materials may be identified in this document in order to describe an experimental procedure or concept adequately. Such identification is not intended to imply recommendation or endorsement by the National Institute of Standards and Technology, nor is it intended to imply that the entities, materials, or equipment are necessarily the best available for the purpose.\\
 \vfill
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%   This secton automated - do not change
+%   This section maintained by Library - do not change
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\normalsize \textbf{National Institute of Standards and Technology Technical Note \pubnumber\\
-Natl. Inst. Stand. Technol. Tech. Note \pubnumber, \pageref{LastPage} pages (\monthyear)} \\
-\textbf{CODEN: NTNOEF}\\
-\vspace{12pt}
-\textbf{This publication is available free of charge from: \DOI}
+\footnotesize
+\sffamily{\textbf{NIST Technical Series Policies}}\\
+ \rmfamily {{\hyperlink{https://doi.org/10.6028/NIST-TECHPUBS.CROSSMARK-POLICY}{\textcolor{blue}{Copyright, Fair Use, and Licensing Statements}}\\
+\hyperlink{https://www.nist.gov/system/files/documents/2022/04/01/PubID_Syntax_NIST_TechPubs.pdf}{\textcolor{blue}{NIST Technical Series Publication Identifier Syntax}}}}
 \vfill
-\end{flushright}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Complete this section as appropriate
+% ERB approval date is REQUIRED.
+% Publication ID, Month/Year, and DOI of report being replaced (superseded)  is only required if this manuscript is a new version (revision, edition, errata update).
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\sffamily{\textbf{Publication History}}\\
+ \rmfamily {Approved by the NIST Editorial Review Board on 2024-09-30**}\\
+\vfill
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This section is automated
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\sffamily{\textbf{How to cite this NIST Technical Series Publication:}} \\
+ \rmfamily {\authorlist~(\pubyear)~\pubtitle.~(National Institute of Standards and Technology, Gaithersburg, MD),~\pubnumber.~ \DOI}
+\vfill
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ORCID IDs required for all NIST authors
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\sffamily{\textbf{NIST Author ORCID iDs}}\\
+ \rmfamily {\authorone: 0000-0002-1135-1274\\
+\authortwo: 0000-0002-8835-8087\\
+}
+\vfill
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% OPTIONAL, include email address / mailing address / etc.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\sffamily{\textbf{Contact Information}}\\
+\rmfamily {
+kevin.mcgrattan@nist.gov
+}
+\vfill
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% OPTIONAL FOR DRAFTS, include how to submit comments and any other relevant information (e.g., disclaimers or FOIA release statements).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \sffamily{\textbf{Public Comment Period}}\\
+% \rmfamily {Month Day, YYYY - Month Day, YYYY}
+
+% \sffamily{\textbf{Submit Comments}}\\
+% \rmfamily {contact@nist.gov
+% Mailing Address}
+
+\end{flushleft}
 \end{titlepage}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %   Start front matter - page number starts with "i"
+% Additional information can be added to the verso and front matter as needed
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\begin{titlepage}
 \pagenumbering{roman}
-
+\thispagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+  \fancyhead{}
+  \fancyhead[l]{\small \pubnumber \\
+	\small \pubmonth~\pubyear \\}
+	\fancyfoot[c]{\thepage}
 \section*{Abstract}
-
-\normalsize This report documents a series of fire experiments performed within steel electrical enclosures. The objective is to measure the heat release rates and qualitatively understand the burning behavior of circuit breaker fires within closed steel enclosures when ignited by a source representative of a high energy arc fault (HEAF). The second focus of this report is to quantify the thermal exposure of electrical cables that typically are installed in trays above an enclosure.  \\
-
-\section*{Key words}
-\normalsize Circuit Breaker Fire; Electrical Enclosures; Heat Release Rate\\
-\pagebreak
+\pubabstract
+\section*{Keywords}
+\keywords
+\newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %   Table of Contents is required
-%  List of Tables & Figures required if more than 5 tables/figures
+% 	List of Tables & Figures required if more than 5 tables/figures
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace*{-3cm}\small{\pubnumber \newline  \pubmonth~\pubyear}
+\vspace{18pt}
 \begin{center}
- \tableofcontents
- \listoftables
- \listoffigures
-\end{center}
+	\tableofcontents
+	\appendixtitleon
+    \appendixtitletocon
+	\listoftables
+	\listoffigures
+	\end{center}
 
-\pagebreak
-
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+  \fancyhead{}
+  \fancyhead[l]{\small \pubnumber \\
+	\small \pubmonth~\pubyear \\}
 \pagenumbering{arabic}
-
 \section{Introduction}
 
 Electrical enclosures housing switchgear, circuit breakers, motor controls, etc., are a common source of fire in industrial settings, and the heat release rate (HRR) and damage caused by these fires is an important consideration in facility risk assessments. This report describes measurements of the HRR of circuit breakers within electrical enclosures as well as the temperature of electrical cables and other equipment outside of the enclosure exposed to the heat of fires within.
