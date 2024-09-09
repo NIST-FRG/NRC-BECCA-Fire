@@ -286,7 +286,7 @@ The measurements of the heat release rate of the breakers were conducted in Octo
 
 Overall, the breakers within the ABB enclosures sustained a fire beyond the time when the burner was extinguished. However, the Westinghouse breakers did not appear to burn without the aid of the gas burner, even though, after the experiment, the non-metallic materials within the breaker clearly showed evidence of having pyrolized.
 
-The ``Peak HRR'' in Table~\ref{matrix} indicates the maximum value of the heat release rate of the enclosure contents; that is the total heat release rate minus that of the natural gas burner. The ``Total HR'' (Total Heat Release) is the total energy released less the burner's energy; that is, the energy of the contents alone. The ``Mass Consumed'' is the Total HR divided by an estimated\footnote{The uncertainty of the estimated heat of combustion is difficult to quantify. The estimated value of 25~MJ/kg is merely the center point of the interval between 20~MJ/kg and 30~MJ/kg which is a typical range for the  various plastics found within the enclosure.} heat of combustion of 25~MJ/kg for the combustible materials within the enclosure **recalculate based on new MCC data; primarly, the breaker components had a HOC of 14? to 22? MJ/kg**). The peak ``slug'' and gas temperatures are comparable and represent uniform conditions within the burning breaker and instrument compartments.
+The ``Peak HRR'' in Table~\ref{matrix} indicates the maximum value of the heat release rate of the enclosure contents; that is the total heat release rate minus that of the natural gas burner. The ``Total HR'' (Total Heat Release) is the total energy released less the burner's energy; that is, the energy of the contents alone. The ``Mass Consumed'' is the Total HR divided by an estimated\footnote{The uncertainty of the estimated heat of combustion is difficult to quantify. The estimated value of 20~MJ/kg $\pm$5~MJ/kg is merely the average heat of combustion, $\Delta H_c$, measured for various plastics found within the enclosure (weighted to account for the greater mass of combustible solids contained within the circuit breaker itself, which had relatively low $\Delta H_c$; see Sec.~\ref{ssec:MCC}).} heat of combustion of 20~MJ/kg for the combustible materials within the enclosure. The peak ``slug'' and gas temperatures are comparable and represent uniform conditions within the burning breaker and instrument compartments.
 
 
 \begin{table}[ht]
@@ -298,11 +298,11 @@ The ``Peak HRR'' in Table~\ref{matrix} indicates the maximum value of the heat r
 Exp.   &                & Peak           & Total      & Mass            & Time            & Burner       & Peak Slug    & Peak Gas      \\
 No.    & Make           & HRR            & HR         & Consumed        & to Peak         & Duration     & Temp.        & Temp.         \\
        &                & [kW]           & [MJ]       & [kg]            & [min]           & [min]        & [$^\circ$C]  & [$^\circ$C]   \\ \hline
-33     & ABB            & 250$\pm$18     & 387$\pm$27 & 15.5$\pm$3.3    & 11              & 10           & 770          & 860           \\ \hline
-34     & ABB            & 140$\pm$10     & 192$\pm$13 & 7.7$\pm$1.6     & 9               & 8            & 680          & 700           \\ \hline
-35     & ABB            & 200$\pm$14     & 230$\pm$16 & 9.2$\pm$1.9     & 20              & 4            & 680          & 670           \\ \hline
-40     & West.          & 30$\pm$14      & 60$\pm$4   & 2.4$\pm$0.5     & 28              & 60           & 160          & 650           \\ \hline
-41     & West.          & 100$\pm$7      & 280$\pm$20 & 11.2$\pm$2.2    & 40              & 60           & 150          & 700           \\ \hline
+33     & ABB            & 250$\pm$18    	& 387$\pm$27 	& 19.4$\pm$4.9    & 11              & 10           & 770          & 860           \\ \hline
+34     & ABB            & 140$\pm$10   	& 192$\pm$13 	& 9.6$\pm$2.4     & 9               & 8            & 680          & 700           \\ \hline
+35     & ABB            & 200$\pm$14    	& 230$\pm$16 	& 11.5$\pm$2.9     & 20              & 4            & 680          & 670           \\ \hline
+40     & West.          & 30$\pm$14      	& 60$\pm$4   	& 3.0$\pm$0.8     & 28              & 60           & 160          & 650           \\ \hline
+41     & West.          & 100$\pm$7      	& 280$\pm$20 	& 14.0$\pm$3.5    & 40              & 60           & 150          & 700           \\ \hline
 \end{tabular}
 \end{center}
 \end{table}
@@ -326,7 +326,7 @@ Evidence for the estimated heat release rate associated with the opening of the 
 
 \subsubsection{Material Property Measurements}
 \label{ssec:MCC}
-Material samples were taken from the various circuit breakers to better understand their burning behavior using a Microscale Combustion Calorimeter\footnote{This MCC used in this work was a Deatak MCC-3 equipped with a paramagnetic oxygen sensor and calibrated according to ASTM~D7309~\cite{ASTM_D7309}} (MCC), an apparatus in which a specimen of known mass is thermally decomposed in nitrogen at a constant heating rate and then burned in oxygen to determine its heat of combustion. Samples were not identified by a specific material type (e.g., composition, and/or manufacturer/distributor name), rather they are labeled in series (No. 1 to No. 10) to correspond to each of the items identified in Figure~\ref{fig:MCC_samples}.
+Material samples were taken from the various circuit breakers to better understand their burning behavior using a Microscale Combustion Calorimeter\footnote{This MCC used in this work was a Deatak MCC-3 equipped with a paramagnetic oxygen sensor and calibrated according to ASTM~D7309~\cite{ASTMD7309}} (MCC), an apparatus in which a specimen of known mass is thermally decomposed in nitrogen at a constant heating rate and then burned in oxygen to determine its heat of combustion. Samples were not identified by a specific material type (e.g., composition, and/or manufacturer/distributor name), rather they are labeled in series (No. 1 to No. 10) to correspond to each of the items identified in Figure~\ref{fig:MCC_samples}.
 
 
 \begin{figure}[!h]
@@ -340,11 +340,12 @@ Material samples were taken from the various circuit breakers to better understa
 \label{fig:MCC_samples}
 \end{figure}
 
-MCC experiments were conducted in December, 2023. The material samples were subjected to a 80~mL/min nitrogen stream starting at a temperature of 75~°C, increasing linearly to 750~°C at a heating rate of 60~K/min. The pyrolyzed gases were combusted in an oxygen stream of 20~mL/min. Tests were repeated at least three times for each material. Nominal results are listed in Table~\ref{MCC}. The average heat of combustion of the materials tested is approximately \#**. Also reported in this table are the onset temperature and Fire Growth Capacity, FGC. The FGC is a physically based parameter for early stage fire growth, derived from a simple burning model, that has been shown to rank commercial materials according to their behavior in bench scale flame and fire tests~\cite{lyon2021molecular}. The onset temperature is approximated by the temperature at which 5~\% of total heat release is measured, consistent with the definition used for calculation of the FGC. Details of these calculations are provided elsewhere~\cite{DOT/FAA/TC-20/30, lyon2021molecular}.
+MCC experiments were conducted in December, 2023. The material samples were subjected to a 80~mL/min nitrogen stream starting at a temperature of 75~°C, increasing linearly to 750~°C at a heating rate of 60~K/min. The pyrolyzed gases were combusted in an oxygen stream of 20~mL/min. Tests were repeated at least three times for each material. Nominal results are listed in Table~\ref{MCC}. The mass-weighted average heat of combustion of the materials tested is approximately 20~mJ/kg. Also reported in this table are the onset temperature and Fire Growth Capacity, FGC. The FGC is a physically based parameter for early stage fire growth, derived from a simple burning model, that has been shown to rank commercial materials according to their behavior in bench scale flame and fire tests~\cite{lyon2021molecular}. The onset temperature is approximated by the temperature at which 5~\% of total heat release is measured, consistent with the definition used for calculation of the FGC. Details of these calculations are provided elsewhere~\cite{DOT/FAA/TC-20/30, lyon2021molecular}.
 
 \begin{table}
 \begin{center}
-\caption[MCC Measurements]{MCC Measurements. Tabulated unceratainty values represent the standard deviation of repeated measurements (tests conducted in triplicate). The primary sources of uncertainty in measured Heat of Combustion, $\Delta H_c$, include: (1) Uncertainty in measured solid residue yield, approximately **3\%; (2) uncertainty of oxygen consumption calorimetry measurements, approximately 5~\%~\cite{Huggett:1}; and test repeatability, calculated as **1 standard deviation of the mean. As seen here, measurements are highly repeatable, thus indicating that the primary uncertainty in $\Delta H_c$ is due to the inherent uncertainty in oxygen consumption calorimetry measurements.}
+\caption[MCC Measurements]{MCC Measurements. Uncertainty in reported Heat of Combustion, $\Delta H_c$, is approximately 6~\% of the measured value. The primary components of uncertainty in measured $\Delta H_c$, include: (1) uncertainty of oxygen consumption calorimetry measurements, approximately 5~\%~\cite{Huggett:1}; (2) measurements of system flow rate (approximately 1~\%); and (3) test repeatability (approximately 2~\%) , which is calculated as 1 standard deviation of repeated values. Uncertainty in measured solid residue yield is approximately 1~\%, primarily due to stochastic variations in values measured in repeated tests.}
+%Tabulated unceratainty values represent the standard deviation of repeated measurements (tests conducted in triplicate). As seen here, measurements are highly repeatable, thus indicating that the primary uncertainty in $\Delta H_c$ is due to the inherent uncertainty in oxygen consumption calorimetry measurements.
 \label{MCC}
 \begin{tabular}{ccccc}
 \hline
@@ -352,16 +353,14 @@ Matl.  & Heat of        & Solid Residue    & Onset              & Fire Growth   
 No.    & Combustion     & Yield            & Temperature        & Capacity (FGC)          \\
        & (kJ/g)         & (g/g)            & (°C)               & (J/(g~K))    \\
 \hline
-1      &  ?? $\pm$ ??   & 0.xx $\pm$ ??    &                    &              \\
-2      &  ?? $\pm$ ??   & 0.xx $\pm$ ??    &                    &              \\
-3      &  13.9 $\pm$ ?? & 0.29 $\pm$ ??    &      315\footnote{Material 3 decomposes through a multi-step reaction, aproximately 10\% of total heat release occurs in reaction step 1; onset temperature of second main reaction step is approximately $T = 425\circ$C}     	& 79.8             \\
-4      &  30.8 $\pm$ ?? & 0.02 $\pm$ ??    &     388         	& 375.9             \\
-5      &  25.7 $\pm$ ?? & 0.00 $\pm$ ??    &       354             &       465.3       \\
-6      &  28.3 $\pm$ ?? & 0.10 $\pm$ 0.00  &                    &              \\
-7      &  22.1 $\pm$ ?? & 0.40 $\pm$ ??    &         247.5           &  111            \\
-8      &  9.6 $\pm$ ??  & 0.02 $\pm$ ??    &        257            &   77.82           \\
-9      &  27.1 $\pm$ ?? & 0.24 $\pm$ ??    &       507             & 309.7             \\
-10     &  17.9 $\pm$ ?? & 0.57 $\pm$ ??    &       204             &  66.57            \\
+3      &  13.9  & 0.29 &      315\footnote{Material 3 decomposes through a multi-step reaction, aproximately 10\% of total heat release occurs in reaction step 1; onset temperature of second main reaction step is approximately $T = 425\circ$C}     	& 79.8             \\
+4      &  30.8 & 0.02 	&     388         	& 375.9             \\
+5      &  25.7 & 0.00 	&       354             &       465.3       \\
+6      &  28.3 & 0.10 	&                    &              \\
+7      &  22.1 & 0.40 	&         247.5           &  111            \\
+8      &  9.6 & 0.02 	&        257            &   77.82           \\
+9      &  27.1 & 0.24 	&       507             & 309.7             \\
+10     &  17.9 & 0.57 	&       204             &  66.57            \\
 \hline
 \end{tabular}
 \end{center}
