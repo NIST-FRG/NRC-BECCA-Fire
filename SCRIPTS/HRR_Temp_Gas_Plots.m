@@ -134,8 +134,8 @@ end
 
 M = importdata('../DATA/Oven_Test_002_avg.csv',',',2);
 
-plot(M.data(:,1),M.data(:,15),'k-'); hold on
-plot(M.data(:,1),M.data(:,2),'k--'); hold on
+plot(M.data(:,1),M.data(:,2),'k-'); hold on
+plot(M.data(:,1),M.data(:,8),'k--'); hold on
 plot(M.data(:,1),M.data(:,9),'k:'); hold on
 
 set(gca,'FontName',Font_Name)
@@ -144,7 +144,7 @@ axis([0 100 0 400])
 
 xlabel('Time (min)','FontSize',Title_Font_Size,'Interpreter',Font_Interpreter)
 ylabel('Temperature ($^\circ$C)','FontSize',Title_Font_Size,'Interpreter',Font_Interpreter)
-legend('Air','Aluminum Rod','Cable Segment', 'Location', 'Best','FontSize',Legend_Font_Size);
+legend('Aluminum Rod','Thermoset Cable','Thermoplastic Cable','Location', 'Best','FontSize',Legend_Font_Size);
 
 set(gcf,'Visible',Figure_Visibility);
 set(gcf,'Units',Paper_Units);
