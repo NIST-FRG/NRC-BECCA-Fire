@@ -108,7 +108,7 @@ for j=1:12 % Test
 
       xlabel('Time (min)','FontSize',Title_Font_Size,'Interpreter',Font_Interpreter)
       ylabel(y_axis_labels{j,i},'FontSize',Title_Font_Size,'Interpreter',Font_Interpreter)
-      legend(legend_labels{j,i},'Location','West','FontSize',Legend_Font_Size);
+      legend(legend_labels{j,i},'Location','Best','FontSize',Legend_Font_Size);
 
       set(gcf,'Visible',Figure_Visibility);
       set(gcf,'Units',Paper_Units);
