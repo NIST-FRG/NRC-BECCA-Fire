@@ -41,16 +41,17 @@
 \usepackage[hidelinks]{hyperref}
 \urlstyle{same}
 \usepackage{tcolorbox}
+\usepackage[sfdefault,lf]{carlito} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % for section formatting
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{titlesec}
 \usepackage[titletoc]{appendix}
 \setcounter{secnumdepth}{4}
-\titleformat{\section}{\normalsize\bfseries\sffamily}{\thesection.}{1em}{}
-\titleformat{\subsection}{\normalsize\bfseries\sffamily}{\thesubsection.}{1em}{}
-\titleformat{\subsubsection}{\normalsize\bfseries\sffamily}{\thesubsubsection.}{1em}{}
-\titleformat{\paragraph}{\normalsize\bfseries\sffamily}{\theparagraph.}{1em}{}
+\titleformat{\section}{\normalsize\bfseries}{\thesection.}{1em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection.}{1em}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{\thesubsubsection.}{1em}{}
+\titleformat{\paragraph}{\normalsize\bfseries}{\theparagraph.}{1em}{}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % for list formatting
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -66,30 +67,30 @@
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     % main contents - part, secs, subsec, paragraph
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \renewcommand{\contentsname}{\sffamily{Table of Contents}}
-    \renewcommand{\cftsecpagefont}{\normalsize\sffamily}
-    \renewcommand{\cftsecfont}{\normalsize\sffamily}
+    \renewcommand{\contentsname}{{Table of Contents}}
+    \renewcommand{\cftsecpagefont}{\normalsize}
+    \renewcommand{\cftsecfont}{\normalsize}
     \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
     \renewcommand\cftbeforesecskip{\setlength{6pt}{}}
     \renewcommand{\cftsecaftersnum}{.}
-    \renewcommand{\cftsubsecfont}{\normalsize\sffamily}
-    \renewcommand{\cftsubsecpagefont}{\normalsize\sffamily}
+    \renewcommand{\cftsubsecfont}{\normalsize}
+    \renewcommand{\cftsubsecpagefont}{\normalsize}
     \renewcommand\cftbeforesubsecskip{\setlength{6pt}{}}
     \renewcommand{\cftsubsecaftersnum}{.}
-    \renewcommand{\cftsubsubsecfont}{\normalsize\sffamily}
-    \renewcommand{\cftsubsubsecpagefont}{\normalsize\sffamily}
+    \renewcommand{\cftsubsubsecfont}{\normalsize}
+    \renewcommand{\cftsubsubsecpagefont}{\normalsize}
     \renewcommand\cftbeforesubsubsecskip{\setlength{6pt}{}}
     \renewcommand{\cftsubsubsecaftersnum}{.}
-     \renewcommand{\cftparafont}{\normalsize\sffamily}
-    \renewcommand{\cftparapagefont}{\normalsize\sffamily}
+     \renewcommand{\cftparafont}{\normalsize}
+    \renewcommand{\cftparapagefont}{\normalsize}
     \renewcommand\cftbeforeparaskip{\setlength{6pt}{}}
     \renewcommand{\cftparaaftersnum}{.}
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     % list of figures
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \renewcommand{\listfigurename}{\sffamily{List of Figures}}
-    \renewcommand{\cftfigpagefont}{\normalsize\sffamily}
-    \renewcommand{\cftfigfont}{\normalsize\sffamily}
+    \renewcommand{\listfigurename}{{List of Figures}}
+    \renewcommand{\cftfigpagefont}{\normalsize}
+    \renewcommand{\cftfigfont}{\normalsize}
     \renewcommand{\cftfigindent}{0em}
     \addtolength{\cftfignumwidth}{1.5em}
     \renewcommand{\cftfigpresnum}{\figurename\ }
@@ -97,9 +98,9 @@
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     % list of tables
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \renewcommand{\listtablename}{\sffamily{List of Tables}}
-    \renewcommand{\cfttabpagefont}{\normalsize\sffamily}
-    \renewcommand{\cfttabfont}{\normalsize\sffamily}
+    \renewcommand{\listtablename}{{List of Tables}}
+    \renewcommand{\cfttabpagefont}{\normalsize}
+    \renewcommand{\cfttabfont}{\normalsize}
     \renewcommand{\cfttabindent}{0em}
     \addtolength{\cfttabnumwidth}{1.5em}
     \renewcommand{\cfttabpresnum}{\tablename\ }
@@ -115,8 +116,8 @@
 % for caption formatting
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{caption} % required for Figure labels
-\DeclareCaptionFont{helvet}{\small\sffamily\selectfont}
-\captionsetup{labelfont=bf,labelsep=period,font=helvet,figurename=Fig.,justification=raggedright}
+\DeclareCaptionFont{carlito}{\small\selectfont}
+\captionsetup{labelfont=bf,labelsep=period,font=carlito,figurename=Fig.,justification=raggedright}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % pdflatex version
