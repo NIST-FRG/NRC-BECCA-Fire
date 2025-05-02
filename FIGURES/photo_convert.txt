@@ -1,0 +1,62 @@
+convert -quality 10% IMG_8213.JPG Test_65_Photo_1.jpg
+convert -quality 10% IMG_8216.JPG Test_65_Photo_2.jpg
+convert -quality 10% IMG_8218.JPG Test_65_Photo_3.jpg
+convert -quality 10% IMG_8228.JPG Test_66_Photo_1.jpg
+convert -quality 10% IMG_8236.JPG Test_66_Photo_2.jpg
+convert -quality 10% IMG_8243.JPG Test_66_Photo_3.jpg
+convert -quality 10% IMG_8248.JPG Test_67_Photo_1.jpg
+convert -quality 10% IMG_8257.JPG Test_67_Photo_2.jpg
+convert -quality 10% IMG_8269.JPG Test_67_Photo_3.jpg
+convert -quality 10% IMG_8281.JPG Test_68_Photo_1.jpg
+convert -quality 10% IMG_8284.JPG Test_68_Photo_2.jpg
+convert -quality 10% IMG_8291.JPG Test_68_Photo_3.jpg
+convert -quality 10% IMG_8302.JPG Test_69_Photo_1.jpg
+convert -quality 10% IMG_8305.JPG Test_69_Photo_2.jpg
+convert -quality 10% IMG_8313.JPG Test_69_Photo_3.jpg
+convert -quality 10% IMG_8323.JPG Test_70_Photo_1.jpg
+convert -quality 10% IMG_8333.JPG Test_70_Photo_2.jpg
+convert -quality 10% IMG_8345.JPG Test_70_Photo_3.jpg
+convert -quality 10% IMG_8356.JPG Test_71_Photo_1.jpg
+convert -quality 10% IMG_8358.JPG Test_71_Photo_2.jpg
+convert -quality 10% IMG_8362.JPG Test_71_Photo_3.jpg
+convert -quality 10% IMG_8369.JPG Test_72_Photo_1.jpg
+convert -quality 10% IMG_8381.JPG Test_72_Photo_2.jpg
+convert -quality 10% IMG_8389.JPG Test_72_Photo_3.jpg
+convert -quality 10% IMG_8403.JPG Test_73_Photo_1.jpg
+convert -quality 10% IMG_8415.JPG Test_73_Photo_2.jpg
+convert -quality 10% IMG_8424.JPG Test_73_Photo_3.jpg
+convert -quality 10% IMG_8430.JPG Test_74_Photo_1.jpg
+convert -quality 10% IMG_8441.JPG Test_74_Photo_2.jpg
+convert -quality 10% IMG_8454.JPG Test_74_Photo_3.jpg
+convert -quality 10% IMG_8468.JPG Test_75_Photo_1.jpg
+convert -quality 10% IMG_8475.JPG Test_75_Photo_2.jpg
+convert -quality 10% IMG_8480.JPG Test_75_Photo_3.jpg
+convert -quality 10% IMG_8495.JPG Test_76_Photo_1.jpg
+convert -quality 10% IMG_8497.JPG Test_76_Photo_2.jpg
+convert -quality 10% IMG_8503.JPG Test_76_Photo_3.jpg
+convert -quality 10% IMG_8512.JPG Test_77_Photo_1.jpg
+convert -quality 10% IMG_8529.JPG Test_77_Photo_2.jpg
+convert -quality 10% IMG_8535.JPG Test_77_Photo_3.jpg
+convert -quality 10% IMG_8546.JPG Test_78_Photo_1.jpg
+convert -quality 10% IMG_8553.JPG Test_78_Photo_2.jpg
+convert -quality 10% IMG_8559.JPG Test_78_Photo_3.jpg
+convert -quality 10% IMG_8563.JPG Test_79_Photo_1.jpg
+convert -quality 10% IMG_8581.JPG Test_79_Photo_2.jpg
+convert -quality 10% IMG_8585.JPG Test_79_Photo_3.jpg
+convert -quality 10% IMG_8602.JPG Test_80_Photo_1.jpg
+convert -quality 10% IMG_8617.JPG Test_80_Photo_2.jpg
+convert -quality 10% IMG_8624.JPG Test_80_Photo_3.jpg
+
+convert -quality 10% IMG_8639.JPG Test_81_Photo_1.jpg
+convert -quality 10% IMG_8643.JPG Test_81_Photo_2.jpg
+convert -quality 10% IMG_8650.JPG Test_81_Photo_3.jpg
+convert -quality 10% IMG_8686.JPG Test_82_Photo_1.jpg
+convert -quality 10% IMG_8691.JPG Test_82_Photo_2.jpg
+convert -quality 10% IMG_8693.JPG Test_82_Photo_3.jpg
+convert -quality 10% IMG_8706.JPG Test_83_Photo_1.jpg
+convert -quality 10% IMG_8710.JPG Test_83_Photo_2.jpg
+convert -quality 10% IMG_8723.JPG Test_83_Photo_3.jpg
+
+
+
+
