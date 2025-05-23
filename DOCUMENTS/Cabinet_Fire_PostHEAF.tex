@@ -80,7 +80,7 @@
 %	For non-NIST authors, list their city and state below their organization name.
 %	For NIST authors, include the Division and Laboratory names (but do not include their city and state).
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\normalsize 
+\normalsize
 \authorone\\
 \authortwo\\
 \authorthree\\
@@ -1763,9 +1763,9 @@ In some experiments, the gaps within the grommets were filled with various seala
 
 \FloatBarrier
 
-\subsubsection{Cables}
+\subsubsection{Cable Failure Analysis}
 
-In each experiment, the cables were all of the same type, and four different cables were used for the entire series. Table~\ref{cables} lists the basic properties.
+Four different types of cables were used for the cable penetration experiments. Table~\ref{cables} lists the basic properties of each.
 
 \begin{table}[ht]
 \centering
@@ -1778,10 +1778,28 @@ No.   & Matl.   & Matl.   &         &        & (mm)   & (kg/m)      & Mass Frac.
 804   & XLPE    & PVC     & Mix     & 7      & 15.1   & 0.41        & 0.52       \\ \hline
 806   & XLPE    & XLPO    & TS      & 7      & 12.2   & 0.32        & 0.66       \\ \hline
 813   & XLPE    & CSPE    & TS      & 12     & 12.7   & 0.25        & 0.37       \\ \hline
-900   & PE      & PVC     & TP      & 7      & 15.9   & 0.38        & 0.55       \\ \hline 
+900   & PE      & PVC     & TP      & 7      & 15.9   & 0.38        & 0.55       \\ \hline
 \end{tabular}
-\end{table}     
+\end{table}
 
+Two cables in each tray were energized using an apparatus called the Surrogate Circuit Diagnostic Unit (SCDU), developed by Sandia National Laboratories to simulate electrical circuit failure. A description of the device can be found in Appendix~C of Volume~1 of Ref.~\cite{CAROLFIRE}. Briefly, the SCDU includes four separate modules, each providing the ability to simulate one 120~V (AC) control circuit. The typical test configuration simulates a motor-operated valve (MOV) control circuit with a pair of interlocked motor starter contactor units, although other configurations are possible. Figure~\ref{circuit_diagram} provides a  schematic diagram of each of the four SCDU modules. Figure~\ref{cable_cross_section} displays the arrangement of conductors within either a seven or twelve conductor cable.
+
+\begin{figure}[ht]
+\includegraphics[width=6.5in]{../FIGURES/Circuit_Drawing}
+\caption[Circuit diagram for the Surrogate Circuit Diagnostic Unit]{Circuit diagram for the Surrogate Circuit Diagnostic Unit.}
+\label{circuit_diagram}
+\end{figure}
+
+There are three energized source circuit paths labelled ``S1'' through ``S3.''  There is one passive target path consisting of a 1.8~k$\Omega$ resistor simulating an indicator light labelled ``PT.'' There are two active target circuit paths consisting of paired motor contactors ``AT5'' and ``AT6.'' There are two circuit ground paths, labelled ``G7'' and ``G8.'' For the experiments described here, the SCDUs were connected in a simple, first-failure detection configuration, rather than the standard MOV wiring configuration described in Ref.~\cite{CAROLFIRE}.  The objective was to determine the time to initial electrical breakdown without concern for the specific failure modes or circuit effects. Hence, the SCDUs were each configured to primarily detect shorting between adjacent conductor pairs within the cable.  The configuration also detects a short between an energized conductor and an external ground (e.g., the cable tray). The wiring configuration between the SCDU and the cable under test was such that the energized ``source'' conductors (S1, S2, S3) were adjacent to either active target conductors (AT5, AT6) or grounded conductors.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=5.5in]{../FIGURES/Cable_Cross_Section}
+\caption[Diagram of cable onductors]{Arrangement of conductors within each cable.}
+\label{cable_cross_section}
+\end{figure}
+
+Given this configuration, any conductor-to-conductor short between an energized conductor and either active target or grounded conductor would be detected by the voltage and current measurements. A conductor-to-conductor short to an active target actuates one of the motor contactors while shorting to a grounded conductor or grounded raceway results in a blown fuse.  The only values of interest for determining circuit failure are the source voltage and current and the target voltage and current. Circuit failure occurs when the voltage of the source conductors drops to zero or when the voltage of the active target conductors surpasses 80~V.
 
 
 \clearpage
