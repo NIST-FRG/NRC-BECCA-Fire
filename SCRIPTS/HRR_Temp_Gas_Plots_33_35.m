@@ -7,7 +7,7 @@
 close all
 clear all
 
-Font_Name       = 'Times';
+Font_Name       = 'Arial';
 Key_Font_Size   = 14;
 Title_Font_Size = 16;
 Label_Font_Size = 16;
@@ -22,7 +22,7 @@ Paper_Units     = 'inches';
 Paper_Width     = 5.75;
 Paper_Height    = 4.5;
 Figure_Visibility = 'on';
-Font_Interpreter = 'LaTeX';
+Font_Interpreter = 'TeX';
 
 HRR_File = {'../DATA/Test_33.csv',...
             '../DATA/Test_34.csv',...
@@ -78,7 +78,7 @@ axis([0 t_end{j} 0 1000])
 text(.05,.90,['Experiment ' num2str(j+32,'%1d\n')],'FontName',Font_Name,'FontSize',Label_Font_Size,'Interpreter',Font_Interpreter,'Units','normalized')
 
 xlabel('Time (min)','FontSize',Title_Font_Size,'Interpreter',Font_Interpreter)
-ylabel('Temperature ($^\circ$C)','FontSize',Title_Font_Size,'Interpreter',Font_Interpreter)
+ylabel('Temperature (°C)','FontSize',Title_Font_Size,'Interpreter',Font_Interpreter)
 legend({'Aluminum Slug','Cable Segment'}, 'Location', 'South','Interpreter',Font_Interpreter,'FontSize',Legend_Font_Size);
 
 set(gcf,'Visible',Figure_Visibility);
@@ -115,7 +115,7 @@ axis([0 t_end{j} 0 1000])
 text(.05,.90,['Experiment ' num2str(j+32,'%1d\n')],'FontName',Font_Name,'FontSize',Label_Font_Size,'Interpreter',Font_Interpreter,'Units','normalized')
 
 xlabel('Time (min)','FontSize',Title_Font_Size,'Interpreter',Font_Interpreter)
-ylabel('Temperature ($^\circ$C)','FontSize',Title_Font_Size,'Interpreter',Font_Interpreter)
+ylabel('Temperature (°C)','FontSize',Title_Font_Size,'Interpreter',Font_Interpreter)
 
 set(gcf,'Visible',Figure_Visibility);
 set(gcf,'Units',Paper_Units);
@@ -143,7 +143,7 @@ set(gca,'FontSize',Title_Font_Size)
 axis([0 100 0 400])
 
 xlabel('Time (min)','FontSize',Title_Font_Size,'Interpreter',Font_Interpreter)
-ylabel('Temperature ($^\circ$C)','FontSize',Title_Font_Size,'Interpreter',Font_Interpreter)
+ylabel('Temperature (°C)','FontSize',Title_Font_Size,'Interpreter',Font_Interpreter)
 legend('Aluminum Rod','Thermoset Cable','Thermoplastic Cable','Location', 'Best','FontSize',Legend_Font_Size);
 
 set(gcf,'Visible',Figure_Visibility);

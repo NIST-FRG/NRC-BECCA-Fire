@@ -131,8 +131,8 @@ National Institute of Standards and Technology\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \footnotesize
 {\textbf{NIST Technical Series Policies}}\\
-  {{\hyperlink{https://doi.org/10.6028/NIST-TECHPUBS.CROSSMARK-POLICY}{\textcolor{blue}{Copyright, Fair Use, and Licensing Statements}}\\
-\hyperlink{https://www.nist.gov/system/files/documents/2022/04/01/PubID_Syntax_NIST_TechPubs.pdf}{\textcolor{blue}{NIST Technical Series Publication Identifier Syntax}}}}
+  {{\href{https://www.nist.gov/nist-research-library/nist-publications}{\textcolor{blue}{Copyright, Fair Use, and Licensing Statements}}\\
+\href{https://www.nist.gov/system/files/documents/2022/04/01/PubID_Syntax_NIST_TechPubs.pdf}{\textcolor{blue}{NIST Technical Series Publication Identifier Syntax}}}}
 \vfill
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %  Complete this section as appropriate
@@ -140,7 +140,7 @@ National Institute of Standards and Technology\\
 % Publication ID, Month/Year, and DOI of report being replaced (superseded)  is only required if this manuscript is a new version (revision, edition, errata update).
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 {\textbf{Publication History}}\\
-  {Approved by the NIST Editorial Review Board on 2024-12-4}\\
+  {Original version approved by the NIST Editorial Review Board on 2024-12-4}\\
 \vfill
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % This section is automated
@@ -1742,7 +1742,9 @@ Experiments were also conducted to characterize the thermal environment of cable
 
 Experiments 65 through 83, conducted in April 2025, examine the propagation of fire from the interior to the exterior of an enclosure along cables routed through holes cut through the enclosure top. Figure~\ref{mock_cabinet_with_trays} displays a drawing of the experimental apparatus, which consists of a semi-enclosed mock steel cabinet with holes cut in its top and a gas burner placed underneath. The steel is slightly thicker than one would expect to find in such an enclosure because it had to withstand the heat of repeated testing.
 
-The heat release rate of the nominally 30~cm by 30~cm (12~in by 12~in) natural gas burner is ramped up to mimic a $t$-squared profile, and various types of cables are studied (see Table~\ref{cables}). Two cable trays are mounted to the assembly, approximately 30~cm (12~in) above the top. The trays contain (a) the cables routed from the interior of the enclosure, (b) four energized cables, two per tray, (c) six cables instrumented with thermocouples, three per tray, and (d) for some experiments extra cables to serve as filler. The energized and instrumented cables do not penetrate the enclosure, as they are meant to represent intervening combustibles. The basic properties of the four cable types used in this series are listed in Table~\ref{cables}.
+The heat release rate of the nominally 30~cm by 30~cm (12~in by 12~in) natural gas burner is ramped up to mimic a $t$-squared profile, and various types of cables are studied (see Table~\ref{cables}). If and when the temperature inside the compartment reaches approximately 800~$^\circ$C, the gas burner is held at its current heat release rate. This occurs at different points in the experiments because some cables burn more readily than others. Also, the gas burner is held steady if excessive amounts of flame is seen flowing outside of the enclosure.
+
+Two cable trays are mounted to the assembly, approximately 30~cm (12~in) above the top for most of the experiments and 60~cm (24~in) for the last four. The trays contain (a) the cables routed from the interior of the enclosure, (b) four energized cables, two per tray, (c) six cables instrumented with thermocouples, three per tray, and (d) for some experiments extra cables to serve as filler. The energized and instrumented cables do not penetrate the enclosure, as they are meant to represent intervening combustibles. The basic properties of the four cable types used in this series are listed in Table~\ref{cables}.
 
 \begin{table}[ht]
 \centering
@@ -1780,8 +1782,8 @@ The holes in the top of the mock enclosure are lined with various types of gromm
 \item[Steel Compression Connector (A):] EMT (Electrical Metallic Tubing) conduit fitting with nominal inner diameters of 8.9~cm (3.5~in), 6.4~cm (2.5~in), and 3.8~cm (1.5~in) were fastened to the 10.2~cm (4~in), 7.6~cm (3~in), and 5.1~cm (2~in) diameter holes, respectively. The axial lengths of the fittings were 7.1~cm (2.8~in), 6.4~cm (2.5~in), and 4.4~cm (1.8~in). For experiments with no steel conduit, the locking rings were removed.
 \item[Die Cast Zinc Compression Connector (B):] EMT conduit fitting with nominal inner diameter of 3.8~cm (1.5~in) fastened to the 5.1~cm (2~in) hole.
 \item[Die Cast Zinc Strap Type Connector (C):] Nominal 3.8~cm (1.5~in) fitting fastened to the 5.1~cm (2~in) diameter hole.
-\item[Nylon Locking Grommet (D):] Circular ring made specifically for 4~in, 3~in, and 2~in holes.
-\item[Rubber Grommet (E):] Styrene-Butadiene Rubber (SBR) grommets fitted in the 2~in holes.
+\item[Nylon Locking Grommet (D):] Circular ring made specifically for 4~inch, 3~inch, and 2~inch holes.
+\item[Rubber Grommet (E):] Styrene-Butadiene Rubber (SBR) grommets fitted in the 2~inch holes.
 \item[Cut-to-Size Rubber Grommet (F):] Similar to the rubber grommet, but with a solid center that can be cut to size.
 \end{description}
 
@@ -1824,14 +1826,14 @@ Four different types of cables, listed in Table~\ref{cables}, are used in the ca
 \label{circuit_diagram}
 \end{figure}
 
-There are three energized source circuit paths labelled S1, S2, and S3. There is one passive target path consisting of a 1.8~k$\Omega$ resistor simulating an indicator light, but this is not connected for these experiments. There are two active target circuit paths consisting of paired motor contactors labelled AT5 and AT6. There are two circuit ground paths, labelled G7 and G8. Lastly, there is a 10~W, 1.8~k$\Omega$ power resistor connected at the ends of source conductor S1 and ground conductor G7. This provides a small current (0.07~A) and indicates a potentially open circuit. For the experiments described here, the SCDUs are connected in an MOV wiring configuration like that described in Ref.~\cite{CAROLFIRE}.  The objective is to determine the time to electrical breakdown without concern for the specific failure modes or circuit effects. Hence, the SCDUs are each configured to primarily detect shorting between adjacent conductor pairs within the cable.  The configuration also detects a short between an energized conductor and an external ground (e.g., the cable tray). The wiring configuration between the SCDU and the cable under test is such that the energized ``source'' conductors (S1, S2, S3) are adjacent to either active target conductors (AT5, AT6) or grounded conductors (G7, G8).
+There are three energized source circuit paths labeled S1, S2, and S3. There is one passive target path consisting of a 1.8~k$\Omega$ resistor simulating an indicator light, but this is not connected for these experiments. There are two active target circuit paths consisting of paired motor contactors labeled AT5 and AT6. There are two circuit ground paths, labeled G7 and G8. Lastly, there is a 10~W, 1.8~k$\Omega$ power resistor connected at the ends of source conductor S1 and ground conductor G7. This provides a small current (0.07~A) and indicates a potentially open circuit. For the experiments described here, the SCDUs are connected in an MOV wiring configuration like that described in Ref.~\cite{CAROLFIRE}.  The objective is to determine the time to electrical breakdown without concern for the specific failure modes or circuit effects. Hence, the SCDUs are each configured to primarily detect shorting between adjacent conductor pairs within the cable.  The configuration also detects a short between an energized conductor and an external ground (e.g., the cable tray). The wiring configuration between the SCDU and the cable under test is such that the energized ``source'' conductors (S1, S2, S3) are adjacent to either active target conductors (AT5, AT6) or grounded conductors (G7, G8).
 
 \begin{figure}[ht]
 \centering
 \vspace{-0.5in}
 \includegraphics[width=5.5in]{../FIGURES/Cable_Cross_Section} \\
 \vspace{-0.5in}
-\caption[Diagram of cable conductors]{Arrangement of conductors within each cable. For the twelve conductor cable at right, the similarly labelled conductors are connected at the junction point of the SCDU.}
+\caption[Diagram of cable conductors]{Arrangement of conductors within each cable. For the twelve conductor cable at right, the similarly labeled conductors are connected at the junction point of the SCDU.}
 \label{cable_cross_section}
 \end{figure}
 
@@ -1850,7 +1852,7 @@ The results of each experiment are summarized in Table~\ref{penetration_matrix} 
 
 \begin{table}[ht]
 \centering
-\caption[Summary of results of penetration experiments]{Summary of results of the cable penetration experiments. The column labelled ``Breakout Time'' denotes the time when the fire is sustained above the top of the enclosure. ``Ign.~Time'' denotes the time when the cables in the tray undergo sustained ignition. ``Fail.~Time'' denotes the time when the first of the two energized cables within the tray malfunctions. ``DNI'' means ``Did Not Ignite'' and ``DNF'' means ``Did Not Fail.'' }
+\caption[Summary of results of penetration experiments]{Summary of results of the cable penetration experiments. The column labeled ``Breakout Time'' denotes the time when the fire is sustained above the top of the enclosure. ``Ign.~Time'' denotes the time when the cables in the tray undergo sustained ignition. ``Fail.~Time'' denotes the time when the first of the two energized cables within the tray malfunctions. ``DNI'' means ``Did Not Ignite'' and ``DNF'' means ``Did Not Fail.'' The asterisk applied to the experiment number indicates a 60~cm (24~in) rather than 30~cm (12~in) tray separation distance.}
 \label{penetration_matrix}
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
 \hline
@@ -1871,10 +1873,10 @@ No.    & No.     & Type     & Type             & Time      & Ign. Time  & Fail.~
 77     & 804     & Mix      & None             & 11:30     & DNI        & DNF              & 18:00      & 16:42            \\ \hline
 78     & 900     & TP       & Foam             & 07:00     & 08:45      & 10:24            & 07:30      & 09:36            \\ \hline
 79     & 900     & TP       & Cer.~Fiber       & 27:00     & 28:00      & 29:00            & 29:00      & 30:24            \\ \hline
-80     & 804     & Mix      & None             & 09:00     & DNI        & DNF              & DNI        & DNF              \\ \hline
-81     & 804     & Mix      & None             & 12:00     & DNI        & DNF              & 17:00      & 30:18            \\ \hline
-82     & 900     & TP       & FR Foam          & 12:00     & 14:30      & 17:18            & 14:30      & 17:12            \\ \hline
-83     & 900     & TP       & None             & 07:00     & 16:00      & 17:12            & 11:45      & 12:12            \\ \hline
+80$^*$ & 804     & Mix      & None             & 09:00     & DNI        & DNF              & DNI        & DNF              \\ \hline
+81$^*$ & 804     & Mix      & None             & 12:00     & DNI        & DNF              & 17:00      & 30:18            \\ \hline
+82$^*$ & 900     & TP       & FR Foam          & 12:00     & 14:30      & 17:18            & 14:30      & 17:12            \\ \hline
+83$^*$ & 900     & TP       & None             & 07:00     & 16:00      & 17:12            & 11:45      & 12:12            \\ \hline
 \end{tabular}
 \end{table}
 
@@ -1946,7 +1948,7 @@ Notes: The fire spreads outside the enclosure in approx.~7~min. The cables risin
 \noindent
 Cable: Thermoplastic, 7/C, \#900 \\
 Grommet: Steel compression fittings \\
-Sealant: Fire-Rated Gap Filling Foam \\
+Sealant: Fire-rated gap filling foam \\
 Notes: The intumescent foam delays the fire penetration through the openings until approx.~12~min. Ignition occurs in Tray~2 in approx.~19~min followed by electrical failure at 22:24. The cables in Tray~1 do not ignite or fail because only the single cables from the 2~inch holes are routed to Tray~1.
 \end{minipage}
 \hfill
@@ -2002,7 +2004,7 @@ Notes: The intumescent foam delays the fire penetration through the openings unt
 \noindent
 Cable: Thermoplastic, 7/C, \#900 \\
 Grommet: Steel compression fittings \\
-Sealant: Duct Sealant or Ceramic Fiber \\
+Sealant: Duct sealant or ceramic fiber \\
 Notes: Duct sealant is applied to the 2~inch and 3~inch holes; ceramic fiber is applied to the 4~inch holes. The fire penetrates the seals at approximately 13~min, ignites the cables within Tray~1 at 26~min and Tray~2 at 29~min. Electrical failure occurs at 27:12 and 29:54 in Trays~1 and 2, respectively. Note that in this experiment, the cables from the 3~inch holes are routed into Tray~1 rather than Tray~2, leading to a balanced combustible load.
 \end{minipage}
 \hfill
@@ -2045,7 +2047,7 @@ Notes: Duct sealant is applied to the 2~inch and 3~inch holes; ceramic fiber is 
 \includegraphics[height=2.50in]{../FIGURES/Test_67_Photo_1} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_67_Photo_2} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_67_Photo_3}
-\caption[Photographs of Experiment~67]{Photographs of Experiment~67 displaying the ceramic fiber seal on the 4~inch hole (top) and the fire at times of 12:37 (center) and 32:54 (bottom) past the time of burner ignition.}
+\caption[Photographs of Experiment~67]{Photographs of Experiment~67 displaying the ceramic fiber seal and putty on the 4~inch hole (top) and the fire at times of 12:37 (center) and 32:54 (bottom) past the time of burner ignition.}
 \label{fig:Test_67_photos}
 \end{figure}
 
@@ -2057,9 +2059,9 @@ Notes: Duct sealant is applied to the 2~inch and 3~inch holes; ceramic fiber is 
 
 \begin{minipage}{.60\textwidth}
 \noindent
-Cable: Thermoset, 7/C, \#804 \\
+Cable: Mixed type, 7/C, \#804 \\
 Grommet: Steel compression fittings \\
-Sealant: Fire-Rated Gap Filling Foam \\
+Sealant: Fire-rated gap filling foam \\
 Notes: The HRR of the fire is limited to 200~kW and the flames only briefly rise above the enclosure top and do not ignite the cables or cause electrical failure.
 \end{minipage}
 \hfill
@@ -2339,7 +2341,7 @@ Notes: Similar to Exp.~71 except that the penetrations are sealed with foam and 
 Cable: Thermoplastic, 7/C, \#806 \\
 Grommet: Steel compression fittings \\
 Sealant: Duct sealant or ceramic fiber \\
-Notes: The ceramic fiber was squeezed into the two 4~inch holes. Duct sealant was applied to the 2~inch and 3~inch holes. The fire broke through the seal at approx.~18~min, 45~s, but did not ignite or cause the cables to fail in either tray.
+Notes: The ceramic fiber was squeezed into the two 4~inch holes. Duct sealant was applied to the 2~inch and 3~inch holes. The fire broke through the seal at approx.~18:45, but did not ignite or cause the cables to fail in either tray.
 \end{minipage}
 \hfill
 \begin{minipage}{.35\textwidth}
@@ -2665,7 +2667,7 @@ Notes: The gap-filling foam is labeled as flammable and {\em not} fire-rated. Th
 Cable: Thermoplastic, 7/C, \#900 \\
 Grommet: Steel compression fittings \\
 Sealant: Ceramic fiber \\
-Notes: The fire remains within the enclosure for approx.~27~min. It spreads rapidly after its initial penetration. The cables in Tray~1 ignite and fail at approx.~28~min and 29:00, respectively. The cables in Tray~2 ignite and fail at approx.~29~min and 30:24, respectively.
+Notes: The fire remains within the enclosure for approx.~27~min. It spreads rapidly after its initial penetration. The cables in Tray~1 ignite and fail at approx.~28:00 and 29:00, respectively. The cables in Tray~2 ignite and fail at approx.~29:00 and 30:24, respectively.
 \end{minipage}
 \hfill
 \begin{minipage}{.35\textwidth}
@@ -2772,7 +2774,7 @@ Notes: The trays are raised to a height 60~cm (24~in) above the enclosure top. T
 \begin{minipage}{.60\textwidth}
 \noindent
 Cable: Mixed type, 7/C, \#804 \\
-Grommet: Steel compression fittings in 3~in and 4~in holes. Zinc compression fittings in 2~in holes. \\
+Grommet: Steel compression fittings in the 4~inch holes. Zinc compression fittings in the 2~inch holes. The 3~inch holes are blocked. \\
 Sealant: None \\
 Notes: 60~cm (24~in) separation distance between trays and enclosure top. The fire emerges in approx.~12~min and ignites the cables in Tray~2 in approx.~17~min. The cables in Tray~2 do not fail until 30:18. The cables in Tray~1 do not ignite or fail.
 \end{minipage}
