@@ -6,7 +6,7 @@
 close all
 clear all
 
-Font_Name       = 'Times';
+Font_Name       = 'Arial';
 Key_Font_Size   = 14;
 Title_Font_Size = 16;
 Label_Font_Size = 16;
@@ -21,7 +21,7 @@ Paper_Units     = 'inches';
 Paper_Width     = 5.75;
 Paper_Height    = 4.5;
 Figure_Visibility = 'on';
-Font_Interpreter = 'LaTeX';
+Font_Interpreter = 'TeX';
 
 t_fail  = {[  -1   -1 14.2 13.8];... % Test 65
            [  -1   -1 22.4 23.0];... % Test 66
@@ -84,7 +84,7 @@ for j=1:19 % Test
    text(.05,.90,['Experiment ' num2str(test_number,'%1d\n')],'FontName',Font_Name,'FontSize',Label_Font_Size,'Interpreter',Font_Interpreter,'Units','normalized')
 
    xlabel('Time (min)','FontSize',Title_Font_Size,'Interpreter',Font_Interpreter)
-   ylabel('Temperature ($^\circ$C)','FontSize',Title_Font_Size,'Interpreter',Font_Interpreter)
+   ylabel('Temperature (°C)','FontSize',Title_Font_Size,'Interpreter',Font_Interpreter)
    legend({'TC-1','TC-2','TC-3'},'Location','East','FontSize',Legend_Font_Size);
 
    set(gcf,'Visible',Figure_Visibility);
@@ -111,7 +111,7 @@ for j=1:19 % Test
    text(.05,.90,['Experiment ' num2str(test_number,'%1d\n')],'FontName',Font_Name,'FontSize',Label_Font_Size,'Interpreter',Font_Interpreter,'Units','normalized')
 
    xlabel('Time (min)','FontSize',Title_Font_Size,'Interpreter',Font_Interpreter)
-   ylabel('Temperature ($^\circ$C)','FontSize',Title_Font_Size,'Interpreter',Font_Interpreter)
+   ylabel('Temperature (°C)','FontSize',Title_Font_Size,'Interpreter',Font_Interpreter)
    legend({'TC-4','TC-5','TC-6'},'Location','East','FontSize',Legend_Font_Size);
 
    set(gcf,'Visible',Figure_Visibility);
@@ -134,7 +134,7 @@ for j=1:19 % Test
    text(.05,.90,['Experiment ' num2str(test_number,'%1d\n')],'FontName',Font_Name,'FontSize',Label_Font_Size,'Interpreter',Font_Interpreter,'Units','normalized')
 
    xlabel('Time (min)','FontSize',Title_Font_Size,'Interpreter',Font_Interpreter)
-   ylabel('Temperature ($^\circ$C)','FontSize',Title_Font_Size,'Interpreter',Font_Interpreter)
+   ylabel('Temperature (°C)','FontSize',Title_Font_Size,'Interpreter',Font_Interpreter)
    legend({'TC-7','TC-8'},'Location','East','FontSize',Legend_Font_Size);
 
    set(gcf,'Visible',Figure_Visibility);
