@@ -95,7 +95,7 @@
 \DOI\\
 \vfill
 \normalsize \pubmonth~\pubyear\\
-%\textsc{Includes Updates as of \erratadate; See \appendixname~\ref{changes}} %include if errata update
+\textsc{Includes Updates as of \erratadate; See \appendixname~\ref{change_log}} %include if errata update
 \vfill
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %  Department of Commerce LOGO - leave as-is
@@ -140,7 +140,8 @@ National Institute of Standards and Technology\\
 % Publication ID, Month/Year, and DOI of report being replaced (superseded)  is only required if this manuscript is a new version (revision, edition, errata update).
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 {\textbf{Publication History}}\\
-  {Original version approved by the NIST Editorial Review Board on 2024-12-4}\\
+  {Approved by the NIST Editorial Review Board on 2025-08-XX}\\
+  {Supersedes NIST Technical Note 2320 (December 2024) \href{https://doi.org/10.6028/NIST.TN.2320}{https://doi.org/10.6028/NIST.TN.2320}}\\
 \vfill
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % This section is automated
@@ -152,8 +153,10 @@ National Institute of Standards and Technology\\
 % ORCID IDs required for all NIST authors
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 {\textbf{NIST Author ORCID iDs}}\\
-  {\authorone: 0000-0002-1135-1274\\
-\authortwo: 0000-0002-8835-8087\\
+{\authorone:   0000-0002-1135-1274\\
+ \authortwo:   0000-0002-8835-8087\\
+ \authorthree: 0000-0001-6667-7055\\
+ \authorfour:  0009-0001-0098-0075\\
 }
 \vfill
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -223,7 +226,7 @@ Previous experiments have been conducted to determine HRR probability distributi
 
 To date, there are few measurements\footnote{See Reference~\cite{NEA_HEAF_2017} which includes a description of some experiments in which the HRR of a fire initiated by a high energy arc fault was measured.} of the HRR of circuit breaker fires in electrical enclosures, which have been observed to grow and continue burning for tens of minutes after high energy arc fault (HEAF) events. Thus, the experiments described in this report (Section~\ref{Sec:Circuit Breakers}) seek to quantify the peak HRR, time to peak HRR, and duration of circuit breaker fires in steel electrical enclosures. The second focus of this report (Section~ \ref{Sec:Cables}) summarizes the results of experiments designed to quantify the thermal exposure of electrical cables that typically are installed in trays above an enclosure.
 
-The experiments described in this report are part of a broader test series, hence the first experiment presented is identified as Experiment 33. Results from the earlier 32 experiments are presented in NIST Technical Note~2232~\cite{OLIVE-FIRE}.
+The experiments described in this report are part of a broader test series, hence the first experiment presented is identified as Experiment~33. Results from the earlier 32 experiments are presented in NIST Technical Note~2232~\cite{OLIVE-FIRE}.
 
 Also, the uncertainty of a measurement presented in this report is typically expressed as a relative expanded uncertainty, sometimes referred to as a 95~\% or ``two-sigma'' confidence interval. This uncertainty includes both an {\em epistemic} component, i.e. the measuring device has an accuracy and precision reported by the manufacturer based on its operating principles and calibration, and an {\em aleatoric} component, i.e. there are random variations in repeated trials of an experiment.
 
@@ -258,7 +261,7 @@ The temperature measurements described in this report are also to be used to val
 \section{Circuit Breaker Heat Release Rate Measurements}
 \label{Sec:Circuit Breakers}
 
-Four low-voltage\footnote{In this report, the term ``low voltage'' implies less than 1000~V alternating current} circuit breaker enclosures built by ABB, an international manufacturer of electrical equipment, were shipped to the National Fire Research Laboratory (NFRL) at NIST in September 2023. These enclosures were donated by the German nuclear safety organization Gesellschaft für Anlagen- und Reaktorsicherheit (GRS) from a decommissioned nuclear power plant in Germany, and contain low-voltage circuit breakers and various types of panel wires, cables, and instrumentation. One configuration consisted of three vertical sections that were bolted together, as shown in Fig.~\ref{fig:Cabinet_1}, and one configuration was detached.
+Four low-voltage\footnote{In this report, the term ``low voltage'' implies less than 1000~V alternating current.} circuit breaker enclosures built by ABB, an international manufacturer of electrical equipment, were shipped to the National Fire Research Laboratory (NFRL) at NIST in September 2023. These enclosures were donated by the German nuclear safety organization Gesellschaft für Anlagen- und Reaktorsicherheit (GRS) from a decommissioned nuclear power plant in Germany, and contain low-voltage circuit breakers and various types of panel wires, cables, and instrumentation. One configuration consisted of three vertical sections that were bolted together, as shown in Fig.~\ref{fig:Cabinet_1}, and one configuration was detached.
 
 \begin{figure}[ht]
 \centering
@@ -294,18 +297,18 @@ The breakers were ignited using a nominally 30~cm (12~in) square natural gas bur
 \begin{figure}[ht]
 \centering
 \includegraphics[width=\textwidth]{../FIGURES/Burner}
-\caption[Position of the burner] {Position of the burner under the breaker in Test~34.}
+\caption[Position of the burner] {Position of the burner under the breaker in Exp.~34.}
 \label{fig:Burner}
 \end{figure}
 
 Sheathed thermocouples\footnote{Type K, sheath diameter 3~mm (1/8~in), expanded uncertainty $\pm 0.75$~\% of the measured absolute temperature.} were installed approximately 15~cm (6~in) below the ceiling of each compartment to provide a measurement of the gas temperature within. Thermocouples were also embedded within electrical cable segments and aluminum rods (see Section~\ref{cable_surrogate}) that were placed directly above each circuit breaker. The cable target is a 7-conductor thermoplastic electrical cable segment and the aluminum target is a 6061~aluminum alloy rod, both approximately  15~cm (6~in) in length and 13~mm (0.5~in) in diameter. Throughout this report, these surrogate targets are referred to as slug calorimeters, or simply ``slugs,'' a term commonly used in the fire science community to describe objects such as these.
 
-Photographs of the enclosures used in this project are shown in Figs.~\ref{fig:Cabinet_1} and \ref{fig:Cabinet_2}. Each enclosure is approximately 2.2~m (87~in) tall, 0.4~m (16~in) wide, and 1.0~m (40~in) deep. Some of the enclosures have ventilation panels near the top and bottom, and all have seams and small openings to accommodate wiring, bus bars, door panels, and so on. No attempt was made to seal these various gaps and openings except in Experiment~34 where a burned out instrument panel was covered by a steel plate, and in Experiment~35, where a hole in the top of the enclosure was covered by a steel plate.
+Photographs of the enclosures used in this project are shown in Figs.~\ref{fig:Cabinet_1} and \ref{fig:Cabinet_2}. Each enclosure is approximately 2.2~m (87~in) tall, 0.4~m (16~in) wide, and 1.0~m (40~in) deep. Some of the enclosures have ventilation panels near the top and bottom, and all have seams and small openings to accommodate wiring, bus bars, door panels, and so on. No attempt was made to seal these various gaps and openings except in Exp.~34 where a burned out instrument panel was covered by a steel plate, and in Exp.~35, where a hole in the top of the enclosure was covered by a steel plate.
 
 \subsection{Material Property Measurements}
 \label{ssec:MCC}
 
-Material samples were taken from the various circuit breakers to better understand their burning behavior using a Microscale Combustion Calorimeter\footnote{This MCC used in this work was a Deatak MCC-3 equipped with a paramagnetic oxygen sensor and calibrated according to ASTM~D7309~\cite{ASTMD7309}} (MCC), an apparatus in which a specimen of known mass is thermally decomposed in nitrogen at a constant heating rate and then burned in oxygen to determine its heat of combustion. Samples were not identified by a specific material type (e.g., composition, and/or manufacturer/distributor name), rather they are labeled in series (No. 1 to No. 10) to correspond to each of the items identified in Fig.~\ref{fig:MCC_samples}.
+Material samples were taken from the various circuit breakers to better understand their burning behavior using a Microscale Combustion Calorimeter\footnote{This MCC used in this work was a Deatak MCC-3 equipped with a paramagnetic oxygen sensor and calibrated according to ASTM~D7309~\cite{ASTMD7309}.} (MCC), an apparatus in which a specimen of known mass is thermally decomposed in nitrogen at a constant heating rate and then burned in oxygen to determine its heat of combustion. Samples were not identified by a specific material type (e.g., composition, and/or manufacturer/distributor name), rather they are labeled in series (No. 1 to No. 10) to correspond to each of the items identified in Fig.~\ref{fig:MCC_samples}.
 
 
 \begin{figure}[!ht]
@@ -323,7 +326,7 @@ MCC experiments were conducted in December, 2023. The material samples were subj
 
 
 \begin{table}
-\caption[MCC Measurements]{MCC Measurements. The relative expanded uncertainty in the reported Heat of Combustion is approximately 6~\% of the measured value. The primary components of this uncertainty estimate include: (1) the relative expanded uncertainty of the heat released per unit mass of oxygen consumed, 5~\%~\cite{Huggett:1}; (2) the relative expanded uncertainty of the system flow rate, 2~\%; and (3) test repeatability, 2~\% or 2 standard deviations of replicate measurements. The relative expanded uncertainty in the solid residue yield is 2~\%, primarily due to stochastic variations in values measured in repeated tests. The expanded uncertainty of the temperature measurements is $\pm 0.75$~\% of the measured absolute value. }
+\caption[Summary of MCC Measurements]{MCC Measurements. The relative expanded uncertainty in the reported Heat of Combustion is approximately 6~\% of the measured value. The primary components of this uncertainty estimate include: (1) the relative expanded uncertainty of the heat released per unit mass of oxygen consumed, 5~\%~\cite{Huggett:1}; (2) the relative expanded uncertainty of the system flow rate, 2~\%; and (3) test repeatability, 2~\% or 2 standard deviations of replicate measurements. The relative expanded uncertainty in the solid residue yield is 2~\%, primarily due to stochastic variations in values measured in repeated tests. The expanded uncertainty of the temperature measurements is $\pm 0.75$~\% of the measured absolute value. }
 \label{MCC}
 \begin{minipage}{\textwidth}
 \begin{tabular}{ccccc}
@@ -358,7 +361,7 @@ The ``Peak HRR'' in Table~\ref{matrix} indicates the maximum value of the HRR of
 
 \begin{table}[ht]
 \begin{center}
-\caption[Summary of Experimental Results]{Summary of Experimental Results. The uncertainty of the HRR is $\pm 7$~\%. The uncertainty of the temperature is $\pm 0.75$~\% of its absolute value. The listed times are rounded to the nearest minute.}
+\caption[Summary of Breaker Experiments]{Summary of breaker experiments. The uncertainty of the HRR is $\pm 7$~\%. The uncertainty of the temperature is $\pm 0.75$~\% of its absolute value. The listed times are rounded to the nearest minute.}
 \label{matrix}
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
 \hline
@@ -414,7 +417,7 @@ The HRR and gas/target temperatures are shown in Fig.~\ref{fig:Test_33}. Referri
 \includegraphics[height=2.50in]{../FIGURES/Test_33_9_min} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_33_17_min} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_33_47_min}
-\caption[Photographs of Experiment~33]{Photographs of Experiment~33, 9~min, 17~min, and 47~min (top to bottom) after ignition of the burner which was located in the lower left compartment.}
+\caption[Photographs of Exp.~33]{Photographs of Exp.~33, 9~min, 17~min, and 47~min (top to bottom) after ignition of the burner which was located in the lower left compartment.}
 \label{fig:Test_33_photos}
 \end{figure}
 
@@ -432,7 +435,7 @@ The fire in Exp.~33 consumed all of the combustibles in the upper compartments o
 \includegraphics[height=2.2in]{../SCRIPT_FIGURES/Test_34_Gas_TC} \\
 \multicolumn{2}{c}{\includegraphics[height=2.2in]{../SCRIPT_FIGURES/Test_34_Slug_TC}}
 \end{tabular*}
-\caption[HRR and temperatures of Exp.~34]{Heat release rate (upper left), gas temperatures (upper right), and slug/cable temperatures (bottom) for Exp.~34. The curve labeled ``Burner'' in the upper left plot represents the ideal HRR based on natural gas flow, and ``Total'' is the HRR measured via oxygen-consumption calorimetry. The gas temperatures were recorded near the ceiling of the middle right compartment housing the breaker (``Breaker Compartment''), and the upper right compartment with the burned out remnants from Experiment~33 (''Empty Compartment Above''). In the bottom plot, the ``Aluminum Slug'' and thermoplastic ``Cable Segment'' were placed atop the breaker.}
+\caption[HRR and temperatures of Exp.~34]{Heat release rate (upper left), gas temperatures (upper right), and slug/cable temperatures (bottom) for Exp.~34. The curve labeled ``Burner'' in the upper left plot represents the ideal HRR based on natural gas flow, and ``Total'' is the HRR measured via oxygen-consumption calorimetry. The gas temperatures were recorded near the ceiling of the middle right compartment housing the breaker (``Breaker Compartment''), and the upper right compartment with the burned out remnants from Exp.~33 (''Empty Compartment Above''). In the bottom plot, the ``Aluminum Slug'' and thermoplastic ``Cable Segment'' were placed atop the breaker.}
 \label{fig:Test_34}
 \end{figure}
 
@@ -476,7 +479,7 @@ Figure~\ref{fig:Test_35} displays the HRR and gas/target temperatures for Exp.~3
 
 \subsubsection{Experiment 40}
 
-Figure~\ref{fig:Test_40} displays the HRR and key temperatures of Experiment~40. Referring to Fig.~\ref{fig:Test_40_photos}, the gas burner was positioned within the lower right compartment of a Westinghouse low-voltage breaker enclosure. Breakers occupied the two compartments above, and the compartment above that was filled with approximately 0.8~kg of panel wire. A 30~cm (12~in) wide tray containing 12 thermoplastic cables was placed approximately 30~cm (12~in) above the top of the enclosure. Thermocouples were inserted into three cables within the tray, and instrumented aluminum rods (``slugs'') were placed alongside the instrumented cables. A single sheathed thermocouple was placed at the front of each compartment. All doors on the left side of the enclosure remained closed during the experiment except the one containing the burner.
+Figure~\ref{fig:Test_40} displays the HRR and key temperatures of Exp.~40. Referring to Fig.~\ref{fig:Test_40_photos}, the gas burner was positioned within the lower right compartment of a Westinghouse low-voltage breaker enclosure. Breakers occupied the two compartments above, and the compartment above that was filled with approximately 0.8~kg of panel wire. A 30~cm (12~in) wide tray containing 12 thermoplastic cables was placed approximately 30~cm (12~in) above the top of the enclosure. Thermocouples were inserted into three cables within the tray, and instrumented aluminum rods (``slugs'') were placed alongside the instrumented cables. A single sheathed thermocouple was placed at the front of each compartment. All doors on the left side of the enclosure remained closed during the experiment except the one containing the burner.
 
 \begin{figure}[!ht]
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
@@ -494,7 +497,7 @@ Figure~\ref{fig:Test_40} displays the HRR and key temperatures of Experiment~40.
 \includegraphics[height=2.50in]{../FIGURES/Test_40_setup} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_40_7_min_26_s} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_40_breaker}
-\caption[Photographs of Experiment~40]{Photographs of Experiment~40. (Top) The burner in position below the breaker. (Middle) The fire at 7~min, 26~s after ignition. (Bottom) The breaker after the experiment.}
+\caption[Photographs of Exp.~40]{Photographs of Exp.~40. (Top) The burner in position below the breaker. (Middle) The fire at 7~min, 26~s after ignition. (Bottom) The breaker after the experiment.}
 \label{fig:Test_40_photos}
 \end{figure}
 
@@ -503,7 +506,7 @@ Figure~\ref{fig:Test_40} displays the HRR and key temperatures of Experiment~40.
 
 \subsubsection{Experiment 41}
 
-Figure~\ref{fig:Test_41} displays the HRR and key temperatures of Experiment~41. Referring to Fig.~\ref{fig:Test_41_photos}, the gas burner was positioned within the lower left compartment of a Westinghouse low-voltage breaker enclosure. Breakers occupied the two compartments above, and the compartment above that was filled with approximately 1.0~kg of panel wire. A 30~cm (12~in) wide tray containing 12 thermoplastic cables was placed approximately 30~cm (12~in) above the top of the enclosure. Thermocouples were inserted into three cables within the tray, and instrumented aluminum rods (``slugs'') were placed alongside the instrumented cables. A single sheathed thermocouple was placed at the front of each compartment. All doors on the left side of the enclosure remained open during the experiment.
+Figure~\ref{fig:Test_41} displays the HRR and key temperatures of Exp.~41. Referring to Fig.~\ref{fig:Test_41_photos}, the gas burner was positioned within the lower left compartment of a Westinghouse low-voltage breaker enclosure. Breakers occupied the two compartments above, and the compartment above that was filled with approximately 1.0~kg of panel wire. A 30~cm (12~in) wide tray containing 12 thermoplastic cables was placed approximately 30~cm (12~in) above the top of the enclosure. Thermocouples were inserted into three cables within the tray, and instrumented aluminum rods (``slugs'') were placed alongside the instrumented cables. A single sheathed thermocouple was placed at the front of each compartment. All doors on the left side of the enclosure remained open during the experiment.
 
 \begin{figure}[!ht]
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
@@ -512,7 +515,7 @@ Figure~\ref{fig:Test_41} displays the HRR and key temperatures of Experiment~41.
 \includegraphics[height=2.2in]{../SCRIPT_FIGURES/Test_41_Plot_3} &
 \includegraphics[height=2.2in]{../SCRIPT_FIGURES/Test_41_Plot_5}
 \end{tabular*}
-\caption[HRR and temperatures of Experiment 41]{The curve labeled ``Burner'' in the upper left plot represents the ideal HRR based on natural gas flow, and ``Total'' is the HRR measured via oxygen-consumption calorimetry. The curves labeled ``Slug X'' and ``Cable X'' are temperatures of cables and aluminum  rods (slugs) in the cable tray above the enclosure. All were placed above the location of the fire, but those labeled with a 7 were to the rear of the tray; 8 to the front. The gas temperatures shown in the lower right plot refer to the lower breaker compartment (``Left 3''), upper breaker (``Left 2''), and top compartment with panel wire (``Left 1'').}
+\caption[HRR and temperatures of Exp.~41]{The curve labeled ``Burner'' in the upper left plot represents the ideal HRR based on natural gas flow, and ``Total'' is the HRR measured via oxygen-consumption calorimetry. The curves labeled ``Slug X'' and ``Cable X'' are temperatures of cables and aluminum  rods (slugs) in the cable tray above the enclosure. All were placed above the location of the fire, but those labeled with a 7 were to the rear of the tray; 8 to the front. The gas temperatures shown in the lower right plot refer to the lower breaker compartment (``Left 3''), upper breaker (``Left 2''), and top compartment with panel wire (``Left 1'').}
 \label{fig:Test_41}
 \end{figure}
 
@@ -521,7 +524,7 @@ Figure~\ref{fig:Test_41} displays the HRR and key temperatures of Experiment~41.
 \includegraphics[height=2.50in]{../FIGURES/Test_41_5_min_20_s} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_41_21_min_22_s} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_41_rear}
-\caption[Photographs of Experiment~41]{Photographs of Experiment~41. The top photograph shows the fire at 5~min, 20~s. The middle photograph shows the material burning in the uppermost compartment at 21~min, 22~s. The bottom photograph shows burning plastic insulation material at the rear of the enclosure after the fires in the front compartments had largely burnt out. }
+\caption[Photographs of Exp.~41]{Photographs of Exp.~41. The top photograph shows the fire at 5~min, 20~s. The middle photograph shows the material burning in the uppermost compartment at 21~min, 22~s. The bottom photograph shows burning plastic insulation material at the rear of the enclosure after the fires in the front compartments had largely burnt out. }
 \label{fig:Test_41_photos}
 \end{figure}
 
@@ -578,7 +581,7 @@ A nominally 45~cm (18~in) wide tray containing 13 thermoplastic cables was place
 \includegraphics[height=2.40in]{../SCRIPT_FIGURES/Test_36_Plot_3} &
 \includegraphics[height=2.40in]{../SCRIPT_FIGURES/Test_36_Plot_4}
 \end{tabular*}
-\caption[HRR and temperatures of Experiment 36]{Heat release rate (upper left) and internal cable and slug temperatures above a 40~kW burner. The curve labeled ``Burner'' in the upper left plot represents the ideal HRR based on natural gas flow, and ``Total'' is the HRR measured via oxygen-consumption calorimetry. The vertical dashed line indicates cable ignition.}
+\caption[HRR and temperatures of Exp.~36]{Heat release rate (upper left) and internal cable and slug temperatures above a 40~kW burner. The curve labeled ``Burner'' in the upper left plot represents the ideal HRR based on natural gas flow, and ``Total'' is the HRR measured via oxygen-consumption calorimetry. The vertical dashed line indicates cable ignition.}
 \label{fig:Test_36}
 \end{figure}
 
@@ -587,7 +590,7 @@ A nominally 45~cm (18~in) wide tray containing 13 thermoplastic cables was place
 \includegraphics[height=2.50in]{../FIGURES/Test_36_setup} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_36_side} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_36_1_min_31_s}
-\caption[Photographs of Experiment~36]{Photographs of Experiment~36. The top photograph shows the arrangement of cables and instrumentation. The middle photograph shows the fire just at the point of cable ignition. The bottom photograph shows the burning cables at approximately the same time.}
+\caption[Photographs of Exp.~36]{Photographs of Exp.~36. The top photograph shows the arrangement of cables and instrumentation. The middle photograph shows the fire just at the point of cable ignition. The bottom photograph shows the burning cables at approximately the same time.}
 \label{fig:Test_36_photos}
 \end{figure}
 
@@ -605,7 +608,7 @@ A nominally 45~cm (18~in) wide tray containing 13 thermoplastic cables was place
 \includegraphics[height=2.40in]{../SCRIPT_FIGURES/Test_37_Plot_3} &
 \includegraphics[height=2.40in]{../SCRIPT_FIGURES/Test_37_Plot_4}
 \end{tabular*}
-\caption[HRR and temperatures of Experiment 37]{Heat release rate (upper left) and internal cable and slug temperatures above a 40~kW burner. The curve labeled ``Burner'' in the upper left plot represents the ideal HRR based on natural gas flow, and ``Total'' is the HRR measured via oxygen-consumption calorimetry. The vertical dashed line indicates cable ignition.}
+\caption[HRR and temperatures of Exp.~37]{Heat release rate (upper left) and internal cable and slug temperatures above a 40~kW burner. The curve labeled ``Burner'' in the upper left plot represents the ideal HRR based on natural gas flow, and ``Total'' is the HRR measured via oxygen-consumption calorimetry. The vertical dashed line indicates cable ignition.}
 \label{fig:Test_37}
 \end{figure}
 
@@ -614,7 +617,7 @@ A nominally 45~cm (18~in) wide tray containing 13 thermoplastic cables was place
 \includegraphics[height=2.50in]{../FIGURES/Test_37_side} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_37_1_min_36_s} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_37_ignition}
-\caption[Photographs of Experiment~37]{Photographs of Experiment~37. The top photograph shows the fire 14~s after the burner was ignited. The middle photograph shows the fire at 1~min, 36~s. The bottom photograph shows the cables igniting at approximately 4~min.}
+\caption[Photographs of Exp.~37]{Photographs of Exp.~37. The top photograph shows the fire 14~s after the burner was ignited. The middle photograph shows the fire at 1~min, 36~s. The bottom photograph shows the cables igniting at approximately 4~min.}
 \label{fig:Test_37_photos}
 \end{figure}
 
@@ -632,7 +635,7 @@ A nominally 45~cm (18~in) wide tray containing 12 thermoset cables was placed ap
 \includegraphics[height=2.40in]{../SCRIPT_FIGURES/Test_38_Plot_3} &
 \includegraphics[height=2.40in]{../SCRIPT_FIGURES/Test_38_Plot_4}
 \end{tabular*}
-\caption[HRR and temperatures of Experiment 38]{Heat release rate (upper left) and internal cable and slug temperatures above a 40~kW burner. The curve labeled ``Burner'' in the upper left plot represents the ideal HRR based on natural gas flow, and ``Total'' is the HRR measured via oxygen-consumption calorimetry.}
+\caption[HRR and temperatures of Exp.~38]{Heat release rate (upper left) and internal cable and slug temperatures above a 40~kW burner. The curve labeled ``Burner'' in the upper left plot represents the ideal HRR based on natural gas flow, and ``Total'' is the HRR measured via oxygen-consumption calorimetry.}
 \label{fig:Test_38}
 \end{figure}
 
@@ -641,7 +644,7 @@ A nominally 45~cm (18~in) wide tray containing 12 thermoset cables was placed ap
 \includegraphics[height=2.50in]{../FIGURES/Test_38_setup} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_38_29_min_29_s} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_38_damage}
-\caption[Photographs of Experiment~38]{Photographs of Experiment~38. The top photograph shows the cable trays elevated an extra 20~cm (8~in) on cement blocks. The middle photograph shows the fire at 29~min, 29~s. The bottom photograph shows the scorched cable jackets. The cables did not ignite.}
+\caption[Photographs of Exp.~38]{Photographs of Exp.~38. The top photograph shows the cable trays elevated an extra 20~cm (8~in) on cement blocks. The middle photograph shows the fire at 29~min, 29~s. The bottom photograph shows the scorched cable jackets. The cables did not ignite.}
 \label{fig:Test_38_photos}
 \end{figure}
 
@@ -659,7 +662,7 @@ A nominally 45~cm (18~in) wide tray containing 12 thermoset cables was placed ap
 \includegraphics[height=2.40in]{../SCRIPT_FIGURES/Test_39_Plot_3} &
 \includegraphics[height=2.40in]{../SCRIPT_FIGURES/Test_39_Plot_4}
 \end{tabular*}
-\caption[HRR and temperatures of Experiment 39]{Heat release rate (upper left) and internal cable and slug temperatures above a 40~kW burner. The curve labeled ``Burner'' in the upper left plot represents the ideal HRR based on natural gas flow, and ``Total'' is the HRR measured via oxygen-consumption calorimetry. The vertical dashed line indicates cable ignition.}
+\caption[HRR and temperatures of Exp.~39]{Heat release rate (upper left) and internal cable and slug temperatures above a 40~kW burner. The curve labeled ``Burner'' in the upper left plot represents the ideal HRR based on natural gas flow, and ``Total'' is the HRR measured via oxygen-consumption calorimetry. The vertical dashed line indicates cable ignition.}
 \label{fig:Test_39}
 \end{figure}
 
@@ -668,7 +671,7 @@ A nominally 45~cm (18~in) wide tray containing 12 thermoset cables was placed ap
 \includegraphics[height=2.50in]{../FIGURES/Test_39_side} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_39_1_min_36_s} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_39_3_min_11_s}
-\caption[Photographs of Experiment~39]{Photographs of Experiment~39. The top photograph shows the fire impinging on the cables. The middle photograph shows the burning cables just after ignition. The bottom photograph shows the cables a few minutes after ignition and just before self-extinguishing.}
+\caption[Photographs of Exp.~39]{Photographs of Exp.~39. The top photograph shows the fire impinging on the cables. The middle photograph shows the burning cables just after ignition. The bottom photograph shows the cables a few minutes after ignition and just before self-extinguishing.}
 \label{fig:Test_39_photos}
 \end{figure}
 
@@ -685,7 +688,7 @@ A nominally 45~cm (18~in) wide tray containing 34 thermoset cables was placed ap
 \includegraphics[height=2.40in]{../SCRIPT_FIGURES/Test_45_Plot_2} \\
 \multicolumn{2}{c}{\includegraphics[height=2.40in]{../SCRIPT_FIGURES/Test_45_Plot_3}}
 \end{tabular*}
-\caption[HRR and temperatures of Experiment 45]{Heat release rate (upper left) and internal cable and slug temperatures above a 40~kW burner. The curve labeled ``Burner'' in the upper left plot represents the ideal HRR based on natural gas flow, and ``Total'' is the HRR measured via oxygen-consumption calorimetry. The vertical dashed line indicates cable ignition.}
+\caption[HRR and temperatures of Exp.~45]{Heat release rate (upper left) and internal cable and slug temperatures above a 40~kW burner. The curve labeled ``Burner'' in the upper left plot represents the ideal HRR based on natural gas flow, and ``Total'' is the HRR measured via oxygen-consumption calorimetry. The vertical dashed line indicates cable ignition.}
 \label{fig:Test_45}
 \end{figure}
 
@@ -694,7 +697,7 @@ A nominally 45~cm (18~in) wide tray containing 34 thermoset cables was placed ap
 \includegraphics[height=2.50in]{../FIGURES/Test_45_setup} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_45_42_min_46_s} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_45_damage}
-\caption[Photographs of Experiment~45]{Photographs of Experiment~45. The top photograph shows the initial cable layer and instrumentation. The middle photograph shows the fire at 42~min, 46~s. The bottom photograph shows the damaged cables.}
+\caption[Photographs of Exp.~45]{Photographs of Exp.~45. The top photograph shows the initial cable layer and instrumentation. The middle photograph shows the fire at 42~min, 46~s. The bottom photograph shows the damaged cables.}
 \label{fig:Test_45_photos}
 \end{figure}
 
@@ -711,7 +714,7 @@ This experiment is similar to Exp.~45 except that every seventh cable has been r
 \includegraphics[height=2.40in]{../SCRIPT_FIGURES/Test_46_Plot_2} \\
 \multicolumn{2}{c}{\includegraphics[height=2.40in]{../SCRIPT_FIGURES/Test_46_Plot_3}}
 \end{tabular*}
-\caption[HRR and temperatures of Experiment 46]{Heat release rate (upper left) and internal cable and slug temperatures above a 40~kW burner. The curve labeled ``Burner'' in the upper left plot represents the ideal HRR based on natural gas flow, and ``Total'' is the HRR measured via oxygen-consumption calorimetry. The vertical dashed line indicates cable ignition.}
+\caption[HRR and temperatures of Exp.~46]{Heat release rate (upper left) and internal cable and slug temperatures above a 40~kW burner. The curve labeled ``Burner'' in the upper left plot represents the ideal HRR based on natural gas flow, and ``Total'' is the HRR measured via oxygen-consumption calorimetry. The vertical dashed line indicates cable ignition.}
 \label{fig:Test_46}
 \end{figure}
 
@@ -720,7 +723,7 @@ This experiment is similar to Exp.~45 except that every seventh cable has been r
 \includegraphics[height=2.50in]{../FIGURES/Test_46_setup} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_46_ignition} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_46_burning}
-\caption[Photographs of Experiment~46]{Photographs of Experiment~46. The top photograph shows the arrangement of cables and instrumentation. The middle photograph shows the cables igniting at approximately 12~min. The bottom photograph shows the cables steadily burning at 15~min, 6~s.}
+\caption[Photographs of Exp.~46]{Photographs of Exp.~46. The top photograph shows the arrangement of cables and instrumentation. The middle photograph shows the cables igniting at approximately 12~min. The bottom photograph shows the cables steadily burning at 15~min, 6~s.}
 \label{fig:Test_46_photos}
 \end{figure}
 
@@ -737,7 +740,7 @@ A nominally 45~cm (18~in) wide tray containing 30 thermoplastic cables was place
 \includegraphics[height=2.40in]{../SCRIPT_FIGURES/Test_47_Plot_2} \\
 \multicolumn{2}{c}{\includegraphics[height=2.40in]{../SCRIPT_FIGURES/Test_47_Plot_3}}
 \end{tabular*}
-\caption[HRR and temperatures of Experiment 47]{Heat release rate (upper left) and internal cable and slug temperatures above a 40~kW burner. The curve labeled ``Burner'' in the upper left plot represents the ideal HRR based on natural gas flow, and ``Total'' is the HRR measured via oxygen-consumption calorimetry. The vertical dashed line indicates cable ignition.}
+\caption[HRR and temperatures of Exp.~47]{Heat release rate (upper left) and internal cable and slug temperatures above a 40~kW burner. The curve labeled ``Burner'' in the upper left plot represents the ideal HRR based on natural gas flow, and ``Total'' is the HRR measured via oxygen-consumption calorimetry. The vertical dashed line indicates cable ignition.}
 \label{fig:Test_47}
 \end{figure}
 
@@ -746,7 +749,7 @@ A nominally 45~cm (18~in) wide tray containing 30 thermoplastic cables was place
 \includegraphics[height=2.50in]{../FIGURES/Test_47_setup} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_47_ignition} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_47_burning}
-\caption[Photographs of Experiment~47]{Photographs of Experiment~47. The top photograph shows the cable and instrumentation placement. The middle photograph shows the cables burning at 1~min, 9~s, just after ignition. The bottom photograph shows the fire at 5~min, 42~s, after the burner has been extinguished. }
+\caption[Photographs of Exp.~47]{Photographs of Exp.~47. The top photograph shows the cable and instrumentation placement. The middle photograph shows the cables burning at 1~min, 9~s, just after ignition. The bottom photograph shows the fire at 5~min, 42~s, after the burner has been extinguished. }
 \label{fig:Test_47_photos}
 \end{figure}
 
@@ -763,7 +766,7 @@ Experiment 48 was the same as Exp.~47 except that the tray was increased to 56~c
 \includegraphics[height=2.40in]{../SCRIPT_FIGURES/Test_48_Plot_2} \\
 \multicolumn{2}{c}{\includegraphics[height=2.40in]{../SCRIPT_FIGURES/Test_48_Plot_3}}
 \end{tabular*}
-\caption[HRR and temperatures of Experiment 48]{Heat release rate (upper left) and internal cable and slug temperatures above a 40~kW burner. The curve labeled ``Burner'' in the upper left plot represents the ideal HRR based on natural gas flow, and ``Total'' is the HRR measured via oxygen-consumption calorimetry. The vertical dashed line indicates cable ignition.}
+\caption[HRR and temperatures of Exp.~48]{Heat release rate (upper left) and internal cable and slug temperatures above a 40~kW burner. The curve labeled ``Burner'' in the upper left plot represents the ideal HRR based on natural gas flow, and ``Total'' is the HRR measured via oxygen-consumption calorimetry. The vertical dashed line indicates cable ignition.}
 \label{fig:Test_48}
 \end{figure}
 
@@ -772,7 +775,7 @@ Experiment 48 was the same as Exp.~47 except that the tray was increased to 56~c
 \includegraphics[height=2.50in]{../FIGURES/Test_48_1_min_3_s} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_48_3_min_11_s} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_48_3_min_28_s}
-\caption[Photographs of Experiment~48]{Photographs of Experiment~48. The top photograph shows the fire 1~min, 3~s after burner ignition. The middle photograph shows cable ignition just after 3~min. The bottom photograph shows steady burning at 3~min, 28~s.}
+\caption[Photographs of Exp.~48]{Photographs of Exp.~48. The top photograph shows the fire 1~min, 3~s after burner ignition. The middle photograph shows cable ignition just after 3~min. The bottom photograph shows steady burning at 3~min, 28~s.}
 \label{fig:Test_48_photos}
 \end{figure}
 
@@ -783,7 +786,7 @@ Experiment 48 was the same as Exp.~47 except that the tray was increased to 56~c
 
 \begin{table}[ht]
 \begin{center}
-\caption[Results of cable tray ignition experiments]{Ignition time of cables set above a 40~kW natural gas burner.}
+\caption[Summary of Cable Tray Ignition Experiments]{Ignition time of cables set above a 40~kW natural gas burner.}
 \label{matrix2}
 \begin{tabular}{|c|c|c|c|c|}
 \hline
@@ -829,7 +832,7 @@ The figures below show the HRR of the gas burner, along with the temperatures me
 \includegraphics[height=2.40in]{../SCRIPT_FIGURES/Test_42_Plot_1} &
 \includegraphics[height=2.40in]{../SCRIPT_FIGURES/Test_42_Plot_2}
 \end{tabular*}
-\caption[HRR and temperatures of Experiment 42]{Heat release rate (left) and sheathed thermocouple temperatures (right) above a burning breaker enclosure. The HRR measurement is based on natural gas consumption (``Burner'') and oxygen-consumption calorimetry (``Total'').}
+\caption[HRR and temperatures of Exp.~42]{Heat release rate (left) and sheathed thermocouple temperatures (right) above a burning breaker enclosure. The HRR measurement is based on natural gas consumption (``Burner'') and oxygen-consumption calorimetry (``Total'').}
 \label{fig:Test_42}
 \end{figure}
 
@@ -838,7 +841,7 @@ The figures below show the HRR of the gas burner, along with the temperatures me
 \includegraphics[height=2.50in]{../FIGURES/Test_42_start} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_42_rear} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_42_side}
-\caption[Photographs of Experiment~42]{Photographs of Experiment~42. The burner is on the right side of the enclosure and the photographs show the fire at approximately 50~kW (top), 100~kW (middle), and 200~kW (bottom). A vertical array of sheathed thermocouples sits at the upper edge of the enclosure. The cable tray in the background was left over from a previous experiment and played no role in this experiment. }
+\caption[Photographs of Exp.~42]{Photographs of Exp.~42. The burner is on the right side of the enclosure and the photographs show the fire at approximately 50~kW (top), 100~kW (middle), and 200~kW (bottom). A vertical array of sheathed thermocouples sits at the upper edge of the enclosure. The cable tray in the background was left over from a previous experiment and played no role in this experiment. }
 \label{fig:Test_42_photos}
 \end{figure}
 
@@ -857,7 +860,7 @@ The figures below show the HRR of the gas burner and the total HRR of the burner
 \includegraphics[height=2.2in]{../SCRIPT_FIGURES/Test_43_Plot_2} \\
 \multicolumn{2}{c}{\includegraphics[height=2.2in]{../SCRIPT_FIGURES/Test_43_Plot_3}}
 \end{tabular*}
-\caption[HRR and temperatures of Experiment 43]{Heat release rate (upper left) slug (upper right) and sheathed thermocouple (bottom) temperatures above a burning breaker enclosure. The HRR measurement is based on natural gas consumption (``Burner'') and oxygen-consumption calorimetry (``Total'').}
+\caption[HRR and temperatures of Exp.~43]{Heat release rate (upper left) slug (upper right) and sheathed thermocouple (bottom) temperatures above a burning breaker enclosure. The HRR measurement is based on natural gas consumption (``Burner'') and oxygen-consumption calorimetry (``Total'').}
 \label{fig:Test_43}
 \end{figure}
 
@@ -866,7 +869,7 @@ The figures below show the HRR of the gas burner and the total HRR of the burner
 \includegraphics[height=2.50in]{../FIGURES/Test_43_setup} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_43_9_min_12_s} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_43_side}
-\caption[Photographs of Experiment~43]{Photographs of Experiment~43. The upper photograph shows that vertical array of sheathed thermocouples and aluminum slugs, positioned in such a way as to capture the peak plume temperatures at the various heights, based on observations of the previous experiment. The middle photograph shows the fire at 9~min, 12~s at which time its HRR is 125~kW. The lower photograph shows the fire at 300~kW.}
+\caption[Photographs of Exp.~43]{Photographs of Exp.~43. The upper photograph shows that vertical array of sheathed thermocouples and aluminum slugs, positioned in such a way as to capture the peak plume temperatures at the various heights, based on observations of the previous experiment. The middle photograph shows the fire at 9~min, 12~s at which time its HRR is 125~kW. The lower photograph shows the fire at 300~kW.}
 \label{fig:Test_43_photos}
 \end{figure}
 
@@ -875,7 +878,7 @@ The figures below show the HRR of the gas burner and the total HRR of the burner
 
 \subsubsection{Experiment 44}
 
-Experiment~44 was similar to Experiment~43 except that two vents in the left rear door of the enclosure were closed off with a metal barrier. The closing of these other vents led to a higher velocity and higher flame heights at the vent above the burner.
+Experiment~44 was similar to Exp.~43 except that two vents in the left rear door of the enclosure were closed off with a metal barrier. The closing of these other vents led to a higher velocity and higher flame heights at the vent above the burner.
 
 The figures below show the HRR of the gas burner, along with the temperatures measured by the sheathed thermocouples and aluminum rods above the enclosure.
 
@@ -885,7 +888,7 @@ The figures below show the HRR of the gas burner, along with the temperatures me
 \includegraphics[height=2.40in]{../SCRIPT_FIGURES/Test_44_Plot_2} \\
 \multicolumn{2}{c}{\includegraphics[height=2.40in]{../SCRIPT_FIGURES/Test_44_Plot_3}}
 \end{tabular*}
-\caption[HRR and temperatures of Experiment 44]{Heat release rate (upper left) and slug (upper right) and sheathed thermocouple (bottom) temperatures above a burning breaker enclosure. The HRR measurement is based on natural gas consumption (``Burner'') and oxygen-consumption calorimetry (``Total'').}
+\caption[HRR and temperatures of Exp.~44]{Heat release rate (upper left) and slug (upper right) and sheathed thermocouple (bottom) temperatures above a burning breaker enclosure. The HRR measurement is based on natural gas consumption (``Burner'') and oxygen-consumption calorimetry (``Total'').}
 \label{fig:Test_44}
 \end{figure}
 
@@ -894,7 +897,7 @@ The figures below show the HRR of the gas burner, along with the temperatures me
 \includegraphics[height=2.50in]{../FIGURES/Test_44_start} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_44_15_min_19_s} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_44_side}
-\caption[Photographs of Experiment~44]{Photographs of Experiment~44. The top photograph shows the fire within the enclosure 20~s following ignition of the burner. Note that the vents on the left side of the enclosure have been sealed. The middle photograph shows the fire 15~min, 19~s following ignition, at which time the HRR is 300~kW. The bottom photograph shows the enclosure from the side at about this same time. The flames can be seen emerging from the side panel, which has opened due to the extreme heat of this and previous experiments.}
+\caption[Photographs of Exp.~44]{Photographs of Exp.~44. The top photograph shows the fire within the enclosure 20~s following ignition of the burner. Note that the vents on the left side of the enclosure have been sealed. The middle photograph shows the fire 15~min, 19~s following ignition, at which time the HRR is 300~kW. The bottom photograph shows the enclosure from the side at about this same time. The flames can be seen emerging from the side panel, which has opened due to the extreme heat of this and previous experiments.}
 \label{fig:Test_44_photos}
 \end{figure}
 
@@ -969,7 +972,7 @@ Two nominally 30~cm (12~in) wide cable trays were set approximately 30~cm (12~in
 \put(74,27){\tiny 25}
 \put(95,17){Front}
 \end{picture}
-\caption[Plan view of Experiment 49]{Plan view of the Enclosure~\#3 with cable trays set on top. The dashed box indicates the location of the burner within the enclosure. Device numbers 1-20 refer to aluminum slugs and 21-40 to instrumented cables. The tray in the lower part of the figure held 10 thermoset cables; the other held 10 thermoplastic cables. The tray rungs are spaced nominally 22.9~cm (9~in) on center.}
+\caption[Plan view of Exp.~49]{Plan view of the Enclosure~\#3 with cable trays set on top. The dashed box indicates the location of the burner within the enclosure. Device numbers 1-20 refer to aluminum slugs and 21-40 to instrumented cables. The tray in the lower part of the figure held 10 thermoset cables; the other held 10 thermoplastic cables. The tray rungs are spaced nominally 22.9~cm (9~in) on center.}
 \label{Exp_49_diagram}
 \end{figure}
 
@@ -978,7 +981,7 @@ Two nominally 30~cm (12~in) wide cable trays were set approximately 30~cm (12~in
 \includegraphics[height=2.40in]{../SCRIPT_FIGURES/Test_49_Plot_1} &
 \includegraphics[height=2.40in]{../SCRIPT_FIGURES/Test_49_Plot_2}
 \end{tabular*}
-\caption[HRR and temperatures of Experiment 49]{Heat release rate (left) and peak target temperatures (right) for Exp.~49. The curve labeled ``Burner'' in the left plot represents the ideal HRR based on natural gas flow, and ``Total'' is the HRR measured via oxygen-consumption calorimetry.}
+\caption[HRR and temperatures of Exp.~49]{Heat release rate (left) and peak target temperatures (right) for Exp.~49. The curve labeled ``Burner'' in the left plot represents the ideal HRR based on natural gas flow, and ``Total'' is the HRR measured via oxygen-consumption calorimetry.}
 \label{fig:Test_49}
 \end{figure}
 
@@ -987,7 +990,7 @@ Two nominally 30~cm (12~in) wide cable trays were set approximately 30~cm (12~in
 \includegraphics[height=2.50in]{../FIGURES/Test_49_setup} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_49_cables} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_49_fire}
-\caption[Photographs of Experiment~49]{Photographs of Experiment~49. The top photograph shows the initial set up. The middle photograph indicates the locations of the thermocouples that are embedded in the cable and secured with white, noncombustible tape. The bottom photograph shows the enclosure during the experiment. Flames did not emerge from the louvered vents during the experiment. }
+\caption[Photographs of Exp.~49]{Photographs of Exp.~49. The top photograph shows the initial set up. The middle photograph indicates the locations of the thermocouples that are embedded in the cable and secured with white, noncombustible tape. The bottom photograph shows the enclosure during the experiment. Flames did not emerge from the louvered vents during the experiment. }
 \label{fig:Test_49_photos}
 \end{figure}
 
@@ -1023,7 +1026,7 @@ This experiment retained the same basic setup as Exp.~49 except that the louvere
 \put(65,27){\tiny 25}
 \put(86,17){Front}
 \end{picture}
-\caption[Plan view of Experiment 50]{Plan view of the enclosure with cable trays set on top. The dashed box indicates the location of the burner within the enclosure. The numbers refer to either the aluminum slugs (1-20) or instrumented cables (21-40). The tray in the lower part of the figure held 10 thermoset cables; the other held 10 thermoplastic cables.}
+\caption[Plan view of Exp.~50]{Plan view of the enclosure with cable trays set on top. The dashed box indicates the location of the burner within the enclosure. The numbers refer to either the aluminum slugs (1-20) or instrumented cables (21-40). The tray in the lower part of the figure held 10 thermoset cables; the other held 10 thermoplastic cables.}
 \label{Exp_50_diagram}
 \end{figure}
 
@@ -1032,7 +1035,7 @@ This experiment retained the same basic setup as Exp.~49 except that the louvere
 \includegraphics[height=2.40in]{../SCRIPT_FIGURES/Test_50_Plot_1} &
 \includegraphics[height=2.40in]{../SCRIPT_FIGURES/Test_50_Plot_2}
 \end{tabular*}
-\caption[HRR and temperatures of Experiment 50]{Heat release rate (left) and peak target temperatures (right) for Exp.~50. The curve labeled ``Burner'' in the left plot represents the ideal HRR based on natural gas flow, and ``Total'' is the HRR measured via oxygen-consumption calorimetry. The increase in ``Total'' over ``Burner'' HRR after 20~min represents the HRR of the burning cables.}
+\caption[HRR and temperatures of Exp.~50]{Heat release rate (left) and peak target temperatures (right) for Exp.~50. The curve labeled ``Burner'' in the left plot represents the ideal HRR based on natural gas flow, and ``Total'' is the HRR measured via oxygen-consumption calorimetry. The increase in ``Total'' over ``Burner'' HRR after 20~min represents the HRR of the burning cables.}
 \label{fig:Test_50}
 \end{figure}
 
@@ -1041,7 +1044,7 @@ This experiment retained the same basic setup as Exp.~49 except that the louvere
 \includegraphics[height=2.50in]{../FIGURES/Test_50_cables} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_50_side} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_50_20_min_58_s}
-\caption[Photographs of Experiment~50]{Photographs of Experiment~50. The upper photograph shows the position of the instrumented cables and aluminum rods. Because the louvered vents were removed, the flames jetted outward such that the peak target temperatures occurred beyond the extent of the instrumented target cables and aluminum rods, as seen in the middle photograph. The bottom photograph was taken 21 minutes after ignition and shows ignition of the cables near the end of the tray.}
+\caption[Photographs of Exp.~50]{Photographs of Exp.~50. The upper photograph shows the position of the instrumented cables and aluminum rods. Because the louvered vents were removed, the flames jetted outward such that the peak target temperatures occurred beyond the extent of the instrumented target cables and aluminum rods, as seen in the middle photograph. The bottom photograph was taken 21 minutes after ignition and shows ignition of the cables near the end of the tray.}
 \label{fig:Test_50_photos}
 \end{figure}
 
@@ -1085,7 +1088,7 @@ Two cable trays were set approximately 30~cm (12~in) above Enclosure~\#2 which m
 \put(79,51){\tiny 39}
 \put(64,31){Front}
 \end{picture}
-\caption[Plan view of Experiment 51]{Plan view of the enclosure with cable trays set on top. The dashed box indicates the location of the burner within the enclosure. The numbers refer to either the aluminum slugs (1-20) or instrumented cables (21-40). The tray directly above the burner held 10 thermoset cables; the other held 10 thermoplastic cables.}
+\caption[Plan view of Exp.~51]{Plan view of the enclosure with cable trays set on top. The dashed box indicates the location of the burner within the enclosure. The numbers refer to either the aluminum slugs (1-20) or instrumented cables (21-40). The tray directly above the burner held 10 thermoset cables; the other held 10 thermoplastic cables.}
 \label{Exp_51_diagram}
 \end{figure}
 
@@ -1103,7 +1106,7 @@ Two cable trays were set approximately 30~cm (12~in) above Enclosure~\#2 which m
 \includegraphics[height=2.50in]{../FIGURES/Test_51_setup} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_51_ignition} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_51_scar}
-\caption[Photographs of Experiment~51]{Photographs of Experiment~51. The upper photograph shows the position of the burner on the left side of the enclosure. The middle photograph shows the burning cables approximately two minutes after they ignited and approximately 20 minutes after ignition of the burner. The bottom photograph shows the damaged cables after the fire has been extinguished.}
+\caption[Photographs of Exp.~51]{Photographs of Exp.~51. The upper photograph shows the position of the burner on the left side of the enclosure. The middle photograph shows the burning cables approximately two minutes after they ignited and approximately 20 minutes after ignition of the burner. The bottom photograph shows the damaged cables after the fire has been extinguished.}
 \label{fig:Test_51_photos}
 \end{figure}
 
@@ -1146,7 +1149,7 @@ This experiment is similar to Exp.~51 except that a single cable tray of thermop
 \includegraphics[height=2.40in]{../SCRIPT_FIGURES/Test_52_Plot_1} &
 \includegraphics[height=2.40in]{../SCRIPT_FIGURES/Test_52_Plot_3}
 \end{tabular*}
-\caption[HRR and temperatures of Experiment 52]{Heat release rate (left) and peak target temperatures (right) for Exp.~52. The curve labeled ``Burner'' in the left plot represents the ideal HRR based on natural gas flow, and ``Total'' is the HRR measured via oxygen-consumption calorimetry. }
+\caption[HRR and temperatures of Exp.~52]{Heat release rate (left) and peak target temperatures (right) for Exp.~52. The curve labeled ``Burner'' in the left plot represents the ideal HRR based on natural gas flow, and ``Total'' is the HRR measured via oxygen-consumption calorimetry. }
 \label{fig:Test_52}
 \end{figure}
 
@@ -1155,7 +1158,7 @@ This experiment is similar to Exp.~51 except that a single cable tray of thermop
 \includegraphics[height=2.50in]{../FIGURES/Test_52_3_min_15_s} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_52_10_min_17_s} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_52_11_min_50_s}
-\caption[Photographs of Experiment~52]{Photographs of Experiment~52. The upper photograph shows the fire within the enclosure 3~min, 15~s following the ignition of the burner. The middle photograph shows the flames impinging on the cables just 40~s prior to cable ignition at 11~min. The bottom photograph shows the burning cables just after ignition.}
+\caption[Photographs of Exp.~52]{Photographs of Exp.~52. The upper photograph shows the fire within the enclosure 3~min, 15~s following the ignition of the burner. The middle photograph shows the flames impinging on the cables just 40~s prior to cable ignition at 11~min. The bottom photograph shows the burning cables just after ignition.}
 \label{fig:Test_52_photos}
 \end{figure}
 
@@ -1197,7 +1200,7 @@ This experiment is similar to Exp.~52 except that a different HRR ramp was imple
 \includegraphics[height=2.40in]{../SCRIPT_FIGURES/Test_53_Plot_1} &
 \includegraphics[height=2.40in]{../SCRIPT_FIGURES/Test_53_Plot_3}
 \end{tabular*}
-\caption[HRR and temperatures of Experiment 53]{Heat release rate (left) and peak target temperatures (right) for Exp.~53. The curve labeled ``Burner'' in the left plot represents the ideal HRR based on natural gas flow, and ``Total'' is the HRR measured via oxygen-consumption calorimetry.}
+\caption[HRR and temperatures of Exp.~53]{Heat release rate (left) and peak target temperatures (right) for Exp.~53. The curve labeled ``Burner'' in the left plot represents the ideal HRR based on natural gas flow, and ``Total'' is the HRR measured via oxygen-consumption calorimetry.}
 \label{fig:Test_53}
 \end{figure}
 
@@ -1206,7 +1209,7 @@ This experiment is similar to Exp.~52 except that a different HRR ramp was imple
 \includegraphics[height=2.50in]{../FIGURES/Test_53_5_min_24_s} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_53_11_min_45_s} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_53_ignition}
-\caption[Photographs of Experiment~53]{Photographs of Experiment~53. The upper photograph shows the fire within the enclosure 5~min, 24~s following the ignition of the burner. The middle photograph shows the flames impinging on the cables just 15~s prior to cable ignition at 12~min. The bottom photograph shows the burning cables just after ignition.}
+\caption[Photographs of Exp.~53]{Photographs of Exp.~53. The upper photograph shows the fire within the enclosure 5~min, 24~s following the ignition of the burner. The middle photograph shows the flames impinging on the cables just 15~s prior to cable ignition at 12~min. The bottom photograph shows the burning cables just after ignition.}
 \label{fig:Test_53_photos}
 \end{figure}
 
@@ -1248,7 +1251,7 @@ This experiment is the same as Exp.~53 except that 10 thermoset cables were laid
 \includegraphics[height=2.40in]{../SCRIPT_FIGURES/Test_54_Plot_1} &
 \includegraphics[height=2.40in]{../SCRIPT_FIGURES/Test_54_Plot_3}
 \end{tabular*}
-\caption[HRR and temperatures of Experiment 54]{Heat release rate (left) and peak target temperatures (right) for Exp.~54. The curve labeled ``Burner'' in the left plot represents the ideal HRR based on natural gas flow, and ``Total'' is the HRR measured via oxygen-consumption calorimetry.}
+\caption[HRR and temperatures of Exp.~54]{Heat release rate (left) and peak target temperatures (right) for Exp.~54. The curve labeled ``Burner'' in the left plot represents the ideal HRR based on natural gas flow, and ``Total'' is the HRR measured via oxygen-consumption calorimetry.}
 \label{fig:Test_54}
 \end{figure}
 
@@ -1257,7 +1260,7 @@ This experiment is the same as Exp.~53 except that 10 thermoset cables were laid
 \includegraphics[height=2.50in]{../FIGURES/Test_54_cables} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_54_15_min_20_s} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_54_22_min_31_s}
-\caption[Photographs of Experiment~54]{Photographs of Experiment~54. The upper photograph shows the location of the instrumented cables that extend beyond the front edge of the enclosure. The middle photograph shows the fire within the enclosure approximately 15~min after ignition of the burner. The bottom photograph shows the cables burning at 22~min, 30~s, approximately 2~min after the cables first ignited.}
+\caption[Photographs of Exp.~54]{Photographs of Exp.~54. The upper photograph shows the location of the instrumented cables that extend beyond the front edge of the enclosure. The middle photograph shows the fire within the enclosure approximately 15~min after ignition of the burner. The bottom photograph shows the cables burning at 22~min, 30~s, approximately 2~min after the cables first ignited.}
 \label{fig:Test_54_photos}
 \end{figure}
 
@@ -1294,7 +1297,7 @@ This is a replicate of Exp.~53, but with the cable and slug targets more concent
 \includegraphics[height=2.40in]{../SCRIPT_FIGURES/Test_55_Plot_1} &
 \includegraphics[height=2.40in]{../SCRIPT_FIGURES/Test_55_Plot_3}
 \end{tabular*}
-\caption[HRR and temperatures of Experiment 55]{Heat release rate (left) and peak target temperatures (right) for Exp.~55. The curve labeled ``Burner'' in the left plot represents the ideal HRR based on natural gas flow, and ``Total'' is the HRR measured via oxygen-consumption calorimetry.}
+\caption[HRR and temperatures of Exp.~55]{Heat release rate (left) and peak target temperatures (right) for Exp.~55. The curve labeled ``Burner'' in the left plot represents the ideal HRR based on natural gas flow, and ``Total'' is the HRR measured via oxygen-consumption calorimetry.}
 \label{fig:Test_55}
 \end{figure}
 
@@ -1302,7 +1305,7 @@ This is a replicate of Exp.~53, but with the cable and slug targets more concent
 \centering
 \includegraphics[height=2.50in]{../FIGURES/Test_55_cables} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_55_14_min_54_s}
-\caption[Photographs of Experiment~55]{Photographs of Experiment~55. The upper photograph shows the position of the instrumented cables. The lower photograph was taken 15~min after the burner was ignited and 3~min after cable ignition.}
+\caption[Photographs of Exp.~55]{Photographs of Exp.~55. The upper photograph shows the position of the instrumented cables. The lower photograph was taken 15~min after the burner was ignited and 3~min after cable ignition.}
 \label{fig:Test_55_photos}
 \end{figure}
 
@@ -1339,7 +1342,7 @@ This is a replicate of Exp.~54, but with the cable and slug targets moved closer
 \includegraphics[height=2.40in]{../SCRIPT_FIGURES/Test_56_Plot_1} &
 \includegraphics[height=2.40in]{../SCRIPT_FIGURES/Test_56_Plot_3}
 \end{tabular*}
-\caption[HRR and temperatures of Experiment 56]{Heat release rate (left) and peak target temperatures (right) for Exp.~56. The curve labeled ``Burner'' in the left plot represents the ideal HRR based on natural gas flow, and ``Total'' is the HRR measured via oxygen-consumption calorimetry.}
+\caption[HRR and temperatures of Exp.~56]{Heat release rate (left) and peak target temperatures (right) for Exp.~56. The curve labeled ``Burner'' in the left plot represents the ideal HRR based on natural gas flow, and ``Total'' is the HRR measured via oxygen-consumption calorimetry.}
 \label{fig:Test_56}
 \end{figure}
 
@@ -1348,7 +1351,7 @@ This is a replicate of Exp.~54, but with the cable and slug targets moved closer
 \includegraphics[height=2.50in]{../FIGURES/Test_56_10_min_13_s} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_56_17_min_30_s} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_56_22_min_5_s}
-\caption[Photographs of Experiment~56]{Photographs of Experiment~56. The top photograph shows the fire within the enclosure 10~min after burner ignition. The middle photograph shows the flame emanating from the vent and impinging on the cable at 17~min, 30~s. The bottom photograph shows the cables igniting at 22~min.}
+\caption[Photographs of Exp.~56]{Photographs of Exp.~56. The top photograph shows the fire within the enclosure 10~min after burner ignition. The middle photograph shows the flame emanating from the vent and impinging on the cable at 17~min, 30~s. The bottom photograph shows the cables igniting at 22~min.}
 \label{fig:Test_56_photos}
 \end{figure}
 
@@ -1386,7 +1389,7 @@ This experiment was similar to Exp.~56, except that the tray of thermoset cables
 \includegraphics[height=2.40in]{../SCRIPT_FIGURES/Test_57_Plot_1} &
 \includegraphics[height=2.40in]{../SCRIPT_FIGURES/Test_57_Plot_3}
 \end{tabular*}
-\caption[HRR and temperatures of Experiment 57]{Heat release rate (left) and peak target temperatures (right) for Exp.~57. The curve labeled ``Burner'' in the left plot represents the ideal HRR based on natural gas flow, and ``Total'' is the HRR measured via oxygen-consumption calorimetry.}
+\caption[HRR and temperatures of Exp.~57]{Heat release rate (left) and peak target temperatures (right) for Exp.~57. The curve labeled ``Burner'' in the left plot represents the ideal HRR based on natural gas flow, and ``Total'' is the HRR measured via oxygen-consumption calorimetry.}
 \label{fig:Test_57}
 \end{figure}
 
@@ -1395,7 +1398,7 @@ This experiment was similar to Exp.~56, except that the tray of thermoset cables
 \includegraphics[height=2.50in]{../FIGURES/Test_57_setup} \\  \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_57_24_min_46_s} \\  \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_57_scar}
-\caption[Photographs of Experiment~57]{Photographs of Experiment~57. The top photograph shows the cable trays sitting atop concrete blocks, raising them approximately 20~cm (8~in). The middle photograph shows the flames extending outside of the enclosure, approximately 25~min after burner ignition. The lower photograph shows the extent of the damage.}
+\caption[Photographs of Exp.~57]{Photographs of Exp.~57. The top photograph shows the cable trays sitting atop concrete blocks, raising them approximately 20~cm (8~in). The middle photograph shows the flames extending outside of the enclosure, approximately 25~min after burner ignition. The lower photograph shows the extent of the damage.}
 \label{fig:Test_57_photos}
 \end{figure}
 
@@ -1432,7 +1435,7 @@ This experiment was similar to Exp.~55, except that the tray of thermoplastic ca
 \includegraphics[height=2.40in]{../SCRIPT_FIGURES/Test_58_Plot_1} &
 \includegraphics[height=2.40in]{../SCRIPT_FIGURES/Test_58_Plot_2}
 \end{tabular*}
-\caption[HRR and temperatures of Experiment 58]{Heat release rate (left) and peak target temperatures (right) for Exp.~58. The curve labeled ``Burner'' in the left plot represents the ideal HRR based on natural gas flow, and ``Total'' is the HRR measured via oxygen-consumption calorimetry.}
+\caption[HRR and temperatures of Exp.~58]{Heat release rate (left) and peak target temperatures (right) for Exp.~58. The curve labeled ``Burner'' in the left plot represents the ideal HRR based on natural gas flow, and ``Total'' is the HRR measured via oxygen-consumption calorimetry.}
 \label{fig:Test_58}
 \end{figure}
 
@@ -1441,7 +1444,7 @@ This experiment was similar to Exp.~55, except that the tray of thermoplastic ca
 \includegraphics[height=2.50in,angle=-90]{../FIGURES/Test_58_12_min_29_s}  \hspace{0.1in}
 \includegraphics[height=2.50in,angle=-90]{../FIGURES/Test_58_34_min_44_s} \\  \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_58_scar}
-\caption[Photographs of Experiment~58]{Photographs of Experiment~58. The upper left photograph shows flames extending outside of the enclosure at 12~min, 29~s. The upper right photograph shows the flickering onset of cable ignition at 34~min, 44~s. Sustained ignition occurred approximately 1~min later. The lower photograph shows the damage.}
+\caption[Photographs of Exp.~58]{Photographs of Exp.~58. The upper left photograph shows flames extending outside of the enclosure at 12~min, 29~s. The upper right photograph shows the flickering onset of cable ignition at 34~min, 44~s. Sustained ignition occurred approximately 1~min later. The lower photograph shows the damage.}
 \label{fig:Test_58_photos}
 \end{figure}
 
@@ -1478,7 +1481,7 @@ The experiment was a replicate of Exp.~57. The thermoset cables ignited after ap
 \includegraphics[height=2.40in]{../SCRIPT_FIGURES/Test_59_Plot_1} &
 \includegraphics[height=2.40in]{../SCRIPT_FIGURES/Test_59_Plot_2}
 \end{tabular*}
-\caption[HRR and temperatures of Experiment 59]{Heat release rate (left) and peak target temperatures (right) for Exp.~59. The curve labeled ``Burner'' in the left plot represents the ideal HRR based on natural gas flow, and ``Total'' is the HRR measured via oxygen-consumption calorimetry.}
+\caption[HRR and temperatures of Exp.~59]{Heat release rate (left) and peak target temperatures (right) for Exp.~59. The curve labeled ``Burner'' in the left plot represents the ideal HRR based on natural gas flow, and ``Total'' is the HRR measured via oxygen-consumption calorimetry.}
 \label{fig:Test_59}
 \end{figure}
 
@@ -1487,7 +1490,7 @@ The experiment was a replicate of Exp.~57. The thermoset cables ignited after ap
 \includegraphics[height=2.50in,angle=-90]{../FIGURES/Test_59_25_min_55_s} \hspace{0.1in}
 \includegraphics[height=2.50in,angle=-90]{../FIGURES/Test_59_side} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_59_scar}
-\caption[Photographs of Experiment~59]{Photographs of Experiment~59. The upper left photograph shows flames extending outside of the enclosure at 25~min, 55~s. The upper right photograph shows flame impingement just prior to cable ignition at 34~min. The lower photograph shows the damage.}
+\caption[Photographs of Exp.~59]{Photographs of Exp.~59. The upper left photograph shows flames extending outside of the enclosure at 25~min, 55~s. The upper right photograph shows flame impingement just prior to cable ignition at 34~min. The lower photograph shows the damage.}
 \label{fig:Test_59_photos}
 \end{figure}
 
@@ -1524,7 +1527,7 @@ The experiment was a replicate of Exp.~58. The thermoplastic cables ignited afte
 \includegraphics[height=2.40in]{../SCRIPT_FIGURES/Test_60_Plot_1} &
 \includegraphics[height=2.40in]{../SCRIPT_FIGURES/Test_60_Plot_2}
 \end{tabular*}
-\caption[HRR and temperatures of Experiment 60]{Heat release rate (left) and peak target temperatures (right) for Exp.~60. The curve labeled ``Burner'' in the left plot represents the ideal HRR based on natural gas flow, and ``Total'' is the HRR measured via oxygen-consumption calorimetry.}
+\caption[HRR and temperatures of Exp.~60]{Heat release rate (left) and peak target temperatures (right) for Exp.~60. The curve labeled ``Burner'' in the left plot represents the ideal HRR based on natural gas flow, and ``Total'' is the HRR measured via oxygen-consumption calorimetry.}
 \label{fig:Test_60}
 \end{figure}
 
@@ -1533,7 +1536,7 @@ The experiment was a replicate of Exp.~58. The thermoplastic cables ignited afte
 \includegraphics[height=2.50in,angle=-90]{../FIGURES/Test_60_26_min_23_s} \hspace{0.1in}
 \includegraphics[height=2.50in,angle=-90]{../FIGURES/Test_60_35_min_18_s} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_60_scar}
-\caption[Photographs of Experiment~60]{Photographs of Experiment~60. The upper left photograph shows flame extension at 26~min, 23~s. The upper right photograph shows flame impingement at 35~min, 18~s, just prior to sustained ignition at 36~min. The lower photograph shows the damaged cables.}
+\caption[Photographs of Exp.~60]{Photographs of Exp.~60. The upper left photograph shows flame extension at 26~min, 23~s. The upper right photograph shows flame impingement at 35~min, 18~s, just prior to sustained ignition at 36~min. The lower photograph shows the damaged cables.}
 \label{fig:Test_60_photos}
 \end{figure}
 
@@ -1570,7 +1573,7 @@ This experiment used the same Enclosure~\#2 as in previous experiments, but now 
 \includegraphics[height=2.2in]{../SCRIPT_FIGURES/Test_61_Plot_1} &
 \includegraphics[height=2.2in]{../SCRIPT_FIGURES/Test_61_Plot_3}
 \end{tabular*}
-\caption[HRR and temperatures of Experiment 61]{Heat release rate (left) and peak target temperatures (right) for Exp.~61. The curve labeled ``Burner'' in the left plot represents the ideal HRR based on natural gas flow, and ``Total'' is the HRR measured via oxygen-consumption calorimetry.}
+\caption[HRR and temperatures of Exp.~61]{Heat release rate (left) and peak target temperatures (right) for Exp.~61. The curve labeled ``Burner'' in the left plot represents the ideal HRR based on natural gas flow, and ``Total'' is the HRR measured via oxygen-consumption calorimetry.}
 \label{fig:Test_61}
 \end{figure}
 
@@ -1579,7 +1582,7 @@ This experiment used the same Enclosure~\#2 as in previous experiments, but now 
 \includegraphics[height=2.50in]{../FIGURES/Test_61_setup} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_61_10_min_28_s} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_61_15_min_34_s}
-\caption[Photographs of Experiment~61]{Photographs of Experiment~61. The upper photograph shows the overall set up of the experiment. The middle photograph shows the burning cables just after ignition. The lower photograph shows the cables continuing to burn after the burner is turned off at approximately 15~min. The cable fire was extinguished shortly after the photograph was taken. }
+\caption[Photographs of Exp.~61]{Photographs of Exp.~61. The upper photograph shows the overall set up of the experiment. The middle photograph shows the burning cables just after ignition. The lower photograph shows the cables continuing to burn after the burner is turned off at approximately 15~min. The cable fire was extinguished shortly after the photograph was taken. }
 \label{fig:Test_61_photos}
 \end{figure}
 
@@ -1617,7 +1620,7 @@ This experiment was similar to Exp.~61 except that thermoplastic cables were lai
 \includegraphics[height=2.40in]{../SCRIPT_FIGURES/Test_62_Plot_1} &
 \includegraphics[height=2.40in]{../SCRIPT_FIGURES/Test_62_Plot_3}
 \end{tabular*}
-\caption[HRR and temperatures of Experiment 62]{Heat release rate (left) and peak target temperatures (right) for Exp.~62. The curve labeled ``Burner'' in the left plot represents the ideal HRR based on natural gas flow, and ``Total'' is the HRR measured via oxygen-consumption calorimetry.}
+\caption[HRR and temperatures of Exp.~62]{Heat release rate (left) and peak target temperatures (right) for Exp.~62. The curve labeled ``Burner'' in the left plot represents the ideal HRR based on natural gas flow, and ``Total'' is the HRR measured via oxygen-consumption calorimetry.}
 \label{fig:Test_62}
 \end{figure}
 
@@ -1626,7 +1629,7 @@ This experiment was similar to Exp.~61 except that thermoplastic cables were lai
 \includegraphics[height=2.50in]{../FIGURES/Test_62_cables} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_62_8_min_35_s} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_62_9_min_34_s}
-\caption[Photographs of Experiment~62]{Photographs of Experiment~62. The upper photograph shows the three holes in the enclosure top just above the location of the burner. The middle photograph shows the fire at 8~min, 35~s, just prior to cable ignition. The bottom photograph shows the cables igniting at 9~min, 34~s.}
+\caption[Photographs of Exp.~62]{Photographs of Exp.~62. The upper photograph shows the three holes in the enclosure top just above the location of the burner. The middle photograph shows the fire at 8~min, 35~s, just prior to cable ignition. The bottom photograph shows the cables igniting at 9~min, 34~s.}
 \label{fig:Test_62_photos}
 \end{figure}
 
@@ -1663,7 +1666,7 @@ This experiment was similar to Exp.~61 except that the three holes above the bur
 \includegraphics[height=2.40in]{../SCRIPT_FIGURES/Test_63_Plot_1} &
 \includegraphics[height=2.40in]{../SCRIPT_FIGURES/Test_63_Plot_3}
 \end{tabular*}
-\caption[HRR and temperatures of Experiment 63]{Heat release rate (left) and peak target temperatures (right) for Exp.~63. The curve labeled ``Burner'' in the left plot represents the ideal HRR based on natural gas flow, and ``Total'' is the HRR measured via oxygen-consumption calorimetry.}
+\caption[HRR and temperatures of Exp.~63]{Heat release rate (left) and peak target temperatures (right) for Exp.~63. The curve labeled ``Burner'' in the left plot represents the ideal HRR based on natural gas flow, and ``Total'' is the HRR measured via oxygen-consumption calorimetry.}
 \label{fig:Test_63}
 \end{figure}
 
@@ -1672,7 +1675,7 @@ This experiment was similar to Exp.~61 except that the three holes above the bur
 \includegraphics[height=2.50in]{../FIGURES/Test_63_11_min_59_s} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_63_25_min_13_s} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_63_ignition}
-\caption[Photographs of Experiment~63]{Photographs of Experiment~63. The upper photograph shows the fire 12~min after the ignition of the burner. The middle photograph shows the fire at 25~min, 13~s. The lower photograph shows ignition of the cables above the two holes in the enclosure top that were not covered at approximately 44~min.}
+\caption[Photographs of Exp.~63]{Photographs of Exp.~63. The upper photograph shows the fire 12~min after the ignition of the burner. The middle photograph shows the fire at 25~min, 13~s. The lower photograph shows ignition of the cables above the two holes in the enclosure top that were not covered at approximately 44~min.}
 \label{fig:Test_63_photos}
 \end{figure}
 
@@ -1709,7 +1712,7 @@ This experiment was similar to Exp.~63 except that thermoplastic cables were use
 \includegraphics[height=2.40in]{../SCRIPT_FIGURES/Test_64_Plot_1} &
 \includegraphics[height=2.40in]{../SCRIPT_FIGURES/Test_64_Plot_3}
 \end{tabular*}
-\caption[HRR and temperatures of Experiment 64]{Heat release rate (left) and peak target temperatures (right) for Exp.~64. The curve labeled ``Burner'' in the left plot represents the ideal HRR based on natural gas flow, and ``Total'' is the HRR measured via oxygen-consumption calorimetry.}
+\caption[HRR and temperatures of Exp.~64]{Heat release rate (left) and peak target temperatures (right) for Exp.~64. The curve labeled ``Burner'' in the left plot represents the ideal HRR based on natural gas flow, and ``Total'' is the HRR measured via oxygen-consumption calorimetry.}
 \label{fig:Test_64}
 \end{figure}
 
@@ -1718,7 +1721,7 @@ This experiment was similar to Exp.~63 except that thermoplastic cables were use
 \includegraphics[height=2.50in]{../FIGURES/Test_64_10_min_39_s} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_64_17_min_8_s} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_64_20_min_26_s}
-\caption[Photographs of Experiment~64]{Photographs of Experiment~64. The upper photograph shows the fire at 10~min, 39~s. The middle photograph shows the fire at 17~min, 8~s. The lower photograph shows the cables burning above each set of holes at 20~min, 26~s.}
+\caption[Photographs of Exp.~64]{Photographs of Exp.~64. The upper photograph shows the fire at 10~min, 39~s. The middle photograph shows the fire at 17~min, 8~s. The lower photograph shows the cables burning above each set of holes at 20~min, 26~s.}
 \label{fig:Test_64_photos}
 \end{figure}
 
@@ -1748,7 +1751,7 @@ Two cable trays are mounted to the assembly, approximately 30~cm (12~in) above t
 
 \begin{table}[ht]
 \centering
-\caption[Basic properties of cables]{Basic properties of the cables used in the enclosure penetration experiments.}
+\caption[Cable Properties]{Basic properties of the cables used in the enclosure penetration experiments.}
 \label{cables}
 \begin{tabular}{|c|c|c|c|c|c|c|c|}
 \hline
@@ -1852,7 +1855,7 @@ The results of each experiment are summarized in Table~\ref{penetration_matrix} 
 
 \begin{table}[ht]
 \centering
-\caption[Summary of results of penetration experiments]{Summary of results of the cable penetration experiments. The column labeled ``Breakout Time'' denotes the time when the fire is sustained above the top of the enclosure. ``Ign.~Time'' denotes the time when the cables in the tray undergo sustained ignition. ``Fail.~Time'' denotes the time when the first of the two energized cables within the tray malfunctions. ``DNI'' means ``Did Not Ignite'' and ``DNF'' means ``Did Not Fail.'' The asterisk applied to the experiment number indicates a 60~cm (24~in) rather than 30~cm (12~in) tray separation distance.}
+\caption[Summary of Cable Penetration Experiments]{Summary of results of the cable penetration experiments. The column labeled ``Breakout Time'' denotes the time when the fire is sustained above the top of the enclosure. ``Ign.~Time'' denotes the time when the cables in the tray undergo sustained ignition. ``Fail.~Time'' denotes the time when the first of the two energized cables within the tray malfunctions. ``DNI'' means ``Did Not Ignite'' and ``DNF'' means ``Did Not Fail.'' The asterisk applied to the experiment number indicates a 60~cm (24~in) rather than 30~cm (12~in) tray separation distance.}
 \label{penetration_matrix}
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
 \hline
@@ -1891,10 +1894,10 @@ No.    & No.     & Type     & Type             & Time      & Ign. Time  & Fail.~
 
 \begin{minipage}{.60\textwidth}
 \noindent
-Cable: Thermoplastic, 7/C, \#900 \\
-Grommet: Steel compression fittings \\
-Sealant: None \\
-Notes: The fire spreads outside the enclosure in approx.~7~min. The cables rising from the 3~inch and 4~inch holes are routed into Tray~2 which ignites in approx.~10~min. The cables rising from the 2~inch holes into Tray~1 do not cause ignition or cable failure, presumably because there is not enough combustible mass to sustain a significant fire.
+{\bf Cable:} Thermoplastic, 7/C, \#900 \\
+{\bf Grommet:} Steel compression fittings \\
+{\bf Sealant:} None \\
+{\bf Notes:} The fire spreads outside the enclosure in approx.~7~min. The cables rising from the 3~inch and 4~inch holes are routed into Tray~2 which ignites in approx.~10~min. The cables rising from the 2~inch holes into Tray~1 do not cause ignition or cable failure, presumably because there is not enough combustible mass to sustain a significant fire.
 \end{minipage}
 \hfill
 \begin{minipage}{.35\textwidth}
@@ -1925,7 +1928,7 @@ Notes: The fire spreads outside the enclosure in approx.~7~min. The cables risin
 \includegraphics[height=2.30in]{../SCRIPT_FIGURES/Test_65_TC_1-3} \hfill
 \includegraphics[height=2.30in]{../SCRIPT_FIGURES/Test_65_TC_4-6}
 %\end{tabular*}
-\caption[HRR and temperatures of Experiment 65]{Heat release rate (upper left), interior enclosure temperature (upper right), Tray~1 cable temperatures (lower left), and Tray~2 cable temperatures (lower right). The curve labeled ``Burner'' in the upper left plot denotes the HRR based solely on the natural gas flow, and ``Total'' denotes the total HRR of both the natural gas and the burning cables measured via oxygen-consumption calorimetry. The vertical dashed lines indicate electrical failure.}
+\caption[HRR and temperatures of Exp.~65]{Heat release rate (upper left), interior enclosure temperature (upper right), Tray~1 cable temperatures (lower left), and Tray~2 cable temperatures (lower right). The curve labeled ``Burner'' in the upper left plot denotes the HRR based solely on the natural gas flow, and ``Total'' denotes the total HRR of both the natural gas and the burning cables measured via oxygen-consumption calorimetry. The vertical dashed lines indicate electrical failure.}
 \label{fig:Test_65}
 \end{figure}
 
@@ -1934,7 +1937,7 @@ Notes: The fire spreads outside the enclosure in approx.~7~min. The cables risin
 \includegraphics[height=2.50in]{../FIGURES/Test_65_Photo_1} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_65_Photo_2} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_65_Photo_3}
-\caption[Photographs of Experiment~65]{Photographs of Experiment~65 at times of 7:04, 9:33, and 11:15 past the time of burner ignition.}
+\caption[Photographs of Exp.~65]{Photographs of Exp.~65 at times of 7:04, 9:33, and 11:15 past the time of burner ignition.}
 \label{fig:Test_65_photos}
 \end{figure}
 
@@ -1946,10 +1949,10 @@ Notes: The fire spreads outside the enclosure in approx.~7~min. The cables risin
 
 \begin{minipage}{.60\textwidth}
 \noindent
-Cable: Thermoplastic, 7/C, \#900 \\
-Grommet: Steel compression fittings \\
-Sealant: Fire-rated gap filling foam \\
-Notes: The intumescent foam delays the fire penetration through the openings until approx.~12~min. Ignition occurs in Tray~2 in approx.~19~min followed by electrical failure at 22:24. The cables in Tray~1 do not ignite or fail because only the single cables from the 2~inch holes are routed to Tray~1.
+{\bf Cable:} Thermoplastic, 7/C, \#900 \\
+{\bf Grommet:} Steel compression fittings \\
+{\bf Sealant:} Fire-rated gap filling foam \\
+{\bf Notes:} The intumescent foam delays the fire penetration through the openings until approx.~12~min. Ignition occurs in Tray~2 in approx.~19~min followed by electrical failure at 22:24. The cables in Tray~1 do not ignite or fail because only the single cables from the 2~inch holes are routed to Tray~1.
 \end{minipage}
 \hfill
 \begin{minipage}{.35\textwidth}
@@ -1980,7 +1983,7 @@ Notes: The intumescent foam delays the fire penetration through the openings unt
 \includegraphics[height=2.30in]{../SCRIPT_FIGURES/Test_66_TC_1-3} \hfill
 \includegraphics[height=2.30in]{../SCRIPT_FIGURES/Test_66_TC_4-6}
 %\end{tabular*}
-\caption[HRR and temperatures of Experiment 66]{Heat release rate (upper left), interior enclosure temperature (upper right), Tray~1 cable temperatures (lower left), and Tray~2 cable temperatures (lower right). The curve labeled ``Burner'' in the upper left plot denotes the HRR based solely on the natural gas flow, and ``Total'' denotes the total HRR of both the natural gas and the burning cables measured via oxygen-consumption calorimetry. The vertical dashed lines indicate electrical failure.}
+\caption[HRR and temperatures of Exp.~66]{Heat release rate (upper left), interior enclosure temperature (upper right), Tray~1 cable temperatures (lower left), and Tray~2 cable temperatures (lower right). The curve labeled ``Burner'' in the upper left plot denotes the HRR based solely on the natural gas flow, and ``Total'' denotes the total HRR of both the natural gas and the burning cables measured via oxygen-consumption calorimetry. The vertical dashed lines indicate electrical failure.}
 \label{fig:Test_66}
 \end{figure}
 
@@ -1989,7 +1992,7 @@ Notes: The intumescent foam delays the fire penetration through the openings unt
 \includegraphics[height=2.50in]{../FIGURES/Test_66_Photo_1} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_66_Photo_2} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_66_Photo_3}
-\caption[Photographs of Experiment~66]{Photographs of Experiment~66 displaying the gap-filling foam, and the fire at times of 11:53, and 24:52 past the time of burner ignition.}
+\caption[Photographs of Exp.~66]{Photographs of Exp.~66 displaying the gap-filling foam, and the fire at times of 11:53, and 24:52 past the time of burner ignition.}
 \label{fig:Test_66_photos}
 \end{figure}
 
@@ -2002,10 +2005,10 @@ Notes: The intumescent foam delays the fire penetration through the openings unt
 
 \begin{minipage}{.60\textwidth}
 \noindent
-Cable: Thermoplastic, 7/C, \#900 \\
-Grommet: Steel compression fittings \\
-Sealant: Duct sealant or ceramic fiber \\
-Notes: Duct sealant is applied to the 2~inch and 3~inch holes; ceramic fiber is applied to the 4~inch holes. The fire penetrates the seals at approximately 13~min, ignites the cables within Tray~1 at 26~min and Tray~2 at 29~min. Electrical failure occurs at 27:12 and 29:54 in Trays~1 and 2, respectively. Note that in this experiment, the cables from the 3~inch holes are routed into Tray~1 rather than Tray~2, leading to a balanced combustible load.
+{\bf Cable:} Thermoplastic, 7/C, \#900 \\
+{\bf Grommet:} Steel compression fittings \\
+{\bf Sealant:} Duct sealant or ceramic fiber \\
+{\bf Notes:} Duct sealant is applied to the 2~inch and 3~inch holes; ceramic fiber is applied to the 4~inch holes. The fire penetrates the seals at approximately 13~min, ignites the cables within Tray~1 at 26~min and Tray~2 at 29~min. Electrical failure occurs at 27:12 and 29:54 in Trays~1 and 2, respectively. Note that in this experiment, the cables from the 3~inch holes are routed into Tray~1 rather than Tray~2, leading to a balanced combustible load.
 \end{minipage}
 \hfill
 \begin{minipage}{.35\textwidth}
@@ -2038,7 +2041,7 @@ Notes: Duct sealant is applied to the 2~inch and 3~inch holes; ceramic fiber is 
 \includegraphics[height=2.30in]{../SCRIPT_FIGURES/Test_67_TC_1-3} \hfill
 \includegraphics[height=2.30in]{../SCRIPT_FIGURES/Test_67_TC_4-6}
 %\end{tabular*}
-\caption[HRR and temperatures of Experiment 67]{Heat release rate (upper left), interior enclosure temperature (upper right), Tray~1 cable temperatures (lower left), and Tray~2 cable temperatures (lower right). The curve labeled ``Burner'' in the upper left plot denotes the HRR based solely on the natural gas flow, and ``Total'' denotes the total HRR of both the natural gas and the burning cables measured via oxygen-consumption calorimetry. The vertical dashed lines indicate electrical failure.}
+\caption[HRR and temperatures of Exp.~67]{Heat release rate (upper left), interior enclosure temperature (upper right), Tray~1 cable temperatures (lower left), and Tray~2 cable temperatures (lower right). The curve labeled ``Burner'' in the upper left plot denotes the HRR based solely on the natural gas flow, and ``Total'' denotes the total HRR of both the natural gas and the burning cables measured via oxygen-consumption calorimetry. The vertical dashed lines indicate electrical failure.}
 \label{fig:Test_67}
 \end{figure}
 
@@ -2047,7 +2050,7 @@ Notes: Duct sealant is applied to the 2~inch and 3~inch holes; ceramic fiber is 
 \includegraphics[height=2.50in]{../FIGURES/Test_67_Photo_1} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_67_Photo_2} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_67_Photo_3}
-\caption[Photographs of Experiment~67]{Photographs of Experiment~67 displaying the ceramic fiber seal and putty on the 4~inch hole (top) and the fire at times of 12:37 (center) and 32:54 (bottom) past the time of burner ignition.}
+\caption[Photographs of Exp.~67]{Photographs of Exp.~67 displaying the ceramic fiber seal and putty on the 4~inch hole (top) and the fire at times of 12:37 (center) and 32:54 (bottom) past the time of burner ignition.}
 \label{fig:Test_67_photos}
 \end{figure}
 
@@ -2059,10 +2062,10 @@ Notes: Duct sealant is applied to the 2~inch and 3~inch holes; ceramic fiber is 
 
 \begin{minipage}{.60\textwidth}
 \noindent
-Cable: Mixed type, 7/C, \#804 \\
-Grommet: Steel compression fittings \\
-Sealant: Fire-rated gap filling foam \\
-Notes: The HRR of the fire is limited to 200~kW and the flames only briefly rise above the enclosure top and do not ignite the cables or cause electrical failure.
+{\bf Cable:} Mixed type, 7/C, \#804 \\
+{\bf Grommet:} Steel compression fittings \\
+{\bf Sealant:} Fire-rated gap filling foam \\
+{\bf Notes:} The HRR of the fire is limited to 200~kW and the flames only briefly rise above the enclosure top and do not ignite the cables or cause electrical failure.
 \end{minipage}
 \hfill
 \begin{minipage}{.35\textwidth}
@@ -2094,7 +2097,7 @@ Notes: The HRR of the fire is limited to 200~kW and the flames only briefly rise
 \includegraphics[height=2.30in]{../SCRIPT_FIGURES/Test_68_TC_7-8} \\
 \includegraphics[height=2.30in]{../SCRIPT_FIGURES/Test_68_TC_1-3} \hfill
 \includegraphics[height=2.30in]{../SCRIPT_FIGURES/Test_68_TC_4-6}
-\caption[HRR and temperatures of Experiment 68]{Heat release rate (upper left), interior enclosure temperature (upper right), Tray~1 cable temperatures (lower left), and Tray~2 cable temperatures (lower right). The curve labeled ``Burner'' in the upper left plot denotes the HRR based solely on the natural gas flow, and ``Total'' denotes the total HRR of both the natural gas and the burning cables measured via oxygen-consumption calorimetry. The vertical dashed lines indicate electrical failure.}
+\caption[HRR and temperatures of Exp.~68]{Heat release rate (upper left), interior enclosure temperature (upper right), Tray~1 cable temperatures (lower left), and Tray~2 cable temperatures (lower right). The curve labeled ``Burner'' in the upper left plot denotes the HRR based solely on the natural gas flow, and ``Total'' denotes the total HRR of both the natural gas and the burning cables measured via oxygen-consumption calorimetry. The vertical dashed lines indicate electrical failure.}
 \label{fig:Test_68}
 \end{figure}
 
@@ -2103,7 +2106,7 @@ Notes: The HRR of the fire is limited to 200~kW and the flames only briefly rise
 \includegraphics[height=2.50in]{../FIGURES/Test_68_Photo_1} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_68_Photo_2} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_68_Photo_3}
-\caption[Photographs of Experiment~68]{Photographs of Experiment~68 at times of 8:13, approximately 15~min, and 23:53 past the time of burner ignition.}
+\caption[Photographs of Exp.~68]{Photographs of Exp.~68 at times of 8:13, approximately 15~min, and 23:53 past the time of burner ignition.}
 \label{fig:Test_68_photos}
 \end{figure}
 
@@ -2115,10 +2118,10 @@ Notes: The HRR of the fire is limited to 200~kW and the flames only briefly rise
 
 \begin{minipage}{.60\textwidth}
 \noindent
-Cable: Thermoset, 12/C, \#813 \\
-Grommet: Steel compression fittings \\
-Sealant: None \\
-Notes: The HRR of the fire is limited to 200~kW and the flames do not extend far enough above the enclosure top to ignite the cables or cause electrical failure.
+{\bf Cable:} Thermoset, 12/C, \#813 \\
+{\bf Grommet:} Steel compression fittings \\
+{\bf Sealant:} None \\
+{\bf Notes:} The HRR of the fire is limited to 200~kW and the flames do not extend far enough above the enclosure top to ignite the cables or cause electrical failure.
 \end{minipage}
 \hfill
 \begin{minipage}{.35\textwidth}
@@ -2152,7 +2155,7 @@ Notes: The HRR of the fire is limited to 200~kW and the flames do not extend far
 \includegraphics[height=2.30in]{../SCRIPT_FIGURES/Test_69_TC_1-3} \hfill
 \includegraphics[height=2.30in]{../SCRIPT_FIGURES/Test_69_TC_4-6}
 %\end{tabular*}
-\caption[HRR and temperatures of Experiment 69]{Heat release rate (upper left), interior enclosure temperature (upper right), Tray~1 cable temperatures (lower left), and Tray~2 cable temperatures (lower right). The curve labeled ``Burner'' in the upper left plot denotes the HRR based solely on the natural gas flow, and ``Total'' denotes the total HRR of both the natural gas and the burning cables measured via oxygen-consumption calorimetry. The vertical dashed lines indicate electrical failure.}
+\caption[HRR and temperatures of Exp.~69]{Heat release rate (upper left), interior enclosure temperature (upper right), Tray~1 cable temperatures (lower left), and Tray~2 cable temperatures (lower right). The curve labeled ``Burner'' in the upper left plot denotes the HRR based solely on the natural gas flow, and ``Total'' denotes the total HRR of both the natural gas and the burning cables measured via oxygen-consumption calorimetry. The vertical dashed lines indicate electrical failure.}
 \label{fig:Test_69}
 \end{figure}
 
@@ -2161,7 +2164,7 @@ Notes: The HRR of the fire is limited to 200~kW and the flames do not extend far
 \includegraphics[height=2.50in]{../FIGURES/Test_69_Photo_1} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_69_Photo_2} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_69_Photo_3}
-\caption[Photographs of Experiment~69]{Photographs of Experiment~69 at times of 10:26, 13:12, and 34:31 past the time of burner ignition.}
+\caption[Photographs of Exp.~69]{Photographs of Exp.~69 at times of 10:26, 13:12, and 34:31 past the time of burner ignition.}
 \label{fig:Test_69_photos}
 \end{figure}
 
@@ -2173,10 +2176,10 @@ Notes: The HRR of the fire is limited to 200~kW and the flames do not extend far
 
 \begin{minipage}{.60\textwidth}
 \noindent
-Cable: Thermoplastic, 7/C, \#900 \\
-Grommet: Steel compression fittings \\
-Sealant: Fire-rated gap-filling foam \\
-Notes: The 3~inch and 4~inch holes are blocked. Rigid steel conduit, 25~cm (10~in) long, is attached to four of the 2~inch holes. Each carries two cables. Gap filling foam is applied to the slot through which 20 cables are routed. The fire breaks out of the slot in approx.~28~min, igniting the cables in Tray~2 at about the same time. Electrical failure in Tray~2 occurs at 30:54. The fire does not exit the conduit and the cables in Tray~1 do not ignite or fail.
+{\bf Cable:} Thermoplastic, 7/C, \#900 \\
+{\bf Grommet:} Steel compression fittings \\
+{\bf Sealant:} Fire-rated gap-filling foam \\
+{\bf Notes:} The 3~inch and 4~inch holes are blocked. Rigid steel conduit, 25~cm (10~in) long, is attached to four of the 2~inch holes. Each carries two cables. Gap filling foam is applied to the slot through which 20 cables are routed. The fire breaks out of the slot in approx.~28~min, igniting the cables in Tray~2 at about the same time. Electrical failure in Tray~2 occurs at 30:54. The fire does not exit the conduit and the cables in Tray~1 do not ignite or fail.
 \end{minipage}
 \hfill
 \begin{minipage}{.35\textwidth}
@@ -2208,7 +2211,7 @@ Notes: The 3~inch and 4~inch holes are blocked. Rigid steel conduit, 25~cm (10~i
 \includegraphics[height=2.30in]{../SCRIPT_FIGURES/Test_70_TC_1-3} \hfill
 \includegraphics[height=2.30in]{../SCRIPT_FIGURES/Test_70_TC_4-6}
 %\end{tabular*}
-\caption[HRR and temperatures of Experiment 70]{Heat release rate (upper left), interior enclosure temperature (upper right), Tray~1 cable temperatures (lower left), and Tray~2 cable temperatures (lower right). The curve labeled ``Burner'' in the upper left plot denotes the HRR based solely on the natural gas flow, and ``Total'' denotes the total HRR of both the natural gas and the burning cables measured via oxygen-consumption calorimetry. The vertical dashed lines indicate electrical failure.}
+\caption[HRR and temperatures of Exp.~70]{Heat release rate (upper left), interior enclosure temperature (upper right), Tray~1 cable temperatures (lower left), and Tray~2 cable temperatures (lower right). The curve labeled ``Burner'' in the upper left plot denotes the HRR based solely on the natural gas flow, and ``Total'' denotes the total HRR of both the natural gas and the burning cables measured via oxygen-consumption calorimetry. The vertical dashed lines indicate electrical failure.}
 \label{fig:Test_70}
 \end{figure}
 
@@ -2217,7 +2220,7 @@ Notes: The 3~inch and 4~inch holes are blocked. Rigid steel conduit, 25~cm (10~i
 \includegraphics[height=2.50in]{../FIGURES/Test_70_Photo_1} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_70_Photo_2} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_70_Photo_3}
-\caption[Photographs of Experiment~70]{Photographs of Experiment~70 at times of 5:15, approx.~20~min, and 35:26 past the time of burner ignition.}
+\caption[Photographs of Exp.~70]{Photographs of Exp.~70 at times of 5:15, approx.~20~min, and 35:26 past the time of burner ignition.}
 \label{fig:Test_70_photos}
 \end{figure}
 
@@ -2229,10 +2232,10 @@ Notes: The 3~inch and 4~inch holes are blocked. Rigid steel conduit, 25~cm (10~i
 
 \begin{minipage}{.60\textwidth}
 \noindent
-Cable: Thermoset, 12/C, \#813 \\
-Grommet: Nylon locking grommets \\
-Sealant:  None \\
-Notes: 20 cables are routed through the unblocked slot and the fire appears above the enclosure in approx.~7~min. Ignition and failure in Tray~2 occur at approx.~11~min and 12:42. Ignition and failure in Tray~1 occur at approx.~15~min and 16:06.
+{\bf Cable:} Thermoset, 12/C, \#813 \\
+{\bf Grommet:} Nylon locking grommets \\
+{\bf Sealant:}  None \\
+{\bf Notes:} 20 cables are routed through the unblocked slot and the fire appears above the enclosure in approx.~7~min. Ignition and failure in Tray~2 occur at approx.~11~min and 12:42. Ignition and failure in Tray~1 occur at approx.~15~min and 16:06.
 \end{minipage}
 \hfill
 \begin{minipage}{.35\textwidth}
@@ -2263,7 +2266,7 @@ Notes: 20 cables are routed through the unblocked slot and the fire appears abov
 \includegraphics[height=2.30in]{../SCRIPT_FIGURES/Test_71_TC_1-3} \hfill
 \includegraphics[height=2.30in]{../SCRIPT_FIGURES/Test_71_TC_4-6}
 %\end{tabular*}
-\caption[HRR and temperatures of Experiment 71]{Heat release rate (upper left), interior enclosure temperature (upper right), Tray~1 cable temperatures (lower left), and Tray~2 cable temperatures (lower right). The curve labeled ``Burner'' in the upper left plot denotes the HRR based solely on the natural gas flow, and ``Total'' denotes the total HRR of both the natural gas and the burning cables measured via oxygen-consumption calorimetry. The vertical dashed lines indicate electrical failure.}
+\caption[HRR and temperatures of Exp.~71]{Heat release rate (upper left), interior enclosure temperature (upper right), Tray~1 cable temperatures (lower left), and Tray~2 cable temperatures (lower right). The curve labeled ``Burner'' in the upper left plot denotes the HRR based solely on the natural gas flow, and ``Total'' denotes the total HRR of both the natural gas and the burning cables measured via oxygen-consumption calorimetry. The vertical dashed lines indicate electrical failure.}
 \label{fig:Test_71}
 \end{figure}
 
@@ -2272,7 +2275,7 @@ Notes: 20 cables are routed through the unblocked slot and the fire appears abov
 \includegraphics[height=2.50in]{../FIGURES/Test_71_Photo_1} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_71_Photo_2} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_71_Photo_3}
-\caption[Photographs of Experiment~71]{Photographs of Experiment~71 at times of 8:22, 10:00, and approx.~12~min past the time of burner ignition.}
+\caption[Photographs of Exp.~71]{Photographs of Exp.~71 at times of 8:22, 10:00, and approx.~12~min past the time of burner ignition.}
 \label{fig:Test_71_photos}
 \end{figure}
 
@@ -2284,10 +2287,10 @@ Notes: 20 cables are routed through the unblocked slot and the fire appears abov
 
 \begin{minipage}{.60\textwidth}
 \noindent
-Cable: Thermoset, 12/C, \#813 \\
-Grommet: Nylon locking grommets \\
-Sealant: Fire-rated gap-filling foam \\
-Notes: Similar to Exp.~71 except that the penetrations are sealed with foam and plastic locking grommets. The fire appears above the enclosure in approx.~9~min. Ignition and failure in Tray~2 occur at approx.~17:30 and 17:42. Ignition and failure in Tray~1 occur at approx.~17:30 and 20:42.
+{\bf Cable:} Thermoset, 12/C, \#813 \\
+{\bf Grommet:} Nylon locking grommets \\
+{\bf Sealant:} Fire-rated gap-filling foam \\
+{\bf Notes:} Similar to Exp.~71 except that the penetrations are sealed with foam and plastic locking grommets. The fire appears above the enclosure in approx.~9~min. Ignition and failure in Tray~2 occur at approx.~17:30 and 17:42. Ignition and failure in Tray~1 occur at approx.~17:30 and 20:42.
 \end{minipage}
 \hfill
 \begin{minipage}{.35\textwidth}
@@ -2318,7 +2321,7 @@ Notes: Similar to Exp.~71 except that the penetrations are sealed with foam and 
 \includegraphics[height=2.30in]{../SCRIPT_FIGURES/Test_72_TC_1-3} \hfill
 \includegraphics[height=2.30in]{../SCRIPT_FIGURES/Test_72_TC_4-6}
 %\end{tabular*}
-\caption[HRR and temperatures of Experiment 72]{Heat release rate (upper left), interior enclosure temperature (upper right), Tray~1 cable temperatures (lower left), and Tray~2 cable temperatures (lower right). The curve labeled ``Burner'' in the upper left plot denotes the HRR based solely on the natural gas flow, and ``Total'' denotes the total HRR of both the natural gas and the burning cables measured via oxygen-consumption calorimetry. The vertical dashed lines indicate electrical failure.}
+\caption[HRR and temperatures of Exp.~72]{Heat release rate (upper left), interior enclosure temperature (upper right), Tray~1 cable temperatures (lower left), and Tray~2 cable temperatures (lower right). The curve labeled ``Burner'' in the upper left plot denotes the HRR based solely on the natural gas flow, and ``Total'' denotes the total HRR of both the natural gas and the burning cables measured via oxygen-consumption calorimetry. The vertical dashed lines indicate electrical failure.}
 \label{fig:Test_72}
 \end{figure}
 
@@ -2327,7 +2330,7 @@ Notes: Similar to Exp.~71 except that the penetrations are sealed with foam and 
 \includegraphics[height=2.50in]{../FIGURES/Test_72_Photo_1} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_72_Photo_2} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_72_Photo_3}
-\caption[Photographs of Experiment~72]{Photographs of Experiment~72 displaying the initial configuration, the fire at time 9:36, and the fire at approximately 12~min.}
+\caption[Photographs of Exp.~72]{Photographs of Exp.~72 displaying the initial configuration, the fire at time 9:36, and the fire at approximately 12~min.}
 \label{fig:Test_72_photos}
 \end{figure}
 
@@ -2338,10 +2341,10 @@ Notes: Similar to Exp.~71 except that the penetrations are sealed with foam and 
 
 \begin{minipage}{.60\textwidth}
 \noindent
-Cable: Thermoplastic, 7/C, \#806 \\
-Grommet: Steel compression fittings \\
-Sealant: Duct sealant or ceramic fiber \\
-Notes: The ceramic fiber was squeezed into the two 4~inch holes. Duct sealant was applied to the 2~inch and 3~inch holes. The fire broke through the seal at approx.~18:45, but did not ignite or cause the cables to fail in either tray.
+{\bf Cable:} Thermoplastic, 7/C, \#806 \\
+{\bf Grommet:} Steel compression fittings \\
+{\bf Sealant:} Duct sealant or ceramic fiber \\
+{\bf Notes:} The ceramic fiber was squeezed into the two 4~inch holes. Duct sealant was applied to the 2~inch and 3~inch holes. The fire broke through the seal at approx.~18:45, but did not ignite or cause the cables to fail in either tray.
 \end{minipage}
 \hfill
 \begin{minipage}{.35\textwidth}
@@ -2374,7 +2377,7 @@ Notes: The ceramic fiber was squeezed into the two 4~inch holes. Duct sealant wa
 \includegraphics[height=2.30in]{../SCRIPT_FIGURES/Test_73_TC_1-3} \hfill
 \includegraphics[height=2.30in]{../SCRIPT_FIGURES/Test_73_TC_4-6}
 %\end{tabular*}
-\caption[HRR and temperatures of Experiment 73]{Heat release rate (upper left), interior enclosure temperature (upper right), Tray~1 cable temperatures (lower left), and Tray~2 cable temperatures (lower right). The curve labeled ``Burner'' in the upper left plot denotes the HRR based solely on the natural gas flow, and ``Total'' denotes the total HRR of both the natural gas and the burning cables measured via oxygen-consumption calorimetry. The vertical dashed lines indicate electrical failure.}
+\caption[HRR and temperatures of Exp.~73]{Heat release rate (upper left), interior enclosure temperature (upper right), Tray~1 cable temperatures (lower left), and Tray~2 cable temperatures (lower right). The curve labeled ``Burner'' in the upper left plot denotes the HRR based solely on the natural gas flow, and ``Total'' denotes the total HRR of both the natural gas and the burning cables measured via oxygen-consumption calorimetry. The vertical dashed lines indicate electrical failure.}
 \label{fig:Test_73}
 \end{figure}
 
@@ -2383,7 +2386,7 @@ Notes: The ceramic fiber was squeezed into the two 4~inch holes. Duct sealant wa
 \includegraphics[height=2.50in]{../FIGURES/Test_73_Photo_1} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_73_Photo_2} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_73_Photo_3}
-\caption[Photographs of Experiment~73]{Photographs of Experiment~73 displaying the initial configuration, the fire at 18:53, and the condition of the cables after the experiment.}
+\caption[Photographs of Exp.~73]{Photographs of Exp.~73 displaying the initial configuration, the fire at 18:53, and the condition of the cables after the experiment.}
 \label{fig:Test_73_photos}
 \end{figure}
 
@@ -2394,10 +2397,10 @@ Notes: The ceramic fiber was squeezed into the two 4~inch holes. Duct sealant wa
 
 \begin{minipage}{.60\textwidth}
 \noindent
-Cable: Thermoset, 12/C, \#813 \\
-Grommet: Steel compression fittings \\
-Sealant: Fire-rated gap-filling foam \\
-Notes: Similar to Exp.~72, but the plastic locking grommets are replaced with steel compression fittings. The fire breaks through the 4~inch holes and sealed slot in approx.~12~min, but do not ignite the cables in Tray~2 until 21~min, with failure at 23:24. The cables in Tray~1 do not ignite or fail.
+{\bf Cable:} Thermoset, 12/C, \#813 \\
+{\bf Grommet:} Steel compression fittings \\
+{\bf Sealant:} Fire-rated gap-filling foam \\
+{\bf Notes:} Similar to Exp.~72, but the plastic locking grommets are replaced with steel compression fittings. The fire breaks through the 4~inch holes and sealed slot in approx.~12~min, but do not ignite the cables in Tray~2 until 21~min, with failure at 23:24. The cables in Tray~1 do not ignite or fail.
 \end{minipage}
 \hfill
 \begin{minipage}{.35\textwidth}
@@ -2427,7 +2430,7 @@ Notes: Similar to Exp.~72, but the plastic locking grommets are replaced with st
 \includegraphics[height=2.30in]{../SCRIPT_FIGURES/Test_74_TC_7-8} \\
 \includegraphics[height=2.30in]{../SCRIPT_FIGURES/Test_74_TC_1-3} \hfill
 \includegraphics[height=2.30in]{../SCRIPT_FIGURES/Test_74_TC_4-6}
-\caption[HRR and temperatures of Experiment 74]{Heat release rate (upper left), interior enclosure temperature (upper right), Tray~1 cable temperatures (lower left), and Tray~2 cable temperatures (lower right). The curve labeled ``Burner'' in the upper left plot denotes the HRR based solely on the natural gas flow, and ``Total'' denotes the total HRR of both the natural gas and the burning cables measured via oxygen-consumption calorimetry. The vertical dashed lines indicate electrical failure.}
+\caption[HRR and temperatures of Exp.~74]{Heat release rate (upper left), interior enclosure temperature (upper right), Tray~1 cable temperatures (lower left), and Tray~2 cable temperatures (lower right). The curve labeled ``Burner'' in the upper left plot denotes the HRR based solely on the natural gas flow, and ``Total'' denotes the total HRR of both the natural gas and the burning cables measured via oxygen-consumption calorimetry. The vertical dashed lines indicate electrical failure.}
 \label{fig:Test_74}
 \end{figure}
 
@@ -2436,7 +2439,7 @@ Notes: Similar to Exp.~72, but the plastic locking grommets are replaced with st
 \includegraphics[height=2.50in]{../FIGURES/Test_74_Photo_1} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_74_Photo_2} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_74_Photo_3}
-\caption[Photographs of Experiment~74]{Photographs of Experiment~74 displaying the initial configuration, the fire at 13:11 and 29:20.}
+\caption[Photographs of Exp.~74]{Photographs of Exp.~74 displaying the initial configuration, the fire at 13:11 and 29:20.}
 \label{fig:Test_74_photos}
 \end{figure}
 
@@ -2447,10 +2450,10 @@ Notes: Similar to Exp.~72, but the plastic locking grommets are replaced with st
 
 \begin{minipage}{.60\textwidth}
 \noindent
-Cable: Mixed type, 7/C, \#804 \\
-Grommet: Nylon plastic grommets \\
-Sealant: None \\
-Notes: The fire breaks out at approx.~9~min, 30~s. Tray~2 ignites at approx.~16~min, 30~s with cable failure at 21:12. Tray~1 ignites at approx.~19~min, 45~s with cable failure at 26:48.
+{\bf Cable:} Mixed type, 7/C, \#804 \\
+{\bf Grommet:} Nylon plastic grommets \\
+{\bf Sealant:} None \\
+{\bf Notes:} The fire breaks out at approx.~9~min, 30~s. Tray~2 ignites at approx.~16~min, 30~s with cable failure at 21:12. Tray~1 ignites at approx.~19~min, 45~s with cable failure at 26:48.
 \end{minipage}
 \hfill
 \begin{minipage}{.35\textwidth}
@@ -2482,7 +2485,7 @@ Notes: The fire breaks out at approx.~9~min, 30~s. Tray~2 ignites at approx.~16~
 \includegraphics[height=2.30in]{../SCRIPT_FIGURES/Test_75_TC_1-3} \hfill
 \includegraphics[height=2.30in]{../SCRIPT_FIGURES/Test_75_TC_4-6}
 %\end{tabular*}
-\caption[HRR and temperatures of Experiment 75]{Heat release rate (upper left), interior enclosure temperature (upper right), Tray~1 cable temperatures (lower left), and Tray~2 cable temperatures (lower right). The curve labeled ``Burner'' in the upper left plot denotes the HRR based solely on the natural gas flow, and ``Total'' denotes the total HRR of both the natural gas and the burning cables measured via oxygen-consumption calorimetry. The vertical dashed lines indicate electrical failure.}
+\caption[HRR and temperatures of Exp.~75]{Heat release rate (upper left), interior enclosure temperature (upper right), Tray~1 cable temperatures (lower left), and Tray~2 cable temperatures (lower right). The curve labeled ``Burner'' in the upper left plot denotes the HRR based solely on the natural gas flow, and ``Total'' denotes the total HRR of both the natural gas and the burning cables measured via oxygen-consumption calorimetry. The vertical dashed lines indicate electrical failure.}
 \label{fig:Test_75}
 \end{figure}
 
@@ -2491,7 +2494,7 @@ Notes: The fire breaks out at approx.~9~min, 30~s. Tray~2 ignites at approx.~16~
 \includegraphics[height=2.50in]{../FIGURES/Test_75_Photo_1} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_75_Photo_2} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_75_Photo_3}
-\caption[Photographs of Experiment~75]{Photographs of Experiment~75 displaying the fire at 11:22, approx.~17~min, and 24:19.}
+\caption[Photographs of Exp.~75]{Photographs of Exp.~75 displaying the fire at 11:22, approx.~17~min, and 24:19.}
 \label{fig:Test_75_photos}
 \end{figure}
 
@@ -2502,10 +2505,10 @@ Notes: The fire breaks out at approx.~9~min, 30~s. Tray~2 ignites at approx.~16~
 
 \begin{minipage}{.60\textwidth}
 \noindent
-Cable: Mixed type, 7/C, \#804 \\
-Grommet: Nylon plastic grommets \\
-Sealant: None \\
-Notes: Similar to Exp.~75 but the HRR is limited to 100~kW. The fire emerges out the top at approx.~7~min, 30~s, but does not ignite or cause the cables to fail in either tray.
+{\bf Cable:} Mixed type, 7/C, \#804 \\
+{\bf Grommet:} Nylon plastic grommets \\
+{\bf Sealant:} None \\
+{\bf Notes:} Similar to Exp.~75 but the HRR is limited to 100~kW. The fire emerges out the top at approx.~7~min, 30~s, but does not ignite or cause the cables to fail in either tray.
 \end{minipage}
 \hfill
 \begin{minipage}{.35\textwidth}
@@ -2535,7 +2538,7 @@ Notes: Similar to Exp.~75 but the HRR is limited to 100~kW. The fire emerges out
 \includegraphics[height=2.30in]{../SCRIPT_FIGURES/Test_76_TC_7-8} \\
 \includegraphics[height=2.30in]{../SCRIPT_FIGURES/Test_76_TC_1-3} \hfill
 \includegraphics[height=2.30in]{../SCRIPT_FIGURES/Test_76_TC_4-6}
-\caption[HRR and temperatures of Experiment 76]{Heat release rate (upper left), interior enclosure temperature (upper right), Tray~1 cable temperatures (lower left), and Tray~2 cable temperatures (lower right). The curve labeled ``Burner'' in the upper left plot denotes the HRR based solely on the natural gas flow, and ``Total'' denotes the total HRR of both the natural gas and the burning cables measured via oxygen-consumption calorimetry. The vertical dashed lines indicate electrical failure.}
+\caption[HRR and temperatures of Exp.~76]{Heat release rate (upper left), interior enclosure temperature (upper right), Tray~1 cable temperatures (lower left), and Tray~2 cable temperatures (lower right). The curve labeled ``Burner'' in the upper left plot denotes the HRR based solely on the natural gas flow, and ``Total'' denotes the total HRR of both the natural gas and the burning cables measured via oxygen-consumption calorimetry. The vertical dashed lines indicate electrical failure.}
 \label{fig:Test_76}
 \end{figure}
 
@@ -2544,7 +2547,7 @@ Notes: Similar to Exp.~75 but the HRR is limited to 100~kW. The fire emerges out
 \includegraphics[height=2.50in]{../FIGURES/Test_76_Photo_1} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_76_Photo_2} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_76_Photo_3}
-\caption[Photographs of Experiment~76]{Photographs of Experiment~76 displaying the fire at 10:22, 11:08, and 15:41.}
+\caption[Photographs of Exp.~76]{Photographs of Exp.~76 displaying the fire at 10:22, 11:08, and 15:41.}
 \label{fig:Test_76_photos}
 \end{figure}
 
@@ -2555,10 +2558,10 @@ Notes: Similar to Exp.~75 but the HRR is limited to 100~kW. The fire emerges out
 
 \begin{minipage}{.60\textwidth}
 \noindent
-Cable: Mixed type, 7/C, \#804 \\
-Grommet: Steel compression fittings \\
-Sealant: None \\
-Notes: 25~cm (10~in) rigid steel conduit attached to each hole. Three cables are routed through each conduit. The fire emerges from the 4~inch conduits at approx.~11~min, 30~s, The cables in Tray~2 fail at 16:42, but it appears that the cables in the tray do not begin to burn steadily until approx.~18~min.
+{\bf Cable:} Mixed type, 7/C, \#804 \\
+{\bf Grommet:} Steel compression fittings \\
+{\bf Sealant:} None \\
+{\bf Notes:} 25~cm (10~in) rigid steel conduit attached to each hole. Three cables are routed through each conduit. The fire emerges from the 4~inch conduits at approx.~11~min, 30~s, The cables in Tray~2 fail at 16:42, but it appears that the cables in the tray do not begin to burn steadily until approx.~18~min.
 \end{minipage}
 \hfill
 \begin{minipage}{.35\textwidth}
@@ -2590,7 +2593,7 @@ Notes: 25~cm (10~in) rigid steel conduit attached to each hole. Three cables are
 \includegraphics[height=2.30in]{../SCRIPT_FIGURES/Test_77_TC_1-3} \hfill
 \includegraphics[height=2.30in]{../SCRIPT_FIGURES/Test_77_TC_4-6}
 %\end{tabular*}
-\caption[HRR and temperatures of Experiment 77]{Heat release rate (upper left), interior enclosure temperature (upper right), Tray~1 cable temperatures (lower left), and Tray~2 cable temperatures (lower right). The curve labeled ``Burner'' in the upper left plot denotes the HRR based solely on the natural gas flow, and ``Total'' denotes the total HRR of both the natural gas and the burning cables measured via oxygen-consumption calorimetry. The vertical dashed lines indicate electrical failure.}
+\caption[HRR and temperatures of Exp.~77]{Heat release rate (upper left), interior enclosure temperature (upper right), Tray~1 cable temperatures (lower left), and Tray~2 cable temperatures (lower right). The curve labeled ``Burner'' in the upper left plot denotes the HRR based solely on the natural gas flow, and ``Total'' denotes the total HRR of both the natural gas and the burning cables measured via oxygen-consumption calorimetry. The vertical dashed lines indicate electrical failure.}
 \label{fig:Test_77}
 \end{figure}
 
@@ -2599,7 +2602,7 @@ Notes: 25~cm (10~in) rigid steel conduit attached to each hole. Three cables are
 \includegraphics[height=2.50in]{../FIGURES/Test_77_Photo_1} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_77_Photo_2} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_77_Photo_3}
-\caption[Photographs of Experiment~77]{Photographs of Experiment~77 displaying the initial configuration, the fire at 17:30 and 24:50.}
+\caption[Photographs of Exp.~77]{Photographs of Exp.~77 displaying the initial configuration, the fire at 17:30 and 24:50.}
 \label{fig:Test_77_photos}
 \end{figure}
 
@@ -2610,10 +2613,10 @@ Notes: 25~cm (10~in) rigid steel conduit attached to each hole. Three cables are
 
 \begin{minipage}{.60\textwidth}
 \noindent
-Cable: Thermoplastic, 7/C, \#900 \\
-Grommet: Steel compression fittings \\
-Sealant: Gap-filling foam \\
-Notes: The gap-filling foam is labeled as flammable and {\em not} fire-rated. The fire readily breaks through the seal at approx.~7~min. Ignition and failure in Tray~2 occur at approx.~7:30 and 9:36, respectively. Ignition and failure in Tray~1 occur at approx.~8:45 and 10:24, respectively.
+{\bf Cable:} Thermoplastic, 7/C, \#900 \\
+{\bf Grommet:} Steel compression fittings \\
+{\bf Sealant:} Gap-filling foam \\
+{\bf Notes:} The gap-filling foam is labeled as flammable and {\em not} fire-rated. The fire readily breaks through the seal at approx.~7~min. Ignition and failure in Tray~2 occur at approx.~7:30 and 9:36, respectively. Ignition and failure in Tray~1 occur at approx.~8:45 and 10:24, respectively.
 \end{minipage}
 \hfill
 \begin{minipage}{.35\textwidth}
@@ -2644,7 +2647,7 @@ Notes: The gap-filling foam is labeled as flammable and {\em not} fire-rated. Th
 \includegraphics[height=2.30in]{../SCRIPT_FIGURES/Test_78_TC_1-3} \hfill
 \includegraphics[height=2.30in]{../SCRIPT_FIGURES/Test_78_TC_4-6}
 %\end{tabular*}
-\caption[HRR and temperatures of Experiment 78]{Heat release rate (upper left), interior enclosure temperature (upper right), Tray~1 cable temperatures (lower left), and Tray~2 cable temperatures (lower right). The curve labeled ``Burner'' in the upper left plot denotes the HRR based solely on the natural gas flow, and ``Total'' denotes the total HRR of both the natural gas and the burning cables measured via oxygen-consumption calorimetry. The vertical dashed lines indicate electrical failure.}
+\caption[HRR and temperatures of Exp.~78]{Heat release rate (upper left), interior enclosure temperature (upper right), Tray~1 cable temperatures (lower left), and Tray~2 cable temperatures (lower right). The curve labeled ``Burner'' in the upper left plot denotes the HRR based solely on the natural gas flow, and ``Total'' denotes the total HRR of both the natural gas and the burning cables measured via oxygen-consumption calorimetry. The vertical dashed lines indicate electrical failure.}
 \label{fig:Test_78}
 \end{figure}
 
@@ -2653,7 +2656,7 @@ Notes: The gap-filling foam is labeled as flammable and {\em not} fire-rated. Th
 \includegraphics[height=2.50in]{../FIGURES/Test_78_Photo_1} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_78_Photo_2} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_78_Photo_3}
-\caption[Photographs of Experiment~78]{Photographs of Experiment~78 displaying the initial configuration, the fire at 7:29 and 10:54.}
+\caption[Photographs of Exp.~78]{Photographs of Exp.~78 displaying the initial configuration, the fire at 7:29 and 10:54.}
 \label{fig:Test_78_photos}
 \end{figure}
 
@@ -2664,10 +2667,10 @@ Notes: The gap-filling foam is labeled as flammable and {\em not} fire-rated. Th
 
 \begin{minipage}{.60\textwidth}
 \noindent
-Cable: Thermoplastic, 7/C, \#900 \\
-Grommet: Steel compression fittings \\
-Sealant: Ceramic fiber \\
-Notes: The fire remains within the enclosure for approx.~27~min. It spreads rapidly after its initial penetration. The cables in Tray~1 ignite and fail at approx.~28:00 and 29:00, respectively. The cables in Tray~2 ignite and fail at approx.~29:00 and 30:24, respectively.
+{\bf Cable:} Thermoplastic, 7/C, \#900 \\
+{\bf Grommet:} Steel compression fittings \\
+{\bf Sealant:} Ceramic fiber \\
+{\bf Notes:} The fire remains within the enclosure for approx.~27~min. It spreads rapidly after its initial penetration. The cables in Tray~1 ignite and fail at approx.~28:00 and 29:00, respectively. The cables in Tray~2 ignite and fail at approx.~29:00 and 30:24, respectively.
 \end{minipage}
 \hfill
 \begin{minipage}{.35\textwidth}
@@ -2698,7 +2701,7 @@ Notes: The fire remains within the enclosure for approx.~27~min. It spreads rapi
 \includegraphics[height=2.30in]{../SCRIPT_FIGURES/Test_79_TC_1-3} \hfill
 \includegraphics[height=2.30in]{../SCRIPT_FIGURES/Test_79_TC_4-6}
 %\end{tabular*}
-\caption[HRR and temperatures of Experiment 79]{Heat release rate (upper left), interior enclosure temperature (upper right), Tray~1 cable temperatures (lower left), and Tray~2 cable temperatures (lower right). The curve labeled ``Burner'' in the upper left plot denotes the HRR based solely on the natural gas flow, and ``Total'' denotes the total HRR of both the natural gas and the burning cables measured via oxygen-consumption calorimetry. The vertical dashed lines indicate electrical failure.}
+\caption[HRR and temperatures of Exp.~79]{Heat release rate (upper left), interior enclosure temperature (upper right), Tray~1 cable temperatures (lower left), and Tray~2 cable temperatures (lower right). The curve labeled ``Burner'' in the upper left plot denotes the HRR based solely on the natural gas flow, and ``Total'' denotes the total HRR of both the natural gas and the burning cables measured via oxygen-consumption calorimetry. The vertical dashed lines indicate electrical failure.}
 \label{fig:Test_79}
 \end{figure}
 
@@ -2707,7 +2710,7 @@ Notes: The fire remains within the enclosure for approx.~27~min. It spreads rapi
 \includegraphics[height=2.50in]{../FIGURES/Test_79_Photo_1} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_79_Photo_2} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_79_Photo_3}
-\caption[Photographs of Experiment~79]{Photographs of Experiment~79 displaying the initial configuration, the fire first breaking through the barrier at approx.~26~min, and the fire at 28:12.}
+\caption[Photographs of Exp.~79]{Photographs of Exp.~79 displaying the initial configuration, the fire first breaking through the barrier at approx.~26~min, and the fire at 28:12.}
 \label{fig:Test_79_photos}
 \end{figure}
 
@@ -2718,10 +2721,10 @@ Notes: The fire remains within the enclosure for approx.~27~min. It spreads rapi
 
 \begin{minipage}{.60\textwidth}
 \noindent
-Cable: Mixed type, 7/C, \#804 \\
-Grommet: Nylon locking grommets \\
-Sealant: None \\
-Notes: The trays are raised to a height 60~cm (24~in) above the enclosure top. The fire emerges out the top of the enclosure in approx.~9~min, but the cables do not ignite or fail in either tray.
+{\bf Cable:} Mixed type, 7/C, \#804 \\
+{\bf Grommet:} Nylon locking grommets \\
+{\bf Sealant:} None \\
+{\bf Notes:} The trays are raised to a height 60~cm (24~in) above the enclosure top. The fire emerges out the top of the enclosure in approx.~9~min, but the cables do not ignite or fail in either tray.
 \end{minipage}
 \hfill
 \begin{minipage}{.35\textwidth}
@@ -2753,7 +2756,7 @@ Notes: The trays are raised to a height 60~cm (24~in) above the enclosure top. T
 \includegraphics[height=2.30in]{../SCRIPT_FIGURES/Test_80_TC_1-3} \hfill
 \includegraphics[height=2.30in]{../SCRIPT_FIGURES/Test_80_TC_4-6}
 %\end{tabular*}
-\caption[HRR and temperatures of Experiment 80]{Heat release rate (upper left), interior enclosure temperature (upper right), Tray~1 cable temperatures (lower left), and Tray~2 cable temperatures (lower right). The curve labeled ``Burner'' in the upper left plot denotes the HRR based solely on the natural gas flow, and ``Total'' denotes the total HRR of both the natural gas and the burning cables measured via oxygen-consumption calorimetry. The vertical dashed lines indicate electrical failure.}
+\caption[HRR and temperatures of Exp.~80]{Heat release rate (upper left), interior enclosure temperature (upper right), Tray~1 cable temperatures (lower left), and Tray~2 cable temperatures (lower right). The curve labeled ``Burner'' in the upper left plot denotes the HRR based solely on the natural gas flow, and ``Total'' denotes the total HRR of both the natural gas and the burning cables measured via oxygen-consumption calorimetry. The vertical dashed lines indicate electrical failure.}
 \label{fig:Test_80}
 \end{figure}
 
@@ -2762,7 +2765,7 @@ Notes: The trays are raised to a height 60~cm (24~in) above the enclosure top. T
 \includegraphics[height=2.50in]{../FIGURES/Test_80_Photo_1} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_80_Photo_2} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_80_Photo_3}
-\caption[Photographs of Experiment~80]{Photographs of Experiment~80 displaying the fire at 0:35, 15:39 and 24:02.}
+\caption[Photographs of Exp.~80]{Photographs of Exp.~80 displaying the fire at 0:35, 15:39 and 24:02.}
 \label{fig:Test_80_photos}
 \end{figure}
 
@@ -2773,10 +2776,10 @@ Notes: The trays are raised to a height 60~cm (24~in) above the enclosure top. T
 
 \begin{minipage}{.60\textwidth}
 \noindent
-Cable: Mixed type, 7/C, \#804 \\
-Grommet: Steel compression fittings in the 4~inch holes. Zinc compression fittings in the 2~inch holes. The 3~inch holes are blocked. \\
-Sealant: None \\
-Notes: 60~cm (24~in) separation distance between trays and enclosure top. The fire emerges in approx.~12~min and ignites the cables in Tray~2 in approx.~17~min. The cables in Tray~2 do not fail until 30:18. The cables in Tray~1 do not ignite or fail.
+{\bf Cable:} Mixed type, 7/C, \#804 \\
+{\bf Grommet:} Steel compression fittings in the 4~inch holes. Zinc compression fittings in the 2~inch holes. The 3~inch holes are blocked. \\
+{\bf Sealant:} None \\
+{\bf Notes:} 60~cm (24~in) separation distance between trays and enclosure top. The fire emerges in approx.~12~min and ignites the cables in Tray~2 in approx.~17~min. The cables in Tray~2 do not fail until 30:18. The cables in Tray~1 do not ignite or fail.
 \end{minipage}
 \hfill
 \begin{minipage}{.35\textwidth}
@@ -2806,7 +2809,7 @@ Notes: 60~cm (24~in) separation distance between trays and enclosure top. The fi
 \includegraphics[height=2.30in]{../SCRIPT_FIGURES/Test_81_TC_7-8} \\
 \includegraphics[height=2.30in]{../SCRIPT_FIGURES/Test_81_TC_1-3} \hfill
 \includegraphics[height=2.30in]{../SCRIPT_FIGURES/Test_81_TC_4-6}
-\caption[HRR and temperatures of Experiment 81]{Heat release rate (upper left), interior enclosure temperature (upper right), Tray~1 cable temperatures (lower left), and Tray~2 cable temperatures (lower right). The curve labeled ``Burner'' in the upper left plot denotes the HRR based solely on the natural gas flow, and ``Total'' denotes the total HRR of both the natural gas and the burning cables measured via oxygen-consumption calorimetry. The vertical dashed lines indicate electrical failure.}
+\caption[HRR and temperatures of Exp.~81]{Heat release rate (upper left), interior enclosure temperature (upper right), Tray~1 cable temperatures (lower left), and Tray~2 cable temperatures (lower right). The curve labeled ``Burner'' in the upper left plot denotes the HRR based solely on the natural gas flow, and ``Total'' denotes the total HRR of both the natural gas and the burning cables measured via oxygen-consumption calorimetry. The vertical dashed lines indicate electrical failure.}
 \label{fig:Test_81}
 \end{figure}
 
@@ -2815,7 +2818,7 @@ Notes: 60~cm (24~in) separation distance between trays and enclosure top. The fi
 \includegraphics[height=2.50in]{../FIGURES/Test_81_Photo_1} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_81_Photo_2} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_81_Photo_3}
-\caption[Photographs of Experiment~81]{Photographs of Experiment~81 displaying the fire at 9:52, 11:31 and 14:52.}
+\caption[Photographs of Exp.~81]{Photographs of Exp.~81 displaying the fire at 9:52, 11:31 and 14:52.}
 \label{fig:Test_81_photos}
 \end{figure}
 
@@ -2826,10 +2829,10 @@ Notes: 60~cm (24~in) separation distance between trays and enclosure top. The fi
 
 \begin{minipage}{.60\textwidth}
 \noindent
-Cable: Thermoplastic, 7/C, \#900 \\
-Grommet: Steel compression fittings \\
-Sealant: Fire-rated gap-filling foam \\
-Notes: 60~cm (24~in) separation distance between trays and enclosure top. The fire emerges in approx.~12~min, igniting both trays at approx.~14:30. Failure occurs in Tray~1 at 17:18 and Tray~2 at 17:12.
+{\bf Cable:} Thermoplastic, 7/C, \#900 \\
+{\bf Grommet:} Steel compression fittings \\
+{\bf Sealant:} Fire-rated gap-filling foam \\
+{\bf Notes:} 60~cm (24~in) separation distance between trays and enclosure top. The fire emerges in approx.~12~min, igniting both trays at approx.~14:30. Failure occurs in Tray~1 at 17:18 and Tray~2 at 17:12.
 \end{minipage}
 \hfill
 \begin{minipage}{.35\textwidth}
@@ -2859,7 +2862,7 @@ Notes: 60~cm (24~in) separation distance between trays and enclosure top. The fi
 \includegraphics[height=2.30in]{../SCRIPT_FIGURES/Test_82_TC_7-8} \\
 \includegraphics[height=2.30in]{../SCRIPT_FIGURES/Test_82_TC_1-3} \hfill
 \includegraphics[height=2.30in]{../SCRIPT_FIGURES/Test_82_TC_4-6}
-\caption[HRR and temperatures of Experiment 82]{Heat release rate (upper left), interior enclosure temperature (upper right), Tray~1 cable temperatures (lower left), and Tray~2 cable temperatures (lower right). The curve labeled ``Burner'' in the upper left plot denotes the HRR based solely on the natural gas flow, and ``Total'' denotes the total HRR of both the natural gas and the burning cables measured via oxygen-consumption calorimetry. The vertical dashed lines indicate electrical failure.}
+\caption[HRR and temperatures of Exp.~82]{Heat release rate (upper left), interior enclosure temperature (upper right), Tray~1 cable temperatures (lower left), and Tray~2 cable temperatures (lower right). The curve labeled ``Burner'' in the upper left plot denotes the HRR based solely on the natural gas flow, and ``Total'' denotes the total HRR of both the natural gas and the burning cables measured via oxygen-consumption calorimetry. The vertical dashed lines indicate electrical failure.}
 \label{fig:Test_82}
 \end{figure}
 
@@ -2868,7 +2871,7 @@ Notes: 60~cm (24~in) separation distance between trays and enclosure top. The fi
 \includegraphics[height=2.50in]{../FIGURES/Test_82_Photo_1} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_82_Photo_2} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_82_Photo_3}
-\caption[Photographs of Experiment~82]{Photographs of Experiment~82 displaying the fire at 12:32, 15:30 and 17:11.}
+\caption[Photographs of Exp.~82]{Photographs of Exp.~82 displaying the fire at 12:32, 15:30 and 17:11.}
 \label{fig:Test_82_photos}
 \end{figure}
 
@@ -2879,10 +2882,10 @@ Notes: 60~cm (24~in) separation distance between trays and enclosure top. The fi
 
 \begin{minipage}{.60\textwidth}
 \noindent
-Cable: Thermoplastic, 7/C, \#900 \\
-Grommet: Steel compression fittings; rigid steel conduit in 3~inch and 4~inch holes. Rubber grommet on 2~inch holes. \\
-Sealant: None \\
-Notes: 56~cm (22~in) rigid steel conduits. 60~cm (24~in) tray separation. The fire emerges at approx.~7~min. The cables in Tray~2 ignite at approx.~11:45 and ignite at 12:12. The cables in Tray~1 ignite at approx.~16~min and ignite at 17:12.
+{\bf Cable:} Thermoplastic, 7/C, \#900 \\
+{\bf Grommet:} Steel compression fittings; rigid steel conduit in 3~inch and 4~inch holes. Rubber grommet on 2~inch holes. \\
+{\bf Sealant:} None \\
+{\bf Notes:} 56~cm (22~in) rigid steel conduits. 60~cm (24~in) tray separation. The fire emerges at approx.~7~min. The cables in Tray~2 ignite at approx.~11:45 and ignite at 12:12. The cables in Tray~1 ignite at approx.~16~min and ignite at 17:12.
 \end{minipage}
 \hfill
 \begin{minipage}{.35\textwidth}
@@ -2913,7 +2916,7 @@ Notes: 56~cm (22~in) rigid steel conduits. 60~cm (24~in) tray separation. The fi
 \includegraphics[height=2.30in]{../SCRIPT_FIGURES/Test_83_TC_1-3} \hfill
 \includegraphics[height=2.30in]{../SCRIPT_FIGURES/Test_83_TC_4-6}
 %\end{tabular*}
-\caption[HRR and temperatures of Experiment 83]{Heat release rate (upper left), interior enclosure temperature (upper right), Tray~1 cable temperatures (lower left), and Tray~2 cable temperatures (lower right). The curve labeled ``Burner'' in the upper left plot denotes the HRR based solely on the natural gas flow, and ``Total'' denotes the total HRR of both the natural gas and the burning cables measured via oxygen-consumption calorimetry. The vertical dashed lines indicate electrical failure.}
+\caption[HRR and temperatures of Exp.~83]{Heat release rate (upper left), interior enclosure temperature (upper right), Tray~1 cable temperatures (lower left), and Tray~2 cable temperatures (lower right). The curve labeled ``Burner'' in the upper left plot denotes the HRR based solely on the natural gas flow, and ``Total'' denotes the total HRR of both the natural gas and the burning cables measured via oxygen-consumption calorimetry. The vertical dashed lines indicate electrical failure.}
 \label{fig:Test_83}
 \end{figure}
 
@@ -2922,7 +2925,7 @@ Notes: 56~cm (22~in) rigid steel conduits. 60~cm (24~in) tray separation. The fi
 \includegraphics[height=2.50in]{../FIGURES/Test_83_Photo_1} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_83_Photo_2} \\ \vspace{0.1in}
 \includegraphics[height=2.50in]{../FIGURES/Test_83_Photo_3}
-\caption[Photographs of Experiment~83]{Photographs of Experiment~83 displaying the fire at 5:37, 8:17 and 18:41.}
+\caption[Photographs of Exp.~83]{Photographs of Exp.~83 displaying the fire at 5:37, 8:17 and 18:41.}
 \label{fig:Test_83_photos}
 \end{figure}
 
@@ -2934,9 +2937,9 @@ Notes: 56~cm (22~in) rigid steel conduits. 60~cm (24~in) tray separation. The fi
 The experiments to better understand fire propagation through enclosure-top cable penetrations provide some insight, but given the wide variety of configurations, this limited number of experiments cannot be considered comprehensive and only qualitative conclusions can be drawn. Some findings are as follows:
 \begin{itemize}
 \item Fire rapidly spreads through enclosure-top penetrations that are not sealed. Thermoplastic cables tend to spread the fire more readily than thermosets.
-\item Non-flammable sealants used in conjunction with steel fittings significantly delay the progression of a fire through enclosure-top penetrations. Mineral fiber, duct sealant, and fire-rated expandable foams can delay the spread of a fire outside of an enclosure for 10 to 20 minutes. However, the cables themselves provide a pathway for heat to spread to the outside, meaning that no sealant can completely arrest the spread of fire upwards. Sealants only serve to delay the spread.
+\item Non-flammable sealants used in conjunction with steel fittings significantly delay the progression of a fire through enclosure-top penetrations. Mineral fiber, duct sealant, and fire-rated expandable foams can delay the spread of a fire outside of an enclosure for 10~min to 20~min. However, the cables themselves provide a pathway for heat to spread to the outside of the enclosure, meaning that no sealant can completely arrest the spread of heat upwards. Sealants only serve to delay the spread.
 \item Grommets or fittings made of combustible plastics (e.g. nylon, rubber) or metals with low melting temperatures (e.g. zinc, aluminum) provide less protection than steel fittings.
-\item In the experiments reported here, fire did not spread through the nominal 1.5~inch conduit, but it did spread through the 2.5~inch and 3.5~inch conduit.
+\item In the experiments reported here, fire did not spread through the nominal 3.8~cm (1.5~in) conduit, but it did spread through the 6.4~cm (2.5~in) and 8.9~cm (3.5~in) conduit.
 \end{itemize}
 
 
@@ -2948,7 +2951,7 @@ This research has been funded by the U.S. Nuclear Regulatory Commission, Office 
 
 Additional comments and advice were provided by Kelly Opert, Sean Hunt, and Francisco Joglar of Jensen-Hughes, Inc.
 
-Anthony Chakalis, Michael Selepak, Marco Fernandez, Philip Deardorff and Laurean DeLauter assisted in conducting the experiments in the National Fire Research Laboratory of the National Institute of Standards and Technology. Matthew Bundy and Artur Chernovsky provided support for the data analysis and video capture.
+Anthony Chakalis, Michael Selepak, Marco Fernandez, Philip Deardorff, Laurean DeLauter, Justin Mills, and Justin Pomerantz assisted in conducting the experiments in the National Fire Research Laboratory of the National Institute of Standards and Technology. Matthew Bundy and Artur Chernovsky provided support for the data analysis and video capture.
 
 
 
@@ -2959,6 +2962,20 @@ Anthony Chakalis, Michael Selepak, Marco Fernandez, Philip Deardorff and Laurean
 \bibliographystyle{unsrt}
 \bibliography{Cabinet_Fire_PostHEAF}
 
+\clearpage
 
+\begin{appendices}
+
+\section{Change Log}
+\label{change_log}
+
+The following changes were made to the original report:
+\begin{itemize}
+\item A new section has been added describing experiments conducted in March 2005, entitled, ``Enclosure-Top Fire Penetration Experiments.''
+\item Scott Bareham and Gabriel Taylor have been added as co-authors.
+\item Minor formatting changes have been made to document.
+\end{itemize}
+
+\end{appendices}
 
 \end{document}
